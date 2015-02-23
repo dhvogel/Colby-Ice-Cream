@@ -37,7 +37,11 @@
 		1AC61DEC1A9A51D80094DDDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */; };
 		1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DED1A9A51E40094DDDE /* libz.dylib */; };
 		1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */; };
-		1AC61DF61A9A5A380094DDDE /* Check_Flavors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DF51A9A5A380094DDDE /* Check_Flavors.swift */; };
+		1AC61DF61A9A5A380094DDDE /* Check_Dana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */; };
+		1AE410FB1A9B9E6900D5EE46 /* Check_Bobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE410FA1A9B9E6900D5EE46 /* Check_Bobs.swift */; };
+		1AE410FD1A9BA0B000D5EE46 /* Check_Foss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */; };
+		1AE411001A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */; };
+		1AE411031A9BB56B00D5EE46 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE411021A9BB56B00D5EE46 /* circle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +90,11 @@
 		1AC61DED1A9A51E40094DDDE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colby Ice Cream-Bridging-Header.h"; sourceTree = "<group>"; };
-		1AC61DF51A9A5A380094DDDE /* Check_Flavors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Flavors.swift; sourceTree = "<group>"; };
+		1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Dana.swift; sourceTree = "<group>"; };
+		1AE410FA1A9B9E6900D5EE46 /* Check_Bobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Bobs.swift; sourceTree = "<group>"; };
+		1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Foss.swift; sourceTree = "<group>"; };
+		1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vacaciones-font-ffp-defharo.otf"; path = "../../../../Downloads/vacaciones_outline/Vacaciones-font-ffp-defharo.otf"; sourceTree = "<group>"; };
+		1AE411021A9BB56B00D5EE46 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../Downloads/circle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,8 @@
 		1AC61C141A9933B00094DDDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AE411021A9BB56B00D5EE46 /* circle.png */,
+				1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */,
 				1AC61C151A9933B00094DDDE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -226,7 +236,9 @@
 		1AC61DF41A9A5A140094DDDE /* Check */ = {
 			isa = PBXGroup;
 			children = (
-				1AC61DF51A9A5A380094DDDE /* Check_Flavors.swift */,
+				1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */,
+				1AE410FA1A9B9E6900D5EE46 /* Check_Bobs.swift */,
+				1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */,
 			);
 			name = Check;
 			sourceTree = "<group>";
@@ -313,7 +325,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC61DBB1A995D290094DDDE /* TwitterKitResources.bundle in Resources */,
+				1AE411001A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf in Resources */,
 				1AC61C1C1A9933B00094DDDE /* Main.storyboard in Resources */,
+				1AE411031A9BB56B00D5EE46 /* circle.png in Resources */,
 				1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */,
 				1AC61C1E1A9933B00094DDDE /* Images.xcassets in Resources */,
 			);
@@ -349,14 +363,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC61DF61A9A5A380094DDDE /* Check_Flavors.swift in Sources */,
+				1AC61DF61A9A5A380094DDDE /* Check_Dana.swift in Sources */,
 				1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */,
 				1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */,
 				1AC61C191A9933B00094DDDE /* ViewController.swift in Sources */,
+				1AE410FB1A9B9E6900D5EE46 /* Check_Bobs.swift in Sources */,
 				1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */,
 				1AC61C371A99537D0094DDDE /* DanaPickerViewController.swift in Sources */,
 				1AC61C171A9933B00094DDDE /* AppDelegate.swift in Sources */,
 				1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */,
+				1AE410FD1A9BA0B000D5EE46 /* Check_Foss.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +591,7 @@
 				1AC61C321A9933B00094DDDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AC61C331A9933B00094DDDE /* Build configuration list for PBXNativeTarget "Colby Ice CreamTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +600,7 @@
 				1AC61C351A9933B00094DDDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

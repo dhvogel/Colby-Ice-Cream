@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Check_Flavors: UIViewController {
+class Check_Dana: UIViewController {
 
     
     @IBOutlet weak var Dana_Flavor1: UILabel!
@@ -20,7 +20,7 @@ class Check_Flavors: UIViewController {
     @IBOutlet weak var Dana_Flavor4: UILabel!
     
     
-    func getFlavors(){
+    func getDanaFlavors(){
         let query = PFQuery(className: "ICSubmit")
         query.whereKey("DHall", equalTo: "Dana")
         query.orderByDescending("createdAt")
@@ -49,7 +49,7 @@ class Check_Flavors: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getFlavors()
+        self.getDanaFlavors()
     }
 
     override func didReceiveMemoryWarning() {

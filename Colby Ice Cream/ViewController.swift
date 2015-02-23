@@ -9,9 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var Check_Flavors: UIButton!
+    @IBOutlet weak var Submit_Flavors: UIButton!
+    @IBOutlet weak var About: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.Check_Flavors.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
+        self.Submit_Flavors.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
+        self.About.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
+        
+        
 
         // Do any additional setup after loading the view, typically from a nib.
     }

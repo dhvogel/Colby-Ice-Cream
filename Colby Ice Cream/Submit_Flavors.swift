@@ -11,12 +11,23 @@ import UIKit
 class Submit_Flavors: UIViewController {
     
     @IBOutlet weak var TestLabel: UILabel!
+    @IBOutlet weak var Chocolate: UILabel!
+    @IBOutlet weak var Vanilla: UILabel!
+    @IBOutlet weak var Strawberry: UILabel!
+    @IBOutlet weak var Campfire_Smore: UILabel!
+    @IBOutlet weak var Coffee: UILabel!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.TestLabel.text = "What flavors are in " + Hall_Select + "?"
-
+        self.TestLabel.font = UIFont(name: "Vacaciones", size: 20)
+        self.Chocolate.font = UIFont(name: "Vacaciones", size: 15)
+        self.Vanilla.font = UIFont(name: "Vacaciones", size: 15)
+        self.Strawberry.font = UIFont(name: "Vacaciones", size: 15)
+        self.Campfire_Smore.font = UIFont(name: "Vacaciones", size:15)
+        self.Coffee.font = UIFont(name: "Vacaciones", size: 15)
         
         
         

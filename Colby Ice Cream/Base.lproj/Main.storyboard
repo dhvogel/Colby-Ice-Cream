@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1l-gk-Naw">
-                                <rect key="frame" x="132" y="344" width="57" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="111" y="380" width="98" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="About"/>
                                 <connections>
@@ -26,8 +26,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-5m-cdB">
-                                <rect key="frame" x="104" y="269" width="113" height="32"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="73" y="268" width="175" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Submit Flavors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,9 +37,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD5-RK-If3">
-                                <rect key="frame" x="104" y="193" width="113" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="75" y="152" width="171" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Check Flavors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -50,15 +51,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="About" destination="n1l-gk-Naw" id="aYf-vc-qbH"/>
+                        <outlet property="Check_Flavors" destination="gD5-RK-If3" id="DF6-at-7J2"/>
+                        <outlet property="Submit_Flavors" destination="7Hd-5m-cdB" id="ggA-Ol-Yzn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1098" y="774"/>
         </scene>
-        <!--Check Flavors-->
+        <!--Check Dana-->
         <scene sceneID="yFT-ur-jqu">
             <objects>
-                <viewController id="v8b-0F-NzU" customClass="Check_Flavors" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v8b-0F-NzU" customClass="Check_Dana" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ifD-cM-NDU"/>
                         <viewControllerLayoutGuide type="bottom" id="SSf-nc-fzt"/>
@@ -74,7 +80,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-rg-1Hg">
-                                <rect key="frame" x="16" y="177" width="288" height="21"/>
+                                <rect key="frame" x="16" y="230" width="288" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -87,7 +93,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-dX-Dem">
-                                <rect key="frame" x="15" y="241" width="288" height="21"/>
+                                <rect key="frame" x="15" y="334" width="288" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -100,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz9-0L-5zn">
-                                <rect key="frame" x="16" y="310" width="288" height="21"/>
+                                <rect key="frame" x="16" y="432" width="288" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -113,7 +119,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpu-k6-3cZ">
-                                <rect key="frame" x="16" y="122" width="288" height="21"/>
+                                <rect key="frame" x="15" y="129" width="288" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -133,10 +139,10 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="Dana_Flavor1" destination="Vpu-k6-3cZ" id="WSm-rz-sUm"/>
-                        <outlet property="Dana_Flavor2" destination="p4Z-rg-1Hg" id="1mg-qV-zr5"/>
-                        <outlet property="Dana_Flavor3" destination="lHc-dX-Dem" id="UQh-O6-FX1"/>
-                        <outlet property="Dana_Flavor4" destination="rz9-0L-5zn" id="k90-kN-a5B"/>
+                        <outlet property="Dana_Flavor1" destination="Vpu-k6-3cZ" id="jkJ-ce-nRg"/>
+                        <outlet property="Dana_Flavor2" destination="p4Z-rg-1Hg" id="PI9-0M-Ty0"/>
+                        <outlet property="Dana_Flavor3" destination="lHc-dX-Dem" id="MzT-Cs-g3x"/>
+                        <outlet property="Dana_Flavor4" destination="rz9-0L-5zn" id="bXD-dd-oWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrO-OM-EUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -148,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="-520" y="-24"/>
         </scene>
-        <!--View Controller-->
+        <!--Check Bobs-->
         <scene sceneID="z4M-Sk-Q3w">
             <objects>
-                <viewController id="72G-3P-2fy" sceneMemberID="viewController">
+                <viewController id="72G-3P-2fy" customClass="Check_Bobs" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ahu-go-iBn"/>
                         <viewControllerLayoutGuide type="bottom" id="t30-kQ-Ski"/>
@@ -166,6 +172,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhI-ge-SFb">
+                                <rect key="frame" x="16" y="235" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcc-Pw-RE8">
+                                <rect key="frame" x="16" y="337" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdN-wO-EDn">
+                                <rect key="frame" x="16" y="438" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOb-ZK-4uA">
+                                <rect key="frame" x="16" y="132" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -174,6 +204,12 @@
                             <outletCollection property="gestureRecognizers" destination="DuV-DA-pHP" appends="YES" id="1kE-2z-Asf"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="Bobs_Flavor_1" destination="OOb-ZK-4uA" id="G7a-Nc-32T"/>
+                        <outlet property="Bobs_Flavor_2" destination="JhI-ge-SFb" id="hou-Z1-X63"/>
+                        <outlet property="Bobs_Flavor_3" destination="dcc-Pw-RE8" id="k0K-Wn-1UA"/>
+                        <outlet property="Bobs_Flavor_4" destination="fdN-wO-EDn" id="Rgi-Du-d6Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYZ-tn-AVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="74d-t0-WSc">
@@ -189,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="-142" y="-28"/>
         </scene>
-        <!--View Controller-->
+        <!--Check Foss-->
         <scene sceneID="NtF-aS-aP0">
             <objects>
-                <viewController id="cDN-tu-aE3" sceneMemberID="viewController">
+                <viewController id="cDN-tu-aE3" customClass="Check_Foss" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZTg-Nn-Dxr"/>
                         <viewControllerLayoutGuide type="bottom" id="3av-5e-hdD"/>
@@ -207,6 +243,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxJ-Ww-fwT">
+                                <rect key="frame" x="16" y="224" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQy-wX-T1S">
+                                <rect key="frame" x="16" y="323" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEs-cO-81y">
+                                <rect key="frame" x="16" y="435" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxK-Kf-sbG">
+                                <rect key="frame" x="16" y="127" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -214,6 +274,12 @@
                             <outletCollection property="gestureRecognizers" destination="coo-LE-4As" appends="YES" id="Q2P-1P-Asu"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="Foss_Flavor1" destination="hxK-Kf-sbG" id="Jrz-52-NuB"/>
+                        <outlet property="Foss_Flavor2" destination="QxJ-Ww-fwT" id="oKM-c0-bIy"/>
+                        <outlet property="Foss_Flavor3" destination="gQy-wX-T1S" id="ngY-Yr-Vmk"/>
+                        <outlet property="Foss_Flavor4" destination="aEs-cO-81y" id="S9m-hW-5TY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAN-mm-chs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="coo-LE-4As">
@@ -298,7 +364,14 @@
                     <view key="view" contentMode="scaleToFill" id="ruT-qq-8Vg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpP-qG-CT2">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="L9c-i2-vOl"/>
                 </viewController>
@@ -319,37 +392,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1c-KV-LEo" customClass="CheckBox" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="55" y="161" width="46" height="30"/>
+                                <rect key="frame" x="16" y="166" width="46" height="30"/>
                                 <state key="normal" title="Strawberry">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daY-KE-bee" customClass="CheckBox" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="55" y="85" width="46" height="30"/>
+                                <rect key="frame" x="16" y="90" width="46" height="30"/>
                                 <state key="normal" title="Chocolate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY7-La-jRb" customClass="CheckBox" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="55" y="123" width="46" height="30"/>
+                                <rect key="frame" x="16" y="128" width="46" height="30"/>
                                 <state key="normal" title="Vanilla">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWw-HM-iBL" customClass="CheckBox" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="55" y="241" width="46" height="30"/>
+                                <rect key="frame" x="16" y="246" width="46" height="30"/>
                                 <state key="normal" title="Coffee">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58E-7o-Ac3" customClass="CheckBox" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="55" y="199" width="46" height="30"/>
+                                <rect key="frame" x="16" y="204" width="46" height="30"/>
                                 <state key="normal" title="Campfire S'more">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBC-Aa-Idl">
-                                <rect key="frame" x="16" y="55" width="288" height="22"/>
+                                <rect key="frame" x="16" y="49" width="288" height="33"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Select Flavors">
                                         <attributes>
@@ -362,31 +435,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chocolate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gS-I8-H4s">
-                                <rect key="frame" x="181" y="90" width="79" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vanilla" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJx-Dz-eLg">
-                                <rect key="frame" x="181" y="128" width="49" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="142" y="95" width="162" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Strawberry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-dw-Ctf">
-                                <rect key="frame" x="181" y="166" width="84" height="21"/>
+                                <rect key="frame" x="142" y="171" width="162" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Campfire S'more" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZC-vn-ivN">
-                                <rect key="frame" x="181" y="204" width="130" height="21"/>
+                                <rect key="frame" x="142" y="209" width="162" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coffee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrJ-Rz-C3c">
-                                <rect key="frame" x="181" y="246" width="51" height="21"/>
+                                <rect key="frame" x="142" y="251" width="162" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -412,11 +479,22 @@
                                     <action selector="SubmitFlavors:" destination="WwV-oh-fTR" eventType="touchUpInside" id="mli-K9-Urc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vanilla" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJx-Dz-eLg">
+                                <rect key="frame" x="142" y="133" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="Campfire_Smore" destination="vZC-vn-ivN" id="A3r-nq-pD4"/>
+                        <outlet property="Chocolate" destination="9gS-I8-H4s" id="g59-VL-UaS"/>
+                        <outlet property="Coffee" destination="WrJ-Rz-C3c" id="8N9-bv-I4U"/>
+                        <outlet property="Strawberry" destination="CQz-dw-Ctf" id="uNi-cd-zYu"/>
                         <outlet property="TestLabel" destination="qBC-Aa-Idl" id="K6K-G0-dnw"/>
+                        <outlet property="Vanilla" destination="yJx-Dz-eLg" id="coa-DW-8QX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47x-Pw-meC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -430,9 +508,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="2hV-kp-YVx"/>
-        <segue reference="I8X-kE-GVy"/>
-        <segue reference="mLB-jI-vVL"/>
+        <segue reference="Vii-Qe-mLd"/>
+        <segue reference="ZEk-qQ-JL1"/>
         <segue reference="vH6-LK-zan"/>
+        <segue reference="3fN-qG-yMu"/>
     </inferredMetricsTieBreakers>
 </document>

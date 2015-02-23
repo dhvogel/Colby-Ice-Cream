@@ -73,8 +73,47 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-rg-1Hg">
+                                <rect key="frame" x="16" y="177" width="288" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-dX-Dem">
+                                <rect key="frame" x="15" y="241" width="288" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz9-0L-5zn">
+                                <rect key="frame" x="16" y="310" width="288" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpu-k6-3cZ">
-                                <rect key="frame" x="16" y="124" width="288" height="21"/>
+                                <rect key="frame" x="16" y="122" width="288" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -88,14 +127,102 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="eX5-fz-JYH" appends="YES" id="YSi-3R-2HW"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="TestLabel2" destination="Vpu-k6-3cZ" id="kQc-jU-nUd"/>
+                        <outlet property="Dana_Flavor1" destination="Vpu-k6-3cZ" id="WSm-rz-sUm"/>
+                        <outlet property="Dana_Flavor2" destination="p4Z-rg-1Hg" id="1mg-qV-zr5"/>
+                        <outlet property="Dana_Flavor3" destination="lHc-dX-Dem" id="UQh-O6-FX1"/>
+                        <outlet property="Dana_Flavor4" destination="rz9-0L-5zn" id="k90-kN-a5B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrO-OM-EUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="eX5-fz-JYH">
+                    <connections>
+                        <segue destination="72G-3P-2fy" kind="modal" modalTransitionStyle="crossDissolve" id="3fN-qG-yMu"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-520" y="-24"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z4M-Sk-Q3w">
+            <objects>
+                <viewController id="72G-3P-2fy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ahu-go-iBn"/>
+                        <viewControllerLayoutGuide type="bottom" id="t30-kQ-Ski"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BPx-Js-knt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bobs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJW-BA-BzY">
+                                <rect key="frame" x="139" y="48" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="74d-t0-WSc" appends="YES" id="xqh-MF-VNU"/>
+                            <outletCollection property="gestureRecognizers" destination="DuV-DA-pHP" appends="YES" id="1kE-2z-Asf"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYZ-tn-AVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="74d-t0-WSc">
+                    <connections>
+                        <segue destination="v8b-0F-NzU" kind="modal" modalTransitionStyle="crossDissolve" id="I8X-kE-GVy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="DuV-DA-pHP">
+                    <connections>
+                        <segue destination="cDN-tu-aE3" kind="modal" modalTransitionStyle="crossDissolve" id="AWl-rq-Yhh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-142" y="-28"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NtF-aS-aP0">
+            <objects>
+                <viewController id="cDN-tu-aE3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZTg-Nn-Dxr"/>
+                        <viewControllerLayoutGuide type="bottom" id="3av-5e-hdD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vda-2b-9zQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foss" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd0-OG-1gV">
+                                <rect key="frame" x="139" y="41" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="coo-LE-4As" appends="YES" id="Q2P-1P-Asu"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAN-mm-chs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="coo-LE-4As">
+                    <connections>
+                        <segue destination="72G-3P-2fy" kind="modal" modalTransitionStyle="crossDissolve" id="2hV-kp-YVx"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="244" y="-24"/>
         </scene>
         <!--Title-->
         <scene sceneID="5Mf-Ht-cUg">
@@ -303,6 +430,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="2hV-kp-YVx"/>
+        <segue reference="I8X-kE-GVy"/>
         <segue reference="mLB-jI-vVL"/>
         <segue reference="vH6-LK-zan"/>
     </inferredMetricsTieBreakers>

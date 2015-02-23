@@ -10,30 +10,39 @@ import UIKit
 
 class Check_Flavors: UIViewController {
 
-    @IBOutlet weak var TestLabel2: UILabel!
+    
+    @IBOutlet weak var Dana_Flavor1: UILabel!
+    
+    @IBOutlet weak var Dana_Flavor2: UILabel!
+    
+    @IBOutlet weak var Dana_Flavor3: UILabel!
+    
+    @IBOutlet weak var Dana_Flavor4: UILabel!
     
     
     func getFlavors(){
         let query = PFQuery(className: "ICSubmit")
+        query.whereKey("DHall", equalTo: "Dana")
         query.orderByDescending("createdAt")
-//        query.getFirstObjectInBackgroundWithBlock ({(object:AnyObject!, error:NSError!) in
-//            if(error == nil){
-//                var ObjtoStr:String = object["Input"] as String
-//                self.TestLabel2.text = String(ObjtoStr)
-//
-//            }
-//            else{
-//                println("Error in retrieving \(error)")
-//            }
-//            
-//        })
+
         var obj = query.getFirstObject()
-        let Input:AnyObject = obj["Flavor1"]
-        let stringRep = "\(Input)"
-        println(Input)
-        println(stringRep)
         
-        self.TestLabel2.text = stringRep
+        let Dana_Flavor_1:AnyObject = obj["Flavor1"]
+        let F1String = "\(Dana_Flavor_1)"
+        self.Dana_Flavor1.text = F1String
+        
+        let Dana_Flavor_2:AnyObject = obj["Flavor2"]
+        let F2String = "\(Dana_Flavor_2)"
+        self.Dana_Flavor2.text = F2String
+        
+        let Dana_Flavor_3:AnyObject = obj["Flavor3"]
+        let F3String = "\(Dana_Flavor_3)"
+        self.Dana_Flavor3.text = F3String
+        
+        let Dana_Flavor_4:AnyObject = obj["Flavor4"]
+        let F4String = "\(Dana_Flavor_4)"
+        self.Dana_Flavor4.text = F4String
+        
     }
     
 

@@ -41,6 +41,16 @@ class Submit_Flavors: UIViewController {
             let alertController = UIAlertController(title:"Great, Thanks!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
+            
+            var ICSubmission = PFObject(className:"ICSubmit")
+            ICSubmission["DHall"] = Hall_Select
+            ICSubmission["Flavor1"] = flavors[0]
+            ICSubmission["Flavor2"] = flavors[1]
+            ICSubmission["Flavor3"] = flavors[2]
+            ICSubmission["Flavor4"] = flavors[3]
+            ICSubmission.saveInBackground()
+            
+            flavors = []
         }
         else {
             let alertController = UIAlertController(title:"Error", message: "Please select 4 flavors", preferredStyle: UIAlertControllerStyle.Alert)
@@ -48,13 +58,7 @@ class Submit_Flavors: UIViewController {
             self.presentViewController(alertController, animated: true, completion: nil)
         }
         
-//        var testObject = PFObject(className:"ICSubmit")
-//        testObject["DHall"] = Hall_Select
-//        testObject["Flavor1"] = "Chocolate"
-//        testObject["Flavor2"] = "Vanilla"
-//        testObject["Flavor3"] = "Campfire S'mores"
-//        testObject["Flavor4"] = "Strawberry"
-//        testObject.saveInBackground()
+
 
         
         

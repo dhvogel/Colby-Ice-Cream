@@ -13,6 +13,31 @@
 		1AC61C1E1A9933B00094DDDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61C1D1A9933B00094DDDE /* Images.xcassets */; };
 		1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61C1F1A9933B00094DDDE /* LaunchScreen.xib */; };
 		1AC61C2D1A9933B00094DDDE /* Colby_Ice_CreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C2C1A9933B00094DDDE /* Colby_Ice_CreamTests.swift */; };
+		1AC61C371A99537D0094DDDE /* DanaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */; };
+		1AC61DBA1A995D290094DDDE /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DB71A995D290094DDDE /* TwitterKit.framework */; };
+		1AC61DBB1A995D290094DDDE /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61DB81A995D290094DDDE /* TwitterKitResources.bundle */; };
+		1AC61DBC1A995D290094DDDE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DB91A995D290094DDDE /* Fabric.framework */; };
+		1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DBF1A995F010094DDDE /* TweetPage.swift */; };
+		1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DC51A99FA570094DDDE /* CheckBox.swift */; };
+		1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */; };
+		1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */; };
+		1AC61DD61A9A50E90094DDDE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD11A9A50E90094DDDE /* Bolts.framework */; };
+		1AC61DD71A9A50E90094DDDE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD21A9A50E90094DDDE /* Parse.framework */; };
+		1AC61DD81A9A50E90094DDDE /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD31A9A50E90094DDDE /* ParseCrashReporting.framework */; };
+		1AC61DD91A9A50E90094DDDE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD41A9A50E90094DDDE /* ParseFacebookUtils.framework */; };
+		1AC61DDA1A9A50E90094DDDE /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD51A9A50E90094DDDE /* ParseUI.framework */; };
+		1AC61DDC1A9A517A0094DDDE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DDB1A9A517A0094DDDE /* AudioToolbox.framework */; };
+		1AC61DDE1A9A51860094DDDE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DDD1A9A51860094DDDE /* CFNetwork.framework */; };
+		1AC61DE01A9A51910094DDDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DDF1A9A51910094DDDE /* CoreGraphics.framework */; };
+		1AC61DE21A9A51980094DDDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DE11A9A51980094DDDE /* CoreLocation.framework */; };
+		1AC61DE41A9A51A30094DDDE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DE31A9A51A30094DDDE /* MobileCoreServices.framework */; };
+		1AC61DE61A9A51AC0094DDDE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DE51A9A51AC0094DDDE /* QuartzCore.framework */; };
+		1AC61DE81A9A51B60094DDDE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DE71A9A51B60094DDDE /* Security.framework */; };
+		1AC61DEA1A9A51C00094DDDE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DE91A9A51C00094DDDE /* StoreKit.framework */; };
+		1AC61DEC1A9A51D80094DDDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */; };
+		1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DED1A9A51E40094DDDE /* libz.dylib */; };
+		1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */; };
+		1AC61DF61A9A5A380094DDDE /* Check_Flavors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DF51A9A5A380094DDDE /* Check_Flavors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +61,32 @@
 		1AC61C261A9933B00094DDDE /* Colby Ice CreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Colby Ice CreamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC61C2B1A9933B00094DDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC61C2C1A9933B00094DDDE /* Colby_Ice_CreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colby_Ice_CreamTests.swift; sourceTree = "<group>"; };
+		1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DanaPickerViewController.swift; sourceTree = "<group>"; };
+		1AC61DB71A995D290094DDDE /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		1AC61DB81A995D290094DDDE /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		1AC61DB91A995D290094DDDE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		1AC61DBF1A995F010094DDDE /* TweetPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetPage.swift; sourceTree = "<group>"; };
+		1AC61DC51A99FA570094DDDE /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit_SetDiningHall.swift; sourceTree = "<group>"; };
+		1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit_Flavors.swift; sourceTree = "<group>"; };
+		1AC61DD11A9A50E90094DDDE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.6.3/Bolts.framework"; sourceTree = "<group>"; };
+		1AC61DD21A9A50E90094DDDE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.6.3/Parse.framework"; sourceTree = "<group>"; };
+		1AC61DD31A9A50E90094DDDE /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../Downloads/parse-library-1.6.3/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		1AC61DD41A9A50E90094DDDE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/parse-library-1.6.3/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		1AC61DD51A9A50E90094DDDE /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../Downloads/parse-library-1.6.3/ParseUI.framework"; sourceTree = "<group>"; };
+		1AC61DDB1A9A517A0094DDDE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1AC61DDD1A9A51860094DDDE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1AC61DDF1A9A51910094DDDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1AC61DE11A9A51980094DDDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1AC61DE31A9A51A30094DDDE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1AC61DE51A9A51AC0094DDDE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1AC61DE71A9A51B60094DDDE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1AC61DE91A9A51C00094DDDE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1AC61DED1A9A51E40094DDDE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colby Ice Cream-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AC61DF51A9A5A380094DDDE /* Check_Flavors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Flavors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +94,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */,
+				1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */,
+				1AC61DEC1A9A51D80094DDDE /* SystemConfiguration.framework in Frameworks */,
+				1AC61DEA1A9A51C00094DDDE /* StoreKit.framework in Frameworks */,
+				1AC61DE81A9A51B60094DDDE /* Security.framework in Frameworks */,
+				1AC61DE61A9A51AC0094DDDE /* QuartzCore.framework in Frameworks */,
+				1AC61DE41A9A51A30094DDDE /* MobileCoreServices.framework in Frameworks */,
+				1AC61DE21A9A51980094DDDE /* CoreLocation.framework in Frameworks */,
+				1AC61DE01A9A51910094DDDE /* CoreGraphics.framework in Frameworks */,
+				1AC61DDE1A9A51860094DDDE /* CFNetwork.framework in Frameworks */,
+				1AC61DDC1A9A517A0094DDDE /* AudioToolbox.framework in Frameworks */,
+				1AC61DD61A9A50E90094DDDE /* Bolts.framework in Frameworks */,
+				1AC61DD81A9A50E90094DDDE /* ParseCrashReporting.framework in Frameworks */,
+				1AC61DDA1A9A50E90094DDDE /* ParseUI.framework in Frameworks */,
+				1AC61DD91A9A50E90094DDDE /* ParseFacebookUtils.framework in Frameworks */,
+				1AC61DBA1A995D290094DDDE /* TwitterKit.framework in Frameworks */,
+				1AC61DD71A9A50E90094DDDE /* Parse.framework in Frameworks */,
+				1AC61DBC1A995D290094DDDE /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +128,7 @@
 		1AC61C081A9933B00094DDDE = {
 			isa = PBXGroup;
 			children = (
+				1AC61DD01A9A50C80094DDDE /* Frameworks */,
 				1AC61C131A9933B00094DDDE /* Colby Ice Cream */,
 				1AC61C291A9933B00094DDDE /* Colby Ice CreamTests */,
 				1AC61C121A9933B00094DDDE /* Products */,
@@ -77,12 +147,17 @@
 		1AC61C131A9933B00094DDDE /* Colby Ice Cream */ = {
 			isa = PBXGroup;
 			children = (
+				1AC61DF41A9A5A140094DDDE /* Check */,
+				1AC61DCF1A9A4ABA0094DDDE /* Submit */,
 				1AC61C161A9933B00094DDDE /* AppDelegate.swift */,
 				1AC61C181A9933B00094DDDE /* ViewController.swift */,
 				1AC61C1A1A9933B00094DDDE /* Main.storyboard */,
 				1AC61C1D1A9933B00094DDDE /* Images.xcassets */,
 				1AC61C1F1A9933B00094DDDE /* LaunchScreen.xib */,
 				1AC61C141A9933B00094DDDE /* Supporting Files */,
+				1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */,
+				1AC61DBF1A995F010094DDDE /* TweetPage.swift */,
+				1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */,
 			);
 			path = "Colby Ice Cream";
 			sourceTree = "<group>";
@@ -112,6 +187,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1AC61DCF1A9A4ABA0094DDDE /* Submit */ = {
+			isa = PBXGroup;
+			children = (
+				1AC61DC51A99FA570094DDDE /* CheckBox.swift */,
+				1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */,
+				1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */,
+			);
+			name = Submit;
+			sourceTree = "<group>";
+		};
+		1AC61DD01A9A50C80094DDDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */,
+				1AC61DED1A9A51E40094DDDE /* libz.dylib */,
+				1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */,
+				1AC61DE91A9A51C00094DDDE /* StoreKit.framework */,
+				1AC61DE71A9A51B60094DDDE /* Security.framework */,
+				1AC61DE51A9A51AC0094DDDE /* QuartzCore.framework */,
+				1AC61DE31A9A51A30094DDDE /* MobileCoreServices.framework */,
+				1AC61DE11A9A51980094DDDE /* CoreLocation.framework */,
+				1AC61DDF1A9A51910094DDDE /* CoreGraphics.framework */,
+				1AC61DDD1A9A51860094DDDE /* CFNetwork.framework */,
+				1AC61DDB1A9A517A0094DDDE /* AudioToolbox.framework */,
+				1AC61DD11A9A50E90094DDDE /* Bolts.framework */,
+				1AC61DD21A9A50E90094DDDE /* Parse.framework */,
+				1AC61DD31A9A50E90094DDDE /* ParseCrashReporting.framework */,
+				1AC61DD41A9A50E90094DDDE /* ParseFacebookUtils.framework */,
+				1AC61DD51A9A50E90094DDDE /* ParseUI.framework */,
+				1AC61DB91A995D290094DDDE /* Fabric.framework */,
+				1AC61DB81A995D290094DDDE /* TwitterKitResources.bundle */,
+				1AC61DB71A995D290094DDDE /* TwitterKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AC61DF41A9A5A140094DDDE /* Check */ = {
+			isa = PBXGroup;
+			children = (
+				1AC61DF51A9A5A380094DDDE /* Check_Flavors.swift */,
+			);
+			name = Check;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +241,7 @@
 				1AC61C0D1A9933B00094DDDE /* Sources */,
 				1AC61C0E1A9933B00094DDDE /* Frameworks */,
 				1AC61C0F1A9933B00094DDDE /* Resources */,
+				1AC61DB61A995CA40094DDDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -192,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC61DBB1A995D290094DDDE /* TwitterKitResources.bundle in Resources */,
 				1AC61C1C1A9933B00094DDDE /* Main.storyboard in Resources */,
 				1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */,
 				1AC61C1E1A9933B00094DDDE /* Images.xcassets in Resources */,
@@ -207,13 +328,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AC61DB61A995CA40094DDDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 9e094555545abc4b0cb4cf4377b9df0705b32ffe 949cf0a9de1ea86c8fcbe72f8839865dff930e21055df1a9667a3fdfcbefaf5c\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AC61C0D1A9933B00094DDDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC61DF61A9A5A380094DDDE /* Check_Flavors.swift in Sources */,
+				1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */,
+				1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */,
 				1AC61C191A9933B00094DDDE /* ViewController.swift in Sources */,
+				1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */,
+				1AC61C371A99537D0094DDDE /* DanaPickerViewController.swift in Sources */,
 				1AC61C171A9933B00094DDDE /* AppDelegate.swift in Sources */,
+				1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +479,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
+					"$(PROJECT_DIR)",
+					"/Users/dhvogel/Downloads/parse-library-1.6.3",
+				);
 				INFOPLIST_FILE = "Colby Ice Cream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/GoogleAdMob/SDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -346,9 +503,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
+					"$(PROJECT_DIR)",
+					"/Users/dhvogel/Downloads/parse-library-1.6.3",
+				);
 				INFOPLIST_FILE = "Colby Ice Cream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/GoogleAdMob/SDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -12,11 +12,17 @@ public var flavors:[String]! = []
 
 class Submit_SetDiningHall: UIViewController {
     
+    @IBOutlet weak var Dana: UIButton!
+    @IBOutlet weak var Bobs: UIButton!
+    @IBOutlet weak var Foss: UIButton!
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.Dana.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
+        self.Bobs.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
+        self.Foss.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
         // Do any additional setup after loading the view.
     }
 

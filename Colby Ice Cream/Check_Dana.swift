@@ -49,7 +49,7 @@ class Check_Dana: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getDanaFlavors()
+        //self.getDanaFlavors()
     }
 
     override func didReceiveMemoryWarning() {

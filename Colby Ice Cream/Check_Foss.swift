@@ -50,7 +50,7 @@ class Check_Foss: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getFossFlavors()
+        //self.getFossFlavors()
         // Do any additional setup after loading the view.
     }
 

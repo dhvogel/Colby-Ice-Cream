@@ -46,7 +46,7 @@ class Check_Bobs: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getBobsFlavors()
+        //self.getBobsFlavors()
 
         // Do any additional setup after loading the view.
     }

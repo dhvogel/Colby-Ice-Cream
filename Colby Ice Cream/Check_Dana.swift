@@ -19,6 +19,9 @@ class Check_Dana: UIViewController {
     
     @IBOutlet weak var Dana_Flavor4: UILabel!
     
+    @IBOutlet weak var Submitted_By: UILabel!
+    
+    @IBOutlet weak var Time_Label: UILabel!
     
     func getDanaFlavors(){
         let query = PFQuery(className: "ICSubmit")
@@ -42,6 +45,17 @@ class Check_Dana: UIViewController {
         let Dana_Flavor_4:AnyObject = obj["Flavor4"]
         let F4String = "\(Dana_Flavor_4)"
         self.Dana_Flavor4.text = F4String
+//        
+//        let name: String! = obj["submitted_FName"] as String
+//        self.Submitted_By.text = name
+//        
+//        var dateUpdated = obj.updatedAt as NSDate
+//        var dateFormat = NSDateFormatter()
+//        dateFormat.dateFormat = "MMM d, h:mm a"
+//        self.Time_Label.text = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String
+       
+        
+        
         
     }
     
@@ -49,7 +63,7 @@ class Check_Dana: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.getDanaFlavors()
+        self.getDanaFlavors()
     }
 
     override func didReceiveMemoryWarning() {

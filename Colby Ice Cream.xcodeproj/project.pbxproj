@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A28D3D81AF27AE00063C564 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A28D3D71AF27AE00063C564 /* BackButton.swift */; };
+		1A3D031F1AE050570023BEE0 /* LetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D031E1AE050560023BEE0 /* LetterButton.swift */; };
+		1A43DF761B6EABA600C0E64F /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A43DF741B6EABA500C0E64F /* Raleway-Light.ttf */; };
+		1A43DF771B6EABA600C0E64F /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A43DF751B6EABA500C0E64F /* Raleway-Medium.ttf */; };
+		1A43DF791B6EAFD300C0E64F /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF781B6EAFD300C0E64F /* CustomFont.swift */; };
+		1A43DF7B1B6EB34700C0E64F /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A43DF7A1B6EB34700C0E64F /* Raleway-SemiBold.ttf */; };
+		1A43DF7D1B6EB46100C0E64F /* Bold_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */; };
+		1A43DF7F1B6EB5FC00C0E64F /* Bold_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */; };
+		1A4C2D4F1AD7FBE700A465A8 /* ClickCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C2D4E1AD7FBE600A465A8 /* ClickCheck.swift */; };
+		1A8C85981AEAA4F60055173B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C85971AEAA4F60055173B /* loginViewController.swift */; };
+		1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C85991AEAB0DD0055173B /* Accounts.framework */; };
+		1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C859B1AEAB0ED0055173B /* Social.framework */; };
+		1AA0CD9A1ADAA3760028E7CE /* FinalFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA0CD991ADAA3760028E7CE /* FinalFlavor.swift */; };
+		1AC57F2A1ADD256800F516F2 /* OtherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC57F291ADD256800F516F2 /* OtherButton.swift */; };
+		1AC57F2C1ADD2A6F00F516F2 /* EmptyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC57F2B1ADD2A6F00F516F2 /* EmptyButton.swift */; };
 		1AC61C171A9933B00094DDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C161A9933B00094DDDE /* AppDelegate.swift */; };
 		1AC61C191A9933B00094DDDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C181A9933B00094DDDE /* ViewController.swift */; };
 		1AC61C1C1A9933B00094DDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61C1A1A9933B00094DDDE /* Main.storyboard */; };
@@ -38,6 +53,10 @@
 		1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DED1A9A51E40094DDDE /* libz.dylib */; };
 		1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */; };
 		1AC61DF61A9A5A380094DDDE /* Check_Dana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */; };
+		1AD5C33F1AD6B9EC0008BA97 /* Set_Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5C33E1AD6B9EC0008BA97 /* Set_Favorites.swift */; };
+		1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD743B91AE7D302008618F2 /* CheckLabel.swift */; };
+		1ADF46921AEF8DF1009C0DB8 /* CustomLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */; };
+		1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */; };
 		1AE410FB1A9B9E6900D5EE46 /* Check_Bobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE410FA1A9B9E6900D5EE46 /* Check_Bobs.swift */; };
 		1AE410FD1A9BA0B000D5EE46 /* Check_Foss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */; };
 		1AE411001A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */; };
@@ -55,6 +74,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A28D3D71AF27AE00063C564 /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		1A3D031E1AE050560023BEE0 /* LetterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterButton.swift; sourceTree = "<group>"; };
+		1A43DF741B6EABA500C0E64F /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.ttf"; path = "../../../../Downloads/raleway (1)/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		1A43DF751B6EABA500C0E64F /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Medium.ttf"; path = "../../../../Downloads/raleway (1)/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		1A43DF781B6EAFD300C0E64F /* CustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		1A43DF7A1B6EB34700C0E64F /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBold.ttf"; path = "../../../../Downloads/raleway (1)/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bold_Button.swift; sourceTree = "<group>"; };
+		1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bold_Label.swift; sourceTree = "<group>"; };
+		1A4C2D4E1AD7FBE600A465A8 /* ClickCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickCheck.swift; sourceTree = "<group>"; };
+		1A8C85971AEAA4F60055173B /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		1A8C85991AEAB0DD0055173B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		1A8C859B1AEAB0ED0055173B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1AA0CD991ADAA3760028E7CE /* FinalFlavor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalFlavor.swift; sourceTree = "<group>"; };
+		1AC57F291ADD256800F516F2 /* OtherButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherButton.swift; sourceTree = "<group>"; };
+		1AC57F2B1ADD2A6F00F516F2 /* EmptyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyButton.swift; sourceTree = "<group>"; };
 		1AC61C111A9933B00094DDDE /* Colby Ice Cream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colby Ice Cream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC61C151A9933B00094DDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC61C161A9933B00094DDDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +125,10 @@
 		1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colby Ice Cream-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Dana.swift; sourceTree = "<group>"; };
+		1AD5C33E1AD6B9EC0008BA97 /* Set_Favorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_Favorites.swift; sourceTree = "<group>"; };
+		1AD743B91AE7D302008618F2 /* CheckLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckLabel.swift; sourceTree = "<group>"; };
+		1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogInViewController.swift; sourceTree = "<group>"; };
+		1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignUpViewController.swift; sourceTree = "<group>"; };
 		1AE410FA1A9B9E6900D5EE46 /* Check_Bobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Bobs.swift; sourceTree = "<group>"; };
 		1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Foss.swift; sourceTree = "<group>"; };
 		1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vacaciones-font-ffp-defharo.otf"; path = "../../../../Downloads/vacaciones_outline/Vacaciones-font-ffp-defharo.otf"; sourceTree = "<group>"; };
@@ -102,6 +140,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */,
+				1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */,
 				1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */,
 				1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */,
 				1AC61DEC1A9A51D80094DDDE /* SystemConfiguration.framework in Frameworks */,
@@ -133,6 +173,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A28D3D41AF27A8F0063C564 /* Formatting */ = {
+			isa = PBXGroup;
+			children = (
+				1A28D3D71AF27AE00063C564 /* BackButton.swift */,
+			);
+			name = Formatting;
+			sourceTree = "<group>";
+		};
 		1AC61C081A9933B00094DDDE = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +203,10 @@
 		1AC61C131A9933B00094DDDE /* Colby Ice Cream */ = {
 			isa = PBXGroup;
 			children = (
+				1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */,
+				1A28D3D41AF27A8F0063C564 /* Formatting */,
+				1ADF46951AEFE86C009C0DB8 /* Login */,
+				1AD5C33D1AD6B9BF0008BA97 /* Favorites */,
 				1AC61DF41A9A5A140094DDDE /* Check */,
 				1AC61DCF1A9A4ABA0094DDDE /* Submit */,
 				1AC61C161A9933B00094DDDE /* AppDelegate.swift */,
@@ -166,6 +218,8 @@
 				1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */,
 				1AC61DBF1A995F010094DDDE /* TweetPage.swift */,
 				1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */,
+				1A43DF781B6EAFD300C0E64F /* CustomFont.swift */,
+				1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */,
 			);
 			path = "Colby Ice Cream";
 			sourceTree = "<group>";
@@ -173,6 +227,9 @@
 		1AC61C141A9933B00094DDDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A43DF7A1B6EB34700C0E64F /* Raleway-SemiBold.ttf */,
+				1A43DF751B6EABA500C0E64F /* Raleway-Medium.ttf */,
+				1A43DF741B6EABA500C0E64F /* Raleway-Light.ttf */,
 				1AE411021A9BB56B00D5EE46 /* circle.png */,
 				1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */,
 				1AC61C151A9933B00094DDDE /* Info.plist */,
@@ -202,7 +259,13 @@
 			children = (
 				1AC61DC51A99FA570094DDDE /* CheckBox.swift */,
 				1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */,
+				1AD743B91AE7D302008618F2 /* CheckLabel.swift */,
 				1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */,
+				1A4C2D4E1AD7FBE600A465A8 /* ClickCheck.swift */,
+				1AA0CD991ADAA3760028E7CE /* FinalFlavor.swift */,
+				1AC57F291ADD256800F516F2 /* OtherButton.swift */,
+				1AC57F2B1ADD2A6F00F516F2 /* EmptyButton.swift */,
+				1A3D031E1AE050560023BEE0 /* LetterButton.swift */,
 			);
 			name = Submit;
 			sourceTree = "<group>";
@@ -210,6 +273,8 @@
 		1AC61DD01A9A50C80094DDDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A8C859B1AEAB0ED0055173B /* Social.framework */,
+				1A8C85991AEAB0DD0055173B /* Accounts.framework */,
 				1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */,
 				1AC61DED1A9A51E40094DDDE /* libz.dylib */,
 				1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */,
@@ -241,6 +306,24 @@
 				1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */,
 			);
 			name = Check;
+			sourceTree = "<group>";
+		};
+		1AD5C33D1AD6B9BF0008BA97 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				1AD5C33E1AD6B9EC0008BA97 /* Set_Favorites.swift */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		1ADF46951AEFE86C009C0DB8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1A8C85971AEAA4F60055173B /* loginViewController.swift */,
+				1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */,
+				1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +407,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A43DF7B1B6EB34700C0E64F /* Raleway-SemiBold.ttf in Resources */,
 				1AC61DBB1A995D290094DDDE /* TwitterKitResources.bundle in Resources */,
+				1A43DF771B6EABA600C0E64F /* Raleway-Medium.ttf in Resources */,
 				1AE411001A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf in Resources */,
 				1AC61C1C1A9933B00094DDDE /* Main.storyboard in Resources */,
+				1A43DF761B6EABA600C0E64F /* Raleway-Light.ttf in Resources */,
 				1AE411031A9BB56B00D5EE46 /* circle.png in Resources */,
 				1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */,
 				1AC61C1E1A9933B00094DDDE /* Images.xcassets in Resources */,
@@ -365,14 +451,28 @@
 			files = (
 				1AC61DF61A9A5A380094DDDE /* Check_Dana.swift in Sources */,
 				1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */,
+				1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */,
 				1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */,
 				1AC61C191A9933B00094DDDE /* ViewController.swift in Sources */,
+				1A28D3D81AF27AE00063C564 /* BackButton.swift in Sources */,
+				1AC57F2A1ADD256800F516F2 /* OtherButton.swift in Sources */,
 				1AE410FB1A9B9E6900D5EE46 /* Check_Bobs.swift in Sources */,
+				1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */,
+				1AC57F2C1ADD2A6F00F516F2 /* EmptyButton.swift in Sources */,
+				1A8C85981AEAA4F60055173B /* loginViewController.swift in Sources */,
 				1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */,
+				1A43DF7D1B6EB46100C0E64F /* Bold_Button.swift in Sources */,
 				1AC61C371A99537D0094DDDE /* DanaPickerViewController.swift in Sources */,
+				1A3D031F1AE050570023BEE0 /* LetterButton.swift in Sources */,
+				1A4C2D4F1AD7FBE700A465A8 /* ClickCheck.swift in Sources */,
+				1ADF46921AEF8DF1009C0DB8 /* CustomLogInViewController.swift in Sources */,
+				1AA0CD9A1ADAA3760028E7CE /* FinalFlavor.swift in Sources */,
+				1A43DF791B6EAFD300C0E64F /* CustomFont.swift in Sources */,
+				1A43DF7F1B6EB5FC00C0E64F /* Bold_Label.swift in Sources */,
 				1AC61C171A9933B00094DDDE /* AppDelegate.swift in Sources */,
 				1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */,
 				1AE410FD1A9BA0B000D5EE46 /* Check_Foss.swift in Sources */,
+				1AD5C33F1AD6B9EC0008BA97 /* Set_Favorites.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +611,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -534,7 +634,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

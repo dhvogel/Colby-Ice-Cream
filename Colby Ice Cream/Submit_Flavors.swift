@@ -7,44 +7,56 @@
 //
 
 import UIKit
+import Parse
 
 class Submit_Flavors: UIViewController {
+
     
-    @IBOutlet weak var TitleLabel: UILabel!
-    @IBOutlet weak var Chocolate: UILabel!
-    @IBOutlet weak var Vanilla: UILabel!
-    @IBOutlet weak var Strawberry: UILabel!
-    @IBOutlet weak var Campfire_Smore: UILabel!
-    @IBOutlet weak var Coffee: UILabel!
-    @IBOutlet weak var Cookie_Dough: UILabel!
-    @IBOutlet weak var Mint_Choc_Chip: UILabel!
-    @IBOutlet weak var Deer_Tracks: UILabel!
-    @IBOutlet weak var Cake_Batter: UILabel!
-    @IBOutlet weak var Salted_Caramel: UILabel!
-    @IBOutlet weak var Toasted_Coconut: UILabel!
+    @IBOutlet weak var Title_Label: UILabel!
     
     
+    @IBOutlet weak var AP: ClickCheck!
+    @IBOutlet weak var Flav1: UIButton!
+    @IBOutlet weak var Flav2: UIButton!
+    @IBOutlet weak var Flav3: UIButton!
+    @IBOutlet weak var Flav4: UIButton!
+    
+    var newWordField: UITextField = UITextField()
+    var nameEntered: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.TitleLabel.text = "What flavors are in " + Hall_Select + "?"
-        self.TitleLabel.font = UIFont(name: "Vacaciones", size: 20)
-        self.Chocolate.font = UIFont(name: "Vacaciones", size: 15)
-        self.Vanilla.font = UIFont(name: "Vacaciones", size: 15)
-        self.Strawberry.font = UIFont(name: "Vacaciones", size: 15)
-        self.Campfire_Smore.font = UIFont(name: "Vacaciones", size:15)
-        self.Coffee.font = UIFont(name: "Vacaciones", size: 15)
-        self.Cookie_Dough.font = UIFont(name: "Vacaciones", size: 15)
-        self.Mint_Choc_Chip.font = UIFont(name: "Vacaciones", size: 15)
-        self.Deer_Tracks.font = UIFont(name: "Vacaciones", size: 15)
-        self.Cake_Batter.font = UIFont(name: "Vacaciones", size: 15)
-        self.Salted_Caramel.font = UIFont(name: "Vacaciones", size:15)
-        self.Toasted_Coconut.font = UIFont(name: "Vacaciones", size: 15)
         
+        Title_Label.text = Hall_Select
         
+        var tempbutton: [UIButton] = [self.Flav1, self.Flav2, self.Flav3, self.Flav4]
         
-        // Do any additional setup after loading the view.
-
+        for (var i=0; i<flavors.count; i++) {
+            if (flavors[i] == "Empty") {
+                tempbutton[i].setTitle("Empty", forState: UIControlState.Normal)
+                tempbutton[i].backgroundColor = UIColor.redColor()
+                tempbutton[i].layer.borderColor = UIColor.redColor().CGColor
+                tempbutton[i].setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)  
+            }
+            else if (flavors[i] == "Other") {
+                tempbutton[i].setTitle("Other", forState: UIControlState.Normal)
+                tempbutton[i].backgroundColor = UIColor.grayColor()
+                tempbutton[i].layer.borderColor = UIColor.grayColor().CGColor
+                tempbutton[i].setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+            }
+            else if (flavors[i] == "nothing") {
+                tempbutton[i].setTitle("Flavor not selected", forState: UIControlState.Normal)
+                tempbutton[i].backgroundColor = UIColor.whiteColor()
+                tempbutton[i].layer.borderColor = UIColor.blackColor().CGColor
+                tempbutton[i].setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+            }
+            else {
+                tempbutton[i].setTitle(flavors[i], forState: UIControlState.Normal)
+                tempbutton[i].backgroundColor = UIColor.greenColor()
+                tempbutton[i].layer.borderColor = UIColor.greenColor().CGColor
+                tempbutton[i].setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+            }
+        }
     }
     
 
@@ -53,39 +65,132 @@ class Submit_Flavors: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    func addTextField(textField: UITextField!){
+        // add the text field and make the result global
+        textField.placeholder = "Name"
+        self.newWordField = textField
+    }
+    
+    func wordEntered(alert: UIAlertAction!){
+        // store the new word
+        self.nameEntered = newWordField.text
+    }
+    
+    
     @IBAction func SubmitFlavors(sender: AnyObject) {
+        
+        
+        
         if (flavors.count == 4) {
+            
+            var FName: String! = PFUser.currentUser().valueForKey("first_name") as String
+            
             var msg = "You submitted "
             msg = msg + flavors[0] + ", "
             msg = msg + flavors[1] + ", "
             msg = msg + flavors[2] + ", and "
             msg = msg + flavors[3]
             msg = msg + " for " + Hall_Select
-            let alertController = UIAlertController(title:"Great, Thanks!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alertController, animated: true, completion: nil)
             
-//            var ICSubmission = PFObject(className:"ICSubmit")
-//            ICSubmission["DHall"] = Hall_Select
-//            ICSubmission["Flavor1"] = flavors[0]
-//            ICSubmission["Flavor2"] = flavors[1]
-//            ICSubmission["Flavor3"] = flavors[2]
-//            ICSubmission["Flavor4"] = flavors[3]
-//            ICSubmission.saveInBackground()
+            var ICSubmission = PFObject(className:"ICSubmit")
+            ICSubmission.setObject(Hall_Select, forKey: "DHall")
+            ICSubmission.setObject(flavors[0], forKey: "Flavor1")
+            ICSubmission.setObject(flavors[1], forKey: "Flavor2")
+            ICSubmission.setObject(flavors[2], forKey: "Flavor3")
+            ICSubmission.setObject(flavors[3], forKey: "Flavor4")
+            ICSubmission.setObject(FName, forKey: "submitted_FName")
             
-            flavors = []
+            
+            var loadingSpinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
+            loadingSpinner.center = CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)
+            loadingSpinner.startAnimating()
+            self.view.addSubview(loadingSpinner)
+
+            
+            ICSubmission.saveInBackgroundWithBlock{
+                (success: Bool!, error: NSError!) -> Void in
+                
+                if success == true {
+                    let alertController = UIAlertController(title:"Thanks, " + FName + "!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    self.performSegueWithIdentifier("submitted_flavors", sender: self)
+                }
+                else {
+                    let alertController = UIAlertController(title:"Error", message: "Pleasdfse select 4 flavors", preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                }
+                loadingSpinner.stopAnimating()
+                loadingSpinner.removeFromSuperview()
+                flavors = ["nothing", "nothing", "nothing", "nothing"]
+                
+            }
         }
         else {
             let alertController = UIAlertController(title:"Error", message: "Please select 4 flavors", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
         }
-        
-
-
-        
-        
     }
+    
+    
+    func setEmpty(button: UIButton, index: Int) {
+        button.setTitle("Empty", forState: UIControlState.Normal)
+        button.backgroundColor = UIColor.redColor()
+        button.layer.borderColor = UIColor.redColor().CGColor
+        button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        flavors[index] = "Empty"
+    }
+    
+    func setOther(button: UIButton, index:Int) {
+        button.setTitle("Other", forState: UIControlState.Normal)
+        button.backgroundColor = UIColor.grayColor()
+        button.layer.borderColor = UIColor.grayColor().CGColor
+        button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        flavors[index] = "Other"
+    }
+    
+    @IBAction func Flav1Other(sender: AnyObject) {
+        setOther(self.Flav1, index: 0)
+    }
+    
+    @IBAction func Flav1Empty(sender: AnyObject) {
+        setEmpty(self.Flav1, index: 0)
+    }
+    
+    @IBAction func Flav2Other(sender: AnyObject) {
+        setOther(self.Flav2, index: 1)
+    }
+    
+    @IBAction func Flav2Empty(sender: AnyObject) {
+        setEmpty(self.Flav2, index: 1)
+    }
+    
+    @IBAction func Flav3Other(sender: AnyObject) {
+        setOther(self.Flav3, index: 2)
+    }
+    
+    @IBAction func Flav3Empty(sender: AnyObject) {
+        setEmpty(self.Flav3, index: 2)
+    }
+    
+    @IBAction func Flav4Other(sender: AnyObject) {
+        setOther(self.Flav4, index: 3)
+    }
+    
+    @IBAction func Flav4Empty(sender: AnyObject) {
+        setEmpty(self.Flav4, index: 3)
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
     

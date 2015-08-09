@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>dvogelapps.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>dhvogel</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -57,7 +57,10 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Raleway-SemiBold.ttf</string>
 		<string>Vacaciones-font-ffp-defharo.otf</string>
+		<string>Raleway-Medium.ttf</string>
+		<string>Raleway-Light.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

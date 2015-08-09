@@ -42,6 +42,14 @@ class Check_Foss: UIViewController {
         let F4String = "\(Foss_Flavor_4)"
         self.Foss_Flavor4.text = F4String
         
+//        let name: String! = obj["submitted_FName"] as String
+//        self.Submitted_By.text = name
+//        
+//        var dateUpdated = obj.updatedAt as NSDate
+//        var dateFormat = NSDateFormatter()
+//        dateFormat.dateFormat = "MMM d, h:mm a"
+//        self.Time_Label.text = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String
+        
     }
     
     
@@ -50,7 +58,7 @@ class Check_Foss: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.getFossFlavors()
+        self.getFossFlavors()
         // Do any additional setup after loading the view.
     }
 

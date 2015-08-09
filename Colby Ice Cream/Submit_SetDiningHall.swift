@@ -8,7 +8,7 @@
 
 import UIKit
 public var Hall_Select:String! = ""
-public var flavors:[String]! = []
+public var flavors:[String]! = Array(count: 4, repeatedValue: "nothing")
 
 class Submit_SetDiningHall: UIViewController {
     
@@ -20,9 +20,14 @@ class Submit_SetDiningHall: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.Dana.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
-        self.Bobs.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
-        self.Foss.setValue(UIFont(name: "Vacaciones", size: 15), forKey: "font")
+        self.Dana.setValue(UIFont(name: "Raleway-Medium", size: 15), forKey: "font")
+        let str = NSAttributedString(string: "Dana", attributes: [
+            NSForegroundColorAttributeName : UIColor.whiteColor(),
+            NSStrokeColorAttributeName : UIColor.blackColor(),
+            NSStrokeWidthAttributeName : -1,
+            ])
+        self.Bobs.setValue(UIFont(name: "Raleway-Medium", size: 15), forKey: "font")
+        self.Foss.setValue(UIFont(name: "Raleway-Medium", size: 15), forKey: "font")
         // Do any additional setup after loading the view.
     }
 

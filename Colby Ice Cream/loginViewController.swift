@@ -23,8 +23,6 @@ class loginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        println(PFUser.currentUser())
-        println(PFUser.currentUser().username)
         
         
         

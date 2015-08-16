@@ -66,7 +66,7 @@ class CustomLogInViewController: UIViewController {
         var username = self.usernameField.text
         var password = self.passwordField.text
         
-        if (username.utf16Count < 4 || password.utf16Count < 5) {
+        if (count(username.utf16) < 4 || count(password.utf16) < 5) {
             var alert = UIAlertView(title: "Invalid", message: "Please enter valid username and password", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }

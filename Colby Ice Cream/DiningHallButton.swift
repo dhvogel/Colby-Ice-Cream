@@ -1,14 +1,14 @@
 //
-//  LetterButton.swift
+//  DiningHallButton.swift
 //  Colby Ice Cream
 //
-//  Created by Daniel Vogel on 4/16/15.
+//  Created by Daniel Vogel on 8/16/15.
 //  Copyright (c) 2015 Daniel Vogel. All rights reserved.
 //
 
 import UIKit
 
-class LetterButton: UIButton {
+class DiningHallButton: UIButton {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -18,7 +18,7 @@ class LetterButton: UIButton {
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.whiteColor().CGColor
         self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        self.titleLabel!.font = UIFont(name: "Raleway-SemiBold", size:15)
+        self.titleLabel!.font = UIFont(name: "Raleway-SemiBold", size:20)
     }
     /*
     // Only override drawRect: if you perform custom drawing.

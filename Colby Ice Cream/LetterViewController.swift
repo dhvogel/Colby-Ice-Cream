@@ -1,28 +1,26 @@
 //
-//  Submit_SetDiningHall.swift
+//  LetterViewController.swift
 //  Colby Ice Cream
 //
-//  Created by Daniel Vogel on 2/22/15.
+//  Created by Daniel Vogel on 8/14/15.
 //  Copyright (c) 2015 Daniel Vogel. All rights reserved.
 //
 
 import UIKit
-public var Hall_Select:String! = ""
-public var flavors:[String]! = Array(count: 4, repeatedValue: "nothing")
 
-class Submit_SetDiningHall: UIViewController {
+class LetterViewController: UIViewController {
     
     let colorGen = ColorGenerator()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let sexyLayer:CAGradientLayer
-        sexyLayer = colorGen.gradientGenerator("#C29EFF", hexBottom: "#55CDFF")
+        sexyLayer = colorGen.gradientGenerator("#1AD6FD", hexBottom: "#1D62F0")
         sexyLayer.frame = view.frame
         
         self.view.layer.insertSublayer(sexyLayer, atIndex: 0)
+
         // Do any additional setup after loading the view.
     }
 
@@ -30,23 +28,6 @@ class Submit_SetDiningHall: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func Press_Dana(sender: AnyObject) {
-        Hall_Select = "Dana"
-    }
-    
-    @IBAction func Press_Bobs(sender: AnyObject) {
-        Hall_Select = "Bobs"
-    }
-    
-    @IBAction func Press_Foss(sender: AnyObject) {
-        Hall_Select = "Foss"
-    }
-    
-    
-    
-//    @IBAction func stop(sender: AnyObject) {
-        
-//    }
     
 
     /*

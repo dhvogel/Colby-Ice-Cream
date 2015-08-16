@@ -15,11 +15,13 @@ class Submit_Flavors: UIViewController {
     @IBOutlet weak var Title_Label: UILabel!
     
     
+    @IBOutlet weak var SubmitButton: Bold_Button!
     @IBOutlet weak var AP: ClickCheck!
     @IBOutlet weak var Flav1: UIButton!
     @IBOutlet weak var Flav2: UIButton!
     @IBOutlet weak var Flav3: UIButton!
     @IBOutlet weak var Flav4: UIButton!
+    let colorGen = ColorGenerator()
     
     var newWordField: UITextField = UITextField()
     var nameEntered: String = ""
@@ -27,9 +29,21 @@ class Submit_Flavors: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        SubmitButton.layer.borderWidth = 1
+        SubmitButton.layer.cornerRadius = 5
+        SubmitButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        SubmitButton.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        let sexyLayer:CAGradientLayer
+        sexyLayer = colorGen.gradientGenerator("#99E1FF", hexBottom: "#04E6F7")
+        sexyLayer.frame = view.frame
+        
+        self.view.layer.insertSublayer(sexyLayer, atIndex: 0)
+        
         Title_Label.text = Hall_Select
         
         var tempbutton: [UIButton] = [self.Flav1, self.Flav2, self.Flav3, self.Flav4]
+        
         
         for (var i=0; i<flavors.count; i++) {
             if (flavors[i] == "Empty") {
@@ -85,7 +99,7 @@ class Submit_Flavors: UIViewController {
         
         if (flavors.count == 4) {
             
-            var FName: String! = PFUser.currentUser().valueForKey("first_name") as String
+            var FName: String! = PFUser.currentUser().valueForKey("first_name") as! String
             
             var msg = "You submitted "
             msg = msg + flavors[0] + ", "
@@ -110,7 +124,7 @@ class Submit_Flavors: UIViewController {
 
             
             ICSubmission.saveInBackgroundWithBlock{
-                (success: Bool!, error: NSError!) -> Void in
+                (success: Bool, error: NSError!) -> Void in
                 
                 if success == true {
                     let alertController = UIAlertController(title:"Thanks, " + FName + "!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HWf-VX-qAC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HWf-VX-qAC">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Custom Log In View Controller-->
@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="DDl-9G-buD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0v1-KM-OHH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqC-cl-2Hb">
@@ -51,13 +51,13 @@
                     <connections>
                         <outlet property="passwordField" destination="dPh-d7-6Jx" id="Ccy-xZ-Fov"/>
                         <outlet property="usernameField" destination="uqC-cl-2Hb" id="GpG-oE-CSK"/>
-                        <segue destination="vXZ-lx-hvc" kind="show" identifier="loggedIn" id="TVQ-wM-TNB"/>
-                        <segue destination="Yx4-gr-aGd" kind="show" identifier="signUp" id="JIs-RE-KKO"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="loggedIn" id="TVQ-wM-TNB"/>
+                        <segue destination="Yx4-gr-aGd" kind="modal" identifier="signUp" id="JIs-RE-KKO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnE-yl-ogK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3220" y="1919"/>
+            <point key="canvasLocation" x="-1717.3333333333333" y="1816.6533333333334"/>
         </scene>
         <!--Custom Sign Up View Controller-->
         <scene sceneID="oul-TS-cuj">
@@ -68,7 +68,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ahX-Hj-QuR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HkN-pG-3yS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bXc-BK-2XI">
@@ -130,12 +130,12 @@
                         <outlet property="PasswordField" destination="iSd-cO-lRc" id="d4Y-TH-Yyy"/>
                         <outlet property="ReTypePasswordField" destination="g7q-aJ-acp" id="6dV-c1-MTQ"/>
                         <outlet property="UsernameField" destination="GvC-l5-hz4" id="V5n-Lu-QfH"/>
-                        <segue destination="vXZ-lx-hvc" kind="show" identifier="justSignedUp" id="bEW-oB-OR0"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="justSignedUp" id="bEW-oB-OR0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sq0-CS-hpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2488" y="1919"/>
+            <point key="canvasLocation" x="-1326.9333333333334" y="1816.6533333333334"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="h25-Uk-ELd">
@@ -146,14 +146,14 @@
                         <viewControllerLayoutGuide type="bottom" id="7VM-pr-2T5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e4W-FB-72h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Qg-wH-JWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2848.125" y="817.6056338028169"/>
+            <point key="canvasLocation" x="-1631" y="773"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -164,78 +164,74 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-5m-cdB">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-5m-cdB" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="217" width="288" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="| Submit Flavors | ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KJf-WF-hJB" kind="presentation" id="ZEk-qQ-JL1"/>
+                                    <segue destination="KJf-WF-hJB" kind="modal" id="ZEk-qQ-JL1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5A-0a-16u">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5A-0a-16u" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="110" width="288" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="| Check Flavors | ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="v8b-0F-NzU" kind="presentation" id="ltK-jL-3oG"/>
+                                    <segue destination="v8b-0F-NzU" kind="modal" id="ltK-jL-3oG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVY-dA-j6j">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVY-dA-j6j" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="424" width="288" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="| About | ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVC-TE-e4V">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVC-TE-e4V" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="317" width="288" height="30"/>
                                 <state key="normal" title="| Set Favorite Flavors | ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9Mh-gg-2Lc" kind="presentation" id="rdd-AK-pUV"/>
+                                    <segue destination="9Mh-gg-2Lc" kind="modal" id="rdd-AK-pUV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F53-JA-zyX" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="58" width="231" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bu-bB-vhP">
-                                <rect key="frame" x="255" y="54" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bu-bB-vhP" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="207" y="54" width="97" height="30"/>
                                 <state key="normal" title="Logout">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="logOut:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rcg-2X-9cl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F53-JA-zyX" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="16" y="58" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="About" destination="QVY-dA-j6j" id="zMS-wq-B8Z"/>
-                        <outlet property="Check_Flavors" destination="X5A-0a-16u" id="M5U-dt-gGO"/>
                         <outlet property="NameLabel" destination="F53-JA-zyX" id="oCh-j6-gDB"/>
-                        <outlet property="Set_Favorites" destination="WVC-TE-e4V" id="jbX-e8-gNn"/>
-                        <outlet property="Submit_Flavors" destination="7Hd-5m-cdB" id="ggA-Ol-Yzn"/>
-                        <segue destination="HWf-VX-qAC" kind="show" identifier="loggedOut" id="hEW-xM-eyA"/>
+                        <segue destination="HWf-VX-qAC" kind="modal" identifier="loggedOut" id="hEW-xM-eyA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2065" y="817"/>
+            <point key="canvasLocation" x="-1102" y="773"/>
         </scene>
         <!--Check Dana-->
         <scene sceneID="yFT-ur-jqu">
@@ -246,17 +242,17 @@
                         <viewControllerLayoutGuide type="bottom" id="SSf-nc-fzt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kJW-kn-8Ig">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dana" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdY-Fe-KCu">
-                                <rect key="frame" x="139" y="35" width="40" height="21"/>
+                                <rect key="frame" x="140" y="35" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-rg-1Hg" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="59" y="160" width="200" height="21"/>
+                                <rect key="frame" x="60" y="160" width="200" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Dana Flavor 2">
                                         <attributes>
@@ -269,7 +265,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-dX-Dem" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="59" y="200" width="200" height="21"/>
+                                <rect key="frame" x="60" y="200" width="200" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Dana Flavor 3">
                                         <attributes>
@@ -282,7 +278,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz9-0L-5zn" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="59" y="240" width="200" height="21"/>
+                                <rect key="frame" x="60" y="240" width="200" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Dana Flavor 4">
                                         <attributes>
@@ -295,7 +291,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpu-k6-3cZ" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="59" y="120" width="200" height="21"/>
+                                <rect key="frame" x="60" y="120" width="200" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Dana Flavor 1">
                                         <attributes>
@@ -308,25 +304,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL3-7l-Q5C">
-                                <rect key="frame" x="15" y="15" width="46" height="30"/>
+                                <rect key="frame" x="16" y="15" width="46" height="30"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="Htu-Sg-BG6"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="Htu-Sg-BG6"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Dkt-Rn-tOC">
-                                <rect key="frame" x="141" y="511" width="39" height="37"/>
+                                <rect key="frame" x="142" y="511" width="39" height="37"/>
                             </pageControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="As Of:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFD-RD-JSy">
-                                <rect key="frame" x="59" y="320" width="200" height="21"/>
+                                <rect key="frame" x="60" y="320" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Submitted By: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-Gs-ZpR">
-                                <rect key="frame" x="59" y="349" width="200" height="21"/>
+                                <rect key="frame" x="60" y="349" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -350,11 +346,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrO-OM-EUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="eX5-fz-JYH">
                     <connections>
-                        <segue destination="72G-3P-2fy" kind="presentation" modalTransitionStyle="crossDissolve" id="3fN-qG-yMu"/>
+                        <segue destination="72G-3P-2fy" kind="modal" modalTransitionStyle="crossDissolve" id="3fN-qG-yMu"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1155" y="-55"/>
+            <point key="canvasLocation" x="-616" y="-52.066666666666663"/>
         </scene>
         <!--Check Bobs-->
         <scene sceneID="z4M-Sk-Q3w">
@@ -365,7 +361,7 @@
                         <viewControllerLayoutGuide type="bottom" id="t30-kQ-Ski"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BPx-Js-knt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bobs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJW-BA-BzY">
@@ -375,25 +371,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bobs Flavor 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhI-ge-SFb" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="220" width="288" height="21"/>
+                                <rect key="frame" x="60" y="160" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bobs Flavor 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcc-Pw-RE8" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="320" width="288" height="21"/>
+                                <rect key="frame" x="60" y="200" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bobs Flavor 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdN-wO-EDn" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="420" width="288" height="21"/>
+                                <rect key="frame" x="60" y="240" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bobs Flavor 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOb-ZK-4uA" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="120" width="288" height="21"/>
+                                <rect key="frame" x="60" y="120" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -404,7 +400,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="A1G-V0-P3k"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="A1G-V0-P3k"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="CJF-0q-Fec">
@@ -428,16 +424,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYZ-tn-AVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="74d-t0-WSc">
                     <connections>
-                        <segue destination="v8b-0F-NzU" kind="presentation" modalTransitionStyle="crossDissolve" id="I8X-kE-GVy"/>
+                        <segue destination="v8b-0F-NzU" kind="modal" modalTransitionStyle="crossDissolve" id="I8X-kE-GVy"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="DuV-DA-pHP">
                     <connections>
-                        <segue destination="cDN-tu-aE3" kind="presentation" modalTransitionStyle="crossDissolve" id="AWl-rq-Yhh"/>
+                        <segue destination="cDN-tu-aE3" kind="modal" modalTransitionStyle="crossDissolve" id="AWl-rq-Yhh"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-326.25" y="-29.577464788732392"/>
+            <point key="canvasLocation" x="-174" y="-27.999999999999996"/>
         </scene>
         <!--Check Foss-->
         <scene sceneID="NtF-aS-aP0">
@@ -448,7 +444,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3av-5e-hdD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vda-2b-9zQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foss" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd0-OG-1gV">
@@ -458,25 +454,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foss Flavor 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxJ-Ww-fwT" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="220" width="288" height="21"/>
+                                <rect key="frame" x="60" y="160" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foss Flavor 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQy-wX-T1S" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="320" width="288" height="21"/>
+                                <rect key="frame" x="60" y="200" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foss Flavor 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEs-cO-81y" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="420" width="288" height="21"/>
+                                <rect key="frame" x="60" y="240" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foss Flavor 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxK-Kf-sbG" customClass="CheckLabel" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="120" width="288" height="21"/>
+                                <rect key="frame" x="60" y="120" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -487,7 +483,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="W8Q-fK-A1w"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="W8Q-fK-A1w"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-DP-CeY">
@@ -510,11 +506,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAN-mm-chs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="coo-LE-4As">
                     <connections>
-                        <segue destination="72G-3P-2fy" kind="presentation" modalTransitionStyle="crossDissolve" id="2hV-kp-YVx"/>
+                        <segue destination="72G-3P-2fy" kind="modal" modalTransitionStyle="crossDissolve" id="2hV-kp-YVx"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="457.5" y="-29.577464788732392"/>
+            <point key="canvasLocation" x="244" y="-27.999999999999996"/>
         </scene>
         <!--Title-->
         <scene sceneID="5Mf-Ht-cUg">
@@ -525,42 +521,9 @@
                         <viewControllerLayoutGuide type="bottom" id="lbd-ry-waq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="roH-qV-ef3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFd-s4-nVy">
-                                <rect key="frame" x="16" y="214" width="288" height="155"/>
-                                <state key="normal" title="| Bobs | " backgroundImage="bobs">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Press_Bobs:" destination="KJf-WF-hJB" eventType="touchUpInside" id="295-uM-6eY"/>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="3Xh-xh-66S"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjL-JS-fyO">
-                                <rect key="frame" x="16" y="53" width="288" height="153"/>
-                                <state key="normal" title="| Dana | " backgroundImage="dana">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Press_Dana:" destination="KJf-WF-hJB" eventType="touchUpInside" id="avm-5C-Fgg"/>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="WB2-OW-NV1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzx-gz-XmC">
-                                <rect key="frame" x="16" y="377" width="288" height="152"/>
-                                <state key="normal" title="| Foss | " backgroundImage="foss">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Press_Foss:" destination="KJf-WF-hJB" eventType="touchUpInside" id="Art-jJ-xLQ"/>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="V45-Pi-1hK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-zg-GCT" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="20" width="30" height="30"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -568,22 +531,47 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="FUS-7F-rtV"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="FUS-7F-rtV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pv-CC-PDv" customClass="DiningHallButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="105" y="90" width="100" height="100"/>
+                                <state key="normal" title="Dana">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Press_Dana:" destination="KJf-WF-hJB" eventType="touchUpInside" id="egc-1b-axk"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="1oh-kO-8rv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-2c-Wb7" customClass="DiningHallButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="105" y="240" width="100" height="100"/>
+                                <state key="normal" title="Bobs">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Press_Bobs:" destination="KJf-WF-hJB" eventType="touchUpInside" id="ojM-XB-5jB"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="U9d-3q-wVF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRh-ki-ue2" customClass="DiningHallButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="105" y="390" width="100" height="100"/>
+                                <state key="normal" title="Foss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Press_Foss:" destination="KJf-WF-hJB" eventType="touchUpInside" id="fqj-2P-aty"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="kPB-bd-47A"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Yld-pn-6YD"/>
-                    <connections>
-                        <outlet property="Bobs" destination="yFd-s4-nVy" id="xxb-V5-tpF"/>
-                        <outlet property="Dana" destination="QjL-JS-fyO" id="ArA-J5-lDa"/>
-                        <outlet property="Foss" destination="Vzx-gz-XmC" id="KUl-n5-LZg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQE-Ma-hqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-978.75" y="822.88732394366195"/>
+            <point key="canvasLocation" x="-522" y="779"/>
         </scene>
         <!--Set Favorites-->
         <scene sceneID="lDy-gZ-0OO">
@@ -594,7 +582,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eYO-F7-lUs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ruT-qq-8Vg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpP-qG-CT2">
@@ -790,7 +778,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3G-GN-FOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1370" y="1741"/>
+            <point key="canvasLocation" x="-730.66666666666663" y="1648.1466666666668"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="awb-Zv-4Dj">
@@ -801,7 +789,7 @@
                         <viewControllerLayoutGuide type="bottom" id="a1n-c6-jsK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UBv-PG-QBh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbp-3a-Xio">
@@ -819,29 +807,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fw1-5f-3hD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-764" y="1729"/>
+            <point key="canvasLocation" x="-407.46666666666664" y="1636.7866666666666"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="4Il-Lj-IUu">
             <objects>
-                <viewController id="Sl0-34-QZF" sceneMemberID="viewController">
+                <viewController id="Sl0-34-QZF" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gqi-3Q-E5P"/>
                         <viewControllerLayoutGuide type="bottom" id="S6s-fm-N63"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xzx-jF-ezd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGF-Ge-yfJ">
-                                <rect key="frame" x="143" y="80" width="35" height="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="F6u-S0-RUi"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="W" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imp-Sf-Sha">
                                 <rect key="frame" x="152" y="130" width="16" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -854,35 +833,35 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAF-Jh-86v" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="Tf6-Lc-Hmv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hlt-Wk-yJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181.25" y="3350.7042253521126"/>
+            <point key="canvasLocation" x="630" y="3172"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="x19-m9-ZKx">
             <objects>
-                <viewController id="9Fy-n0-fyh" sceneMemberID="viewController">
+                <viewController id="9Fy-n0-fyh" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nfa-GE-GDo"/>
                         <viewControllerLayoutGuide type="bottom" id="Vus-yn-fCH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rdt-tB-bKz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAu-Rq-vFx">
-                                <rect key="frame" x="143" y="80" width="35" height="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="DLO-qS-J3v"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGc-P0-EP7" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="155" y="130" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -901,24 +880,33 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGi-jR-2TG" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="7WM-XO-x8u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHb-jw-K2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3091.875" y="2686.2676056338028"/>
+            <point key="canvasLocation" x="1649" y="2543"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="FUr-ta-mPn">
             <objects>
-                <viewController id="V42-GC-WJS" sceneMemberID="viewController">
+                <viewController id="V42-GC-WJS" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6dd-VE-eRZ"/>
                         <viewControllerLayoutGuide type="bottom" id="gAa-yy-1T0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bxU-nO-XB2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xp-rE-9pI" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -933,13 +921,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cf-vj-Yer">
-                                <rect key="frame" x="143" y="80" width="35" height="30"/>
-                                <state key="normal" title="Back">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBA-w6-uYb" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="L0G-Uo-iQf"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="pMn-Lt-V0V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -948,7 +936,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIi-Vk-JMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2458.125" y="2686.2676056338028"/>
+            <point key="canvasLocation" x="1311" y="2543"/>
         </scene>
         <!--Submit Flavors-->
         <scene sceneID="iCu-HI-wN9">
@@ -959,158 +947,152 @@
                         <viewControllerLayoutGuide type="bottom" id="PTR-bk-Xo1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CmP-VS-fbL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I want to submit a flavor starting with the letter... " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93A-Tg-yn6" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="92" width="288" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7H-5E-H7K" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="158" width="30" height="30"/>
+                                <rect key="frame" x="16" y="129" width="30" height="30"/>
                                 <state key="normal" title="A">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yQH-Li-35j" kind="presentation" id="gC1-ww-ZHP"/>
+                                    <segue destination="yQH-Li-35j" kind="modal" id="gC1-ww-ZHP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvo-6H-LBD" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="78" y="158" width="30" height="30"/>
+                                <rect key="frame" x="78" y="129" width="30" height="30"/>
                                 <state key="normal" title="B">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8Lc-Xi-8AP" kind="presentation" id="nfx-Lt-tcj"/>
+                                    <segue destination="8Lc-Xi-8AP" kind="modal" id="nfx-Lt-tcj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWv-7g-RJ6" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="145" y="158" width="30" height="30"/>
+                                <rect key="frame" x="145" y="129" width="30" height="30"/>
                                 <state key="normal" title="C">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TfC-JC-TKa" kind="presentation" id="jZk-Ff-SNP"/>
+                                    <segue destination="TfC-JC-TKa" kind="modal" id="jZk-Ff-SNP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdZ-Fp-E4t" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="209" y="158" width="30" height="30"/>
+                                <rect key="frame" x="209" y="129" width="30" height="30"/>
                                 <state key="normal" title="F">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9gq-pU-zJ0" kind="presentation" id="qoJ-Pg-NhM"/>
+                                    <segue destination="9gq-pU-zJ0" kind="modal" id="qoJ-Pg-NhM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-a1-fJ0" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="274" y="158" width="30" height="30"/>
+                                <rect key="frame" x="274" y="129" width="30" height="30"/>
                                 <state key="normal" title="G">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8Gs-WZ-cEh" kind="presentation" id="RgG-sk-Pv8"/>
+                                    <segue destination="8Gs-WZ-cEh" kind="modal" id="RgG-sk-Pv8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-V5-jQN" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="207" width="30" height="30"/>
+                                <rect key="frame" x="16" y="178" width="30" height="30"/>
                                 <state key="normal" title="M">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="huC-LJ-fQk" kind="presentation" id="4yY-Eh-M0Y"/>
+                                    <segue destination="huC-LJ-fQk" kind="modal" id="4yY-Eh-M0Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLe-lV-MGo" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="78" y="207" width="30" height="30"/>
+                                <rect key="frame" x="78" y="178" width="30" height="30"/>
                                 <state key="normal" title="O">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tg7-YB-mYf" kind="presentation" id="Tl5-e3-Pil"/>
+                                    <segue destination="tg7-YB-mYf" kind="modal" id="Tl5-e3-Pil"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbe-LS-V5S" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="145" y="207" width="30" height="30"/>
+                                <rect key="frame" x="145" y="178" width="30" height="30"/>
                                 <state key="normal" title="P">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xzE-Gz-ejT" kind="presentation" id="iGp-4g-0nE"/>
+                                    <segue destination="xzE-Gz-ejT" kind="modal" id="iGp-4g-0nE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uf-Y8-Zsp" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="209" y="207" width="30" height="30"/>
+                                <rect key="frame" x="209" y="178" width="30" height="30"/>
                                 <state key="normal" title="R">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="onI-Vf-xDJ" kind="presentation" id="OaH-fM-4Gl"/>
+                                    <segue destination="onI-Vf-xDJ" kind="modal" id="OaH-fM-4Gl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qM3-g8-ghS" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="274" y="207" width="30" height="30"/>
+                                <rect key="frame" x="274" y="178" width="30" height="30"/>
                                 <state key="normal" title="S">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oaE-Ug-yPU" kind="presentation" id="Oy6-lv-EIe"/>
+                                    <segue destination="oaE-Ug-yPU" kind="modal" id="Oy6-lv-EIe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIs-eU-VJf" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="78" y="260" width="30" height="30"/>
+                                <rect key="frame" x="78" y="231" width="30" height="30"/>
                                 <state key="normal" title="T">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="V42-GC-WJS" kind="presentation" id="qud-ZB-oMu"/>
+                                    <segue destination="V42-GC-WJS" kind="modal" id="qud-ZB-oMu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bh-7J-Tfs" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="145" y="260" width="30" height="30"/>
+                                <rect key="frame" x="145" y="231" width="30" height="30"/>
                                 <state key="normal" title="V">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9Fy-n0-fyh" kind="presentation" id="Hrn-aX-XIm"/>
+                                    <segue destination="9Fy-n0-fyh" kind="modal" id="Hrn-aX-XIm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-iN-vFJ" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="209" y="260" width="30" height="30"/>
+                                <rect key="frame" x="209" y="231" width="30" height="30"/>
                                 <state key="normal" title="W">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Sl0-34-QZF" kind="presentation" id="kNc-GF-GaZ"/>
+                                    <segue destination="Sl0-34-QZF" kind="modal" id="kNc-GF-GaZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So far I've submitted..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-eF-1jx" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="73" y="339" width="174" height="21"/>
+                                <rect key="frame" x="73" y="324" width="174" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K62-ju-GtM" customClass="FinalFlavor" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="368" width="194" height="30"/>
+                                <rect key="frame" x="16" y="353" width="194" height="30"/>
                                 <state key="normal" title="Flavor not selected">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6b-CT-i6L" customClass="FinalFlavor" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="406" width="194" height="30"/>
+                                <rect key="frame" x="16" y="391" width="194" height="30"/>
                                 <state key="normal" title="Flavor not selected">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAp-az-via" customClass="FinalFlavor" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="444" width="194" height="30"/>
+                                <rect key="frame" x="16" y="429" width="194" height="30"/>
                                 <state key="normal" title="Flavor not selected">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-yG-Gee" customClass="Bold_Button" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="545" width="288" height="30"/>
+                                <rect key="frame" x="16" y="530" width="288" height="30"/>
                                 <state key="normal" title="Submit Flavors!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1119,13 +1101,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1re-RN-gGk" customClass="FinalFlavor" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="482" width="194" height="30"/>
+                                <rect key="frame" x="16" y="467" width="194" height="30"/>
                                 <state key="normal" title="Flavor not selected">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAd-gI-fpG" customClass="EmptyButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="261" y="370" width="40" height="25"/>
+                                <rect key="frame" x="261" y="355" width="40" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="empty">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1135,7 +1117,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1i-ea-QTp" customClass="EmptyButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="261" y="408" width="40" height="25"/>
+                                <rect key="frame" x="261" y="393" width="40" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="empty">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1145,7 +1127,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljt-er-eec" customClass="OtherButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="216" y="408" width="40" height="25"/>
+                                <rect key="frame" x="216" y="393" width="40" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="other">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1155,7 +1137,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoA-Bl-1go" customClass="EmptyButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="261" y="446" width="40" height="25"/>
+                                <rect key="frame" x="261" y="431" width="40" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="empty">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1165,7 +1147,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqz-oz-zcy" customClass="OtherButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="216" y="446" width="40" height="25"/>
+                                <rect key="frame" x="216" y="431" width="40" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="other">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1175,7 +1157,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-HQ-a22" customClass="EmptyButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="261" y="484" width="40" height="25"/>
+                                <rect key="frame" x="261" y="469" width="40" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="empty">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1185,7 +1167,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSK-Hk-Qds" customClass="OtherButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="216" y="484" width="40" height="25"/>
+                                <rect key="frame" x="216" y="469" width="40" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="other">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1195,7 +1177,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNA-4T-abk" customClass="OtherButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="216" y="370" width="40" height="25"/>
+                                <rect key="frame" x="216" y="355" width="40" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="other">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1204,6 +1186,12 @@
                                     <action selector="Flav1Other:" destination="kJ7-7H-JEM" eventType="touchUpInside" id="6Hb-WC-dVu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title_Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW2-ds-aJ0" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="90" y="20" width="140" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvD-TH-gHx" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="20" width="30" height="30"/>
                                 <state key="normal" title="Back">
@@ -1213,8 +1201,8 @@
                                     <segue destination="KJf-WF-hJB" kind="modal" id="O4U-97-6I3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title_Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW2-ds-aJ0" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="16" y="63" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Submit a flavor starting with the letter... " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93A-Tg-yn6" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="8" y="92" width="305" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1227,35 +1215,27 @@
                         <outlet property="Flav2" destination="H6b-CT-i6L" id="4Dr-AU-0E5"/>
                         <outlet property="Flav3" destination="DAp-az-via" id="a7F-TL-drO"/>
                         <outlet property="Flav4" destination="1re-RN-gGk" id="YRI-Ek-Vkl"/>
+                        <outlet property="SubmitButton" destination="bFc-yG-Gee" id="m1r-9V-qRp"/>
                         <outlet property="Title_Label" destination="JW2-ds-aJ0" id="4V5-ax-Yzr"/>
-                        <segue destination="vXZ-lx-hvc" kind="show" identifier="submitted_flavors" id="WJC-iZ-2va"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="submitted_flavors" id="WJC-iZ-2va"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJi-OZ-tqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-269" y="822"/>
+            <point key="canvasLocation" x="-174" y="773"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="Nyb-iv-amA">
             <objects>
-                <viewController id="tg7-YB-mYf" sceneMemberID="viewController">
+                <viewController id="tg7-YB-mYf" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5fT-lY-t89"/>
                         <viewControllerLayoutGuide type="bottom" id="lvx-Rv-AhZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JCU-kF-uD3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prk-WU-xcv" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="145" y="80" width="30" height="30"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="HJr-Vi-wlJ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va8-0k-yhC" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="154" y="130" width="13" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1274,24 +1254,33 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ug-EPB" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="vKd-nr-TzO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ov8-Gc-hd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2458.125" y="2032.394366197183"/>
+            <point key="canvasLocation" x="1311" y="1923.9999999999998"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="reZ-b1-kke">
             <objects>
-                <viewController id="yQH-Li-35j" sceneMemberID="viewController">
+                <viewController id="yQH-Li-35j" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EuS-go-lDV"/>
                         <viewControllerLayoutGuide type="bottom" id="jwc-Hq-I49"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="v5a-yR-ahM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-UM-yYP" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1306,7 +1295,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="lS2-8j-3wa"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="lS2-8j-3wa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-bX-VpH" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1327,18 +1316,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rqk-ur-c0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181.25" y="1385.9154929577464"/>
+            <point key="canvasLocation" x="630" y="1312"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="EPb-dw-pzo">
             <objects>
-                <viewController id="xzE-Gz-ejT" sceneMemberID="viewController">
+                <viewController id="xzE-Gz-ejT" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ihc-bB-l7O"/>
                         <viewControllerLayoutGuide type="bottom" id="p7Y-E1-PtL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ahg-dr-AzA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="P" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XF-MD-gEr" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1377,13 +1366,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkF-BL-96s" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="145" y="70" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmq-ac-JZt" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="3g9-7K-STb"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="rTz-FI-spI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1392,29 +1381,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPz-TG-e25" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3103.125" y="2032.394366197183"/>
+            <point key="canvasLocation" x="1655" y="1923.9999999999998"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="3pm-et-l26">
             <objects>
-                <viewController id="oaE-Ug-yPU" sceneMemberID="viewController">
+                <viewController id="oaE-Ug-yPU" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6PR-KT-VTS"/>
                         <viewControllerLayoutGuide type="bottom" id="INA-18-2At"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LuY-AK-UDG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndh-yA-tSQ">
-                                <rect key="frame" x="143" y="80" width="35" height="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="vFq-0v-nkn"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4G-86-NcD" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="154" y="130" width="12" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1439,35 +1419,41 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkX-r3-sOL" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6A-Gd-hGW" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="Ebl-0w-pi2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWJ-gV-7hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820.625" y="2686.2676056338028"/>
+            <point key="canvasLocation" x="971" y="2543"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="60C-Dg-VAK">
             <objects>
-                <viewController id="8Gs-WZ-cEh" sceneMemberID="viewController">
+                <viewController id="8Gs-WZ-cEh" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ufh-UH-FjD"/>
                         <viewControllerLayoutGuide type="bottom" id="0g6-i7-lAb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="X3c-ag-JzE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWm-xa-SfP" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="145" y="80" width="30" height="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="9Be-L9-5vw"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTt-TK-Vn5" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="154" y="130" width="13" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1486,24 +1472,33 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ll-4N-dxC" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="UEJ-QE-oT0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1C3-Zh-aOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181.25" y="2032.394366197183"/>
+            <point key="canvasLocation" x="630" y="1923.9999999999998"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="2N9-55-5zl">
             <objects>
-                <viewController id="onI-Vf-xDJ" sceneMemberID="viewController">
+                <viewController id="onI-Vf-xDJ" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e6G-I4-lnh"/>
                         <viewControllerLayoutGuide type="bottom" id="R0a-9w-PAg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6vY-jW-0TJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e5-9w-4Cr" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1512,15 +1507,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmB-al-rbN">
-                                <rect key="frame" x="145" y="80" width="30" height="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="aAb-iW-aap"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNv-WH-9OZ" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="170" width="288" height="30"/>
                                 <state key="normal" title="Rainbow Sherbert">
@@ -1533,35 +1519,35 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsv-Wa-niK" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="mPa-tc-VQM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YU-hX-CdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181.25" y="2686.2676056338028"/>
+            <point key="canvasLocation" x="630" y="2543"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="KID-Qe-waW">
             <objects>
-                <viewController id="huC-LJ-fQk" sceneMemberID="viewController">
+                <viewController id="huC-LJ-fQk" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cvt-hQ-VR4"/>
                         <viewControllerLayoutGuide type="bottom" id="zew-Pf-rDe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cmo-31-jZK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkr-T6-zT7" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="139" y="80" width="30" height="30"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="A3E-Kx-tI1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="M" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8T-cs-lkN" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="147" y="130" width="15" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1622,24 +1608,33 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRm-kE-2sc" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="145" y="80" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="fVr-AN-aDB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdV-N6-53X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820.625" y="2032.394366197183"/>
+            <point key="canvasLocation" x="971" y="1923.9999999999998"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="o8f-Yw-vIX">
             <objects>
-                <viewController id="8Lc-Xi-8AP" sceneMemberID="viewController">
+                <viewController id="8Lc-Xi-8AP" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XaS-ra-okU"/>
                         <viewControllerLayoutGuide type="bottom" id="No6-Ce-xpk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2PV-Xf-YfY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrN-Jh-pc0" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1654,7 +1649,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="m6P-6R-t65"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="m6P-6R-t65"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoh-da-mrt" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1675,18 +1670,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLi-34-c4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820.625" y="1385.9154929577464"/>
+            <point key="canvasLocation" x="971" y="1312"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="PfQ-w8-lxQ">
             <objects>
-                <viewController id="TfC-JC-TKa" sceneMemberID="viewController">
+                <viewController id="TfC-JC-TKa" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1O6-eG-KE1"/>
                         <viewControllerLayoutGuide type="bottom" id="KRi-9J-qic"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9mG-iP-HIS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9c-EX-MyN" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1713,7 +1708,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="dNy-fh-JgD"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="dNy-fh-JgD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-aF-KdK" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1776,18 +1771,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lB-X6-kcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2458.125" y="1385.9154929577464"/>
+            <point key="canvasLocation" x="1311" y="1312"/>
         </scene>
-        <!--View Controller-->
+        <!--Letter View Controller-->
         <scene sceneID="2eN-y3-DS9">
             <objects>
-                <viewController id="9gq-pU-zJ0" sceneMemberID="viewController">
+                <viewController id="9gq-pU-zJ0" customClass="LetterViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8bp-AT-gdC"/>
                         <viewControllerLayoutGuide type="bottom" id="s08-Qv-nV4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7yY-Qu-nN3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otc-Ue-nYk" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1796,7 +1791,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kJ7-7H-JEM" kind="presentation" id="vaK-oB-K22"/>
+                                    <segue destination="kJ7-7H-JEM" kind="modal" id="vaK-oB-K22"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zD-b4-xFS" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
@@ -1823,21 +1818,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BzR-Tw-DyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3103.125" y="1385.9154929577464"/>
+            <point key="canvasLocation" x="1655" y="1312"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="bobs" width="260" height="194"/>
-        <image name="dana" width="837" height="628"/>
-        <image name="foss" width="297" height="170"/>
-    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="WB2-OW-NV1"/>
+        <segue reference="kPB-bd-47A"/>
         <segue reference="O4U-97-6I3"/>
-        <segue reference="rdd-AK-pUV"/>
-        <segue reference="Htu-Sg-BG6"/>
-        <segue reference="ltK-jL-3oG"/>
+        <segue reference="FUS-7F-rtV"/>
         <segue reference="hEW-xM-eyA"/>
+        <segue reference="rdd-AK-pUV"/>
+        <segue reference="ltK-jL-3oG"/>
         <segue reference="3fN-qG-yMu"/>
     </inferredMetricsTieBreakers>
 </document>

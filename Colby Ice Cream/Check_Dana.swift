@@ -23,6 +23,8 @@ class Check_Dana: UIViewController {
     
     @IBOutlet weak var Time_Label: UILabel!
     
+    let colorGen = ColorGenerator()
+    
     func getDanaFlavors(){
         let query = PFQuery(className: "ICSubmit")
         query.whereKey("DHall", equalTo: "Dana")
@@ -45,14 +47,14 @@ class Check_Dana: UIViewController {
         let Dana_Flavor_4:AnyObject = obj["Flavor4"]
         let F4String = "\(Dana_Flavor_4)"
         self.Dana_Flavor4.text = F4String
-//        
-//        let name: String! = obj["submitted_FName"] as String
-//        self.Submitted_By.text = name
-//        
-//        var dateUpdated = obj.updatedAt as NSDate
-//        var dateFormat = NSDateFormatter()
-//        dateFormat.dateFormat = "MMM d, h:mm a"
-//        self.Time_Label.text = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String
+        
+        let name: String! = obj["submitted_FName"] as! String
+        self.Submitted_By.text = name
+        
+        var dateUpdated = obj.updatedAt as NSDate
+        var dateFormat = NSDateFormatter()
+        dateFormat.dateFormat = "MMM d, h:mm a"
+        self.Time_Label.text = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String
        
         
         
@@ -63,7 +65,15 @@ class Check_Dana: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sexyLayer:CAGradientLayer
+        sexyLayer = colorGen.gradientGenerator("#FD925E", hexBottom: "#FCB100")
+        sexyLayer.frame = view.frame
+        
+        self.view.layer.insertSublayer(sexyLayer, atIndex: 0)
+        
         self.getDanaFlavors()
+        
     }
 
     override func didReceiveMemoryWarning() {

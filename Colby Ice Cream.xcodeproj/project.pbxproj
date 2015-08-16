@@ -20,6 +20,10 @@
 		1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C85991AEAB0DD0055173B /* Accounts.framework */; };
 		1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C859B1AEAB0ED0055173B /* Social.framework */; };
 		1AA0CD9A1ADAA3760028E7CE /* FinalFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA0CD991ADAA3760028E7CE /* FinalFlavor.swift */; };
+		1ABE7E1D1B7E9CC000AD9DFA /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE7E1C1B7E9CC000AD9DFA /* MenuButton.swift */; };
+		1ABE7E1F1B7EC22C00AD9DFA /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE7E1E1B7EC22C00AD9DFA /* ColorGenerator.swift */; };
+		1ABE7E211B7ED3B800AD9DFA /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE7E201B7ED3B800AD9DFA /* LetterViewController.swift */; };
+		1ABE7E231B80EC4500AD9DFA /* DiningHallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE7E221B80EC4500AD9DFA /* DiningHallButton.swift */; };
 		1AC57F2A1ADD256800F516F2 /* OtherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC57F291ADD256800F516F2 /* OtherButton.swift */; };
 		1AC57F2C1ADD2A6F00F516F2 /* EmptyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC57F2B1ADD2A6F00F516F2 /* EmptyButton.swift */; };
 		1AC61C171A9933B00094DDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C161A9933B00094DDDE /* AppDelegate.swift */; };
@@ -87,6 +91,10 @@
 		1A8C85991AEAB0DD0055173B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1A8C859B1AEAB0ED0055173B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1AA0CD991ADAA3760028E7CE /* FinalFlavor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalFlavor.swift; sourceTree = "<group>"; };
+		1ABE7E1C1B7E9CC000AD9DFA /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		1ABE7E1E1B7EC22C00AD9DFA /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
+		1ABE7E201B7ED3B800AD9DFA /* LetterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterViewController.swift; sourceTree = "<group>"; };
+		1ABE7E221B80EC4500AD9DFA /* DiningHallButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningHallButton.swift; sourceTree = "<group>"; };
 		1AC57F291ADD256800F516F2 /* OtherButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherButton.swift; sourceTree = "<group>"; };
 		1AC57F2B1ADD2A6F00F516F2 /* EmptyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyButton.swift; sourceTree = "<group>"; };
 		1AC61C111A9933B00094DDDE /* Colby Ice Cream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colby Ice Cream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +228,10 @@
 				1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */,
 				1A43DF781B6EAFD300C0E64F /* CustomFont.swift */,
 				1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */,
+				1ABE7E1C1B7E9CC000AD9DFA /* MenuButton.swift */,
+				1ABE7E1E1B7EC22C00AD9DFA /* ColorGenerator.swift */,
+				1ABE7E201B7ED3B800AD9DFA /* LetterViewController.swift */,
+				1ABE7E221B80EC4500AD9DFA /* DiningHallButton.swift */,
 			);
 			path = "Colby Ice Cream";
 			sourceTree = "<group>";
@@ -458,6 +470,7 @@
 				1AC57F2A1ADD256800F516F2 /* OtherButton.swift in Sources */,
 				1AE410FB1A9B9E6900D5EE46 /* Check_Bobs.swift in Sources */,
 				1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */,
+				1ABE7E1F1B7EC22C00AD9DFA /* ColorGenerator.swift in Sources */,
 				1AC57F2C1ADD2A6F00F516F2 /* EmptyButton.swift in Sources */,
 				1A8C85981AEAA4F60055173B /* loginViewController.swift in Sources */,
 				1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */,
@@ -471,8 +484,11 @@
 				1A43DF7F1B6EB5FC00C0E64F /* Bold_Label.swift in Sources */,
 				1AC61C171A9933B00094DDDE /* AppDelegate.swift in Sources */,
 				1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */,
+				1ABE7E1D1B7E9CC000AD9DFA /* MenuButton.swift in Sources */,
 				1AE410FD1A9BA0B000D5EE46 /* Check_Foss.swift in Sources */,
+				1ABE7E211B7ED3B800AD9DFA /* LetterViewController.swift in Sources */,
 				1AD5C33F1AD6B9EC0008BA97 /* Set_Favorites.swift in Sources */,
+				1ABE7E231B80EC4500AD9DFA /* DiningHallButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

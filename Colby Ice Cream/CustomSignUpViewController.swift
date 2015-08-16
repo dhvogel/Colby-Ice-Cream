@@ -51,23 +51,23 @@ class CustomSignUpViewController: UIViewController {
         var LName = self.LastNameField.text
         
         
-        if (username.utf16Count < 4) {
+        if (count(username.utf16) < 4) {
             var alert = UIAlertView(title: "Invalid", message: "Username must be more than 4 characters", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
-        else if(password.utf16Count < 5 || password.utf16Count > 20) {
+        else if(count(password.utf16) < 5 || count(password.utf16) > 20) {
             var alert = UIAlertView(title: "Invalid", message: "Password must be between 5 and 20 characters", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
-        else if (email.utf16Count < 8) {
-            var alert = UIAlertView(title: "Invalid", message: "Please enter valid email", delegate: self, cancelButtonTitle: "OK")
+        else if (count(email.utf16) < 11 || suffix(email, 10) != "@colby.edu") {
+            var alert = UIAlertView(title: "Invalid", message: "Please enter valid Colby email (ending in @colby.edu)", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
-        else if (FName.utf16Count < 1) {
+        else if (count(FName.utf16) < 1) {
             var alert = UIAlertView(title: "Invalid", message: "Please enter valid first name", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
-        else if (LName.utf16Count < 1) {
+        else if (count(LName.utf16) < 1) {
             var alert = UIAlertView(title: "Invalid", message: "Please enter valid last name", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }

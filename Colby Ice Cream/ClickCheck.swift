@@ -42,12 +42,10 @@ class ClickCheck: UIButton {
                         for (var i=0; i<flavors.count; i++) {
                             println(flavors[i])
                             if (flavors[i] == "nothing") {
-                                println("sldkfjewij")
                                 flavors[i] = self.titleLabel!.text!
                                 break
                             }
                         }
-                        println(flavors)
                     }
             }
             else{

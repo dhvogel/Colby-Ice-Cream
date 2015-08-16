@@ -1,24 +1,20 @@
 //
-//  LetterButton.swift
+//  MenuButton.swift
 //  Colby Ice Cream
 //
-//  Created by Daniel Vogel on 4/16/15.
+//  Created by Daniel Vogel on 8/14/15.
 //  Copyright (c) 2015 Daniel Vogel. All rights reserved.
 //
 
 import UIKit
 
-class LetterButton: UIButton {
+class MenuButton: UIButton {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.clipsToBounds = true
-        self.layer.cornerRadius = 0.5 * self.bounds.size.width
+        self.setValue(UIFont(name: "Raleway-Medium", size: 15), forKey: "font")
         self.backgroundColor = UIColor.clearColor()
-        self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.whiteColor().CGColor
-        self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        self.titleLabel!.font = UIFont(name: "Raleway-SemiBold", size:15)
+        self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
     }
     /*
     // Only override drawRect: if you perform custom drawing.

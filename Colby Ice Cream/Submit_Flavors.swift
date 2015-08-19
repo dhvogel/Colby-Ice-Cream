@@ -69,6 +69,7 @@ class Submit_Flavors: UIViewController {
                 tempbutton[i].backgroundColor = UIColor.greenColor()
                 tempbutton[i].layer.borderColor = UIColor.greenColor().CGColor
                 tempbutton[i].setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+                tempbutton[i].titleLabel!.font = UIFont(name: "Raleway-SemiBold", size:13)
             }
         }
     }

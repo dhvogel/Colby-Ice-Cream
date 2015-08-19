@@ -19,7 +19,7 @@ class Submit_SetDiningHall: UIViewController {
         super.viewDidLoad()
         
         let sexyLayer:CAGradientLayer
-        sexyLayer = colorGen.gradientGenerator("#C29EFF", hexBottom: "#55CDFF")
+        sexyLayer = colorGen.gradientGenerator("#99E1FF", hexBottom: "#04E6F7")
         sexyLayer.frame = view.frame
         
         self.view.layer.insertSublayer(sexyLayer, atIndex: 0)

@@ -18,11 +18,19 @@ class CustomSignUpViewController: UIViewController {
     @IBOutlet weak var PasswordField: UITextField!
     @IBOutlet weak var ReTypePasswordField: UITextField!
     
+    let colorGen = ColorGenerator()
+    
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sexyLayer:CAGradientLayer
+        sexyLayer = colorGen.gradientGenerator("#6AD922", hexBottom: "#70FFD9")
+        sexyLayer.frame = view.frame
+        
+        self.view.layer.insertSublayer(sexyLayer, atIndex: 0)
         
         self.actInd.center = self.view.center
         

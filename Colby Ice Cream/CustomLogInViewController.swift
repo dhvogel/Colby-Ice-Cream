@@ -16,9 +16,17 @@ class CustomLogInViewController: UIViewController {
     
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
     
+    let colorGen = ColorGenerator()
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        let sexyLayer:CAGradientLayer
+        sexyLayer = colorGen.gradientGenerator("#5FA9FF", hexBottom: "#C29EFF")
+        sexyLayer.frame = view.frame
+        
+        self.view.layer.insertSublayer(sexyLayer, atIndex: 0)
         
         self.actInd.center = self.view.center
         
@@ -32,11 +40,7 @@ class CustomLogInViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        println(PFUser.currentUser())
-        
         if ((PFUser.currentUser().username) != nil) {
-            println(PFUser.currentUser().username)
-            println(PFUser.currentUser().email)
             self.performSegueWithIdentifier("loggedIn", sender: nil)
         }
         

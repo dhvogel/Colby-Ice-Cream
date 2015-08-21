@@ -42,13 +42,12 @@ class Check_Foss: UIViewController {
         let F4String = "\(Foss_Flavor_4)"
         self.Foss_Flavor4.text = F4String
         
-//        let name: String! = obj["submitted_FName"] as String
-//        self.Submitted_By.text = name
-//        
-//        var dateUpdated = obj.updatedAt as NSDate
-//        var dateFormat = NSDateFormatter()
-//        dateFormat.dateFormat = "MMM d, h:mm a"
-//        self.Time_Label.text = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String
+        let name: String! = obj["submitted_FName"] as! String
+        
+        var dateUpdated = obj.updatedAt as NSDate
+        var dateFormat = NSDateFormatter()
+        dateFormat.dateFormat = "MMM d, h:mm a"
+       
         
     }
     

@@ -59,6 +59,9 @@
 		1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DED1A9A51E40094DDDE /* libz.dylib */; };
 		1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */; };
 		1AC61DF61A9A5A380094DDDE /* Check_Dana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */; };
+		1ACF7D791B86C69A002D202B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D781B86C69A002D202B /* BorderedButton.swift */; };
+		1ACF7D7D1B878603002D202B /* CustomFontTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */; };
+		1ACF7D7F1B87869F002D202B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D7E1B87869F002D202B /* AboutViewController.swift */; };
 		1AD5C33F1AD6B9EC0008BA97 /* Set_Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5C33E1AD6B9EC0008BA97 /* Set_Favorites.swift */; };
 		1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD743B91AE7D302008618F2 /* CheckLabel.swift */; };
 		1ADF46921AEF8DF1009C0DB8 /* CustomLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */; };
@@ -137,6 +140,9 @@
 		1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colby Ice Cream-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Dana.swift; sourceTree = "<group>"; };
+		1ACF7D781B86C69A002D202B /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFontTextView.swift; sourceTree = "<group>"; };
+		1ACF7D7E1B87869F002D202B /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		1AD5C33E1AD6B9EC0008BA97 /* Set_Favorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_Favorites.swift; sourceTree = "<group>"; };
 		1AD743B91AE7D302008618F2 /* CheckLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckLabel.swift; sourceTree = "<group>"; };
 		1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogInViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +242,9 @@
 				1ABE7E1E1B7EC22C00AD9DFA /* ColorGenerator.swift */,
 				1ABE7E201B7ED3B800AD9DFA /* LetterViewController.swift */,
 				1ABE7E221B80EC4500AD9DFA /* DiningHallButton.swift */,
+				1ACF7D781B86C69A002D202B /* BorderedButton.swift */,
+				1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */,
+				1ACF7D7E1B87869F002D202B /* AboutViewController.swift */,
 			);
 			path = "Colby Ice Cream";
 			sourceTree = "<group>";
@@ -470,7 +479,9 @@
 				1AC61DF61A9A5A380094DDDE /* Check_Dana.swift in Sources */,
 				1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */,
 				1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */,
+				1ACF7D791B86C69A002D202B /* BorderedButton.swift in Sources */,
 				1ABE7E271B84116E00AD9DFA /* CheckViewController.swift in Sources */,
+				1ACF7D7D1B878603002D202B /* CustomFontTextView.swift in Sources */,
 				1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */,
 				1AC61C191A9933B00094DDDE /* ViewController.swift in Sources */,
 				1A28D3D81AF27AE00063C564 /* BackButton.swift in Sources */,
@@ -489,6 +500,7 @@
 				1ADF46921AEF8DF1009C0DB8 /* CustomLogInViewController.swift in Sources */,
 				1AA0CD9A1ADAA3760028E7CE /* FinalFlavor.swift in Sources */,
 				1A43DF791B6EAFD300C0E64F /* CustomFont.swift in Sources */,
+				1ACF7D7F1B87869F002D202B /* AboutViewController.swift in Sources */,
 				1A43DF7F1B6EB5FC00C0E64F /* Bold_Label.swift in Sources */,
 				1AC61C171A9933B00094DDDE /* AppDelegate.swift in Sources */,
 				1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */,

@@ -37,10 +37,10 @@ class ClickCheck: UIButton {
                         self.backgroundColor = UIColor.greenColor()
                         self.layer.borderColor = UIColor.greenColor().CGColor
                         self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+                        self.setValue(UIFont(name: "Raleway-SemiBold", size: 15), forKey: "font")
                         self.layer.cornerRadius = 5
                         self.layer.borderWidth = 1
                         for (var i=0; i<flavors.count; i++) {
-                            println(flavors[i])
                             if (flavors[i] == "nothing") {
                                 flavors[i] = self.titleLabel!.text!
                                 break
@@ -52,6 +52,7 @@ class ClickCheck: UIButton {
                 self.backgroundColor = UIColor.whiteColor()
                 self.layer.borderColor = UIColor.blackColor().CGColor
                 self.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+                self.setValue(UIFont(name: "Raleway-Light", size: 15), forKey: "font")
                 self.layer.cornerRadius = 5
                 self.layer.borderWidth = 1
                 let idx = find(flavors, self.titleForState(.Normal)!)

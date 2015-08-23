@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class CustomSignUpViewController: UIViewController {
+class CustomSignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var FirstNameField: UITextField!
     @IBOutlet weak var LastNameField: UITextField!
@@ -17,7 +17,7 @@ class CustomSignUpViewController: UIViewController {
     @IBOutlet weak var UsernameField: UITextField!
     @IBOutlet weak var PasswordField: UITextField!
     @IBOutlet weak var ReTypePasswordField: UITextField!
-    
+    @IBOutlet weak var SignUpTitle: UILabel!
     let colorGen = ColorGenerator()
     
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
@@ -25,6 +25,10 @@ class CustomSignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.SignUpTitle.setValue(UIFont(name: "Raleway-Light", size:20), forKey: "font")
+        
+        self.ReTypePasswordField.delegate = self
         
         let sexyLayer:CAGradientLayer
         sexyLayer = colorGen.gradientGenerator("#6AD922", hexBottom: "#70FFD9")
@@ -39,6 +43,11 @@ class CustomSignUpViewController: UIViewController {
         self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         
         view.addSubview(self.actInd)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
 
@@ -90,7 +99,7 @@ class CustomSignUpViewController: UIViewController {
             self.actInd.startAnimating()
             
             var newUser = PFUser()
-            newUser.username = username
+            newUser.username = username.lowercaseString
             newUser.password = password
             newUser.email = email
             newUser["first_name"] = FName

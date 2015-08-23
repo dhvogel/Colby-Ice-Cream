@@ -34,6 +34,7 @@ class FinalFlavor: UIButton {
             self.backgroundColor = UIColor.whiteColor()
             self.layer.borderColor = UIColor.blackColor().CGColor
             self.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+            self.setValue(UIFont(name: "Raleway-Light", size: 15), forKey: "font")
             let idx = find(flavors, self.titleLabel!.text!)
             if (idx != nil) {
                 flavors[idx!] = "nothing"

@@ -13,6 +13,8 @@ class CustomLogInViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var LoginTitle: UILabel!
+    
     
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
     
@@ -21,6 +23,8 @@ class CustomLogInViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        self.LoginTitle.setValue(UIFont(name: "Raleway-Light", size:30), forKey: "font")
         
         let sexyLayer:CAGradientLayer
         sexyLayer = colorGen.gradientGenerator("#5FA9FF", hexBottom: "#C29EFF")
@@ -67,7 +71,7 @@ class CustomLogInViewController: UIViewController {
     
     @IBAction func loginAction(sender: AnyObject) {
         
-        var username = self.usernameField.text
+        var username = self.usernameField.text.lowercaseString
         var password = self.passwordField.text
         
         if (count(username.utf16) < 4 || count(password.utf16) < 5) {

@@ -43,10 +43,11 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         
         query.getFirstObjectInBackgroundWithBlock {(object, error) -> Void in
             if (object == nil) {
-                NSLog("The getFirstObject request failed")
+                let alertController = UIAlertController(title:"Error", message: "Could not retrieve Foss information", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
             }
             else {
-                NSLog("Successfully retrieved object")
                 
                 self.getFlavorsfromObject(object, hall: "Foss")
                 
@@ -60,10 +61,11 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         
         query.getFirstObjectInBackgroundWithBlock {(object, error) -> Void in
             if (object == nil) {
-                NSLog("The getFirstObject request failed")
+                let alertController = UIAlertController(title:"Error", message: "Could not retrieve Dana information", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
             }
             else {
-                NSLog("Successfully retrieved object")
                 
                 self.getFlavorsfromObject(object, hall: "Dana")
                 
@@ -77,10 +79,11 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         
         query.getFirstObjectInBackgroundWithBlock {(object, error) -> Void in
             if (object == nil) {
-                NSLog("The getFirstObject request failed")
+                let alertController = UIAlertController(title:"Error", message: "Could not retrieve Bobs information", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
             }
             else {
-                NSLog("Successfully retrieved object")
                 
                 self.getFlavorsfromObject(object, hall: "Bobs")
                 
@@ -142,7 +145,6 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         let Time_Label: String = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String
     
         var finArray: [String!] = [Flavor_1, Flavor_2, Flavor_3, Flavor_4, FName, Time_Label]
-        println(finArray)
     
         if (hall=="Foss") {
             self.Foss_Flavors = finArray

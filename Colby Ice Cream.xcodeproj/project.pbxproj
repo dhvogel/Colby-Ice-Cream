@@ -58,16 +58,12 @@
 		1AC61DEC1A9A51D80094DDDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */; };
 		1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DED1A9A51E40094DDDE /* libz.dylib */; };
 		1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */; };
-		1AC61DF61A9A5A380094DDDE /* Check_Dana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */; };
 		1ACF7D791B86C69A002D202B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D781B86C69A002D202B /* BorderedButton.swift */; };
 		1ACF7D7D1B878603002D202B /* CustomFontTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */; };
 		1ACF7D7F1B87869F002D202B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D7E1B87869F002D202B /* AboutViewController.swift */; };
-		1AD5C33F1AD6B9EC0008BA97 /* Set_Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5C33E1AD6B9EC0008BA97 /* Set_Favorites.swift */; };
 		1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD743B91AE7D302008618F2 /* CheckLabel.swift */; };
 		1ADF46921AEF8DF1009C0DB8 /* CustomLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */; };
 		1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */; };
-		1AE410FB1A9B9E6900D5EE46 /* Check_Bobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE410FA1A9B9E6900D5EE46 /* Check_Bobs.swift */; };
-		1AE410FD1A9BA0B000D5EE46 /* Check_Foss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */; };
 		1AE411001A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */; };
 		1AE411031A9BB56B00D5EE46 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE411021A9BB56B00D5EE46 /* circle.png */; };
 /* End PBXBuildFile section */
@@ -139,16 +135,12 @@
 		1AC61DED1A9A51E40094DDDE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colby Ice Cream-Bridging-Header.h"; sourceTree = "<group>"; };
-		1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Dana.swift; sourceTree = "<group>"; };
 		1ACF7D781B86C69A002D202B /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFontTextView.swift; sourceTree = "<group>"; };
 		1ACF7D7E1B87869F002D202B /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		1AD5C33E1AD6B9EC0008BA97 /* Set_Favorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set_Favorites.swift; sourceTree = "<group>"; };
 		1AD743B91AE7D302008618F2 /* CheckLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckLabel.swift; sourceTree = "<group>"; };
 		1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogInViewController.swift; sourceTree = "<group>"; };
 		1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignUpViewController.swift; sourceTree = "<group>"; };
-		1AE410FA1A9B9E6900D5EE46 /* Check_Bobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Bobs.swift; sourceTree = "<group>"; };
-		1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check_Foss.swift; sourceTree = "<group>"; };
 		1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vacaciones-font-ffp-defharo.otf"; path = "../../../../Downloads/vacaciones_outline/Vacaciones-font-ffp-defharo.otf"; sourceTree = "<group>"; };
 		1AE411021A9BB56B00D5EE46 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../Downloads/circle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -326,9 +318,6 @@
 		1AC61DF41A9A5A140094DDDE /* Check */ = {
 			isa = PBXGroup;
 			children = (
-				1AC61DF51A9A5A380094DDDE /* Check_Dana.swift */,
-				1AE410FA1A9B9E6900D5EE46 /* Check_Bobs.swift */,
-				1AE410FC1A9BA0B000D5EE46 /* Check_Foss.swift */,
 				1ABE7E241B840B7800AD9DFA /* Check_Flavors.swift */,
 				1ABE7E261B84116E00AD9DFA /* CheckViewController.swift */,
 			);
@@ -338,7 +327,6 @@
 		1AD5C33D1AD6B9BF0008BA97 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				1AD5C33E1AD6B9EC0008BA97 /* Set_Favorites.swift */,
 			);
 			name = Favorites;
 			sourceTree = "<group>";
@@ -403,6 +391,7 @@
 				TargetAttributes = {
 					1AC61C101A9933B00094DDDE = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = E8KK7U9Z9B;
 					};
 					1AC61C251A9933B00094DDDE = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -476,7 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC61DF61A9A5A380094DDDE /* Check_Dana.swift in Sources */,
 				1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */,
 				1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */,
 				1ACF7D791B86C69A002D202B /* BorderedButton.swift in Sources */,
@@ -486,7 +474,6 @@
 				1AC61C191A9933B00094DDDE /* ViewController.swift in Sources */,
 				1A28D3D81AF27AE00063C564 /* BackButton.swift in Sources */,
 				1AC57F2A1ADD256800F516F2 /* OtherButton.swift in Sources */,
-				1AE410FB1A9B9E6900D5EE46 /* Check_Bobs.swift in Sources */,
 				1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */,
 				1ABE7E1F1B7EC22C00AD9DFA /* ColorGenerator.swift in Sources */,
 				1AC57F2C1ADD2A6F00F516F2 /* EmptyButton.swift in Sources */,
@@ -505,9 +492,7 @@
 				1AC61C171A9933B00094DDDE /* AppDelegate.swift in Sources */,
 				1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */,
 				1ABE7E1D1B7E9CC000AD9DFA /* MenuButton.swift in Sources */,
-				1AE410FD1A9BA0B000D5EE46 /* Check_Foss.swift in Sources */,
 				1ABE7E211B7ED3B800AD9DFA /* LetterViewController.swift in Sources */,
-				1AD5C33F1AD6B9EC0008BA97 /* Set_Favorites.swift in Sources */,
 				1ABE7E231B80EC4500AD9DFA /* DiningHallButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +617,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
@@ -644,7 +631,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/GoogleAdMob/SDK",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Colby Ice Cream";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -656,6 +644,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
@@ -668,7 +658,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/GoogleAdMob/SDK",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Colby Ice Cream";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

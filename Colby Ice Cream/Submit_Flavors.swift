@@ -96,9 +96,16 @@ class Submit_Flavors: UIViewController {
     
     @IBAction func SubmitFlavors(sender: AnyObject) {
         
+        var isNull:Bool = false
+        
+        for (var i=0; i<flavors.count; i++) {
+            if (flavors[i] == "nothing") {
+                isNull = true
+            }
+        }
         
         
-        if (flavors.count == 4) {
+        if (isNull == false) {
             
             var FName: String! = PFUser.currentUser().valueForKey("first_name") as! String
             
@@ -131,10 +138,9 @@ class Submit_Flavors: UIViewController {
                     let alertController = UIAlertController(title:"Thanks, " + FName + "!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alertController, animated: true, completion: nil)
-                    self.performSegueWithIdentifier("submitted_flavors", sender: self)
                 }
                 else {
-                    let alertController = UIAlertController(title:"Error", message: "Pleasdfse select 4 flavors", preferredStyle: UIAlertControllerStyle.Alert)
+                    let alertController = UIAlertController(title:"Error", message: "Please select 4 flavors", preferredStyle: UIAlertControllerStyle.Alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alertController, animated: true, completion: nil)
                 }

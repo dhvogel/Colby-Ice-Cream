@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		1A28D3D81AF27AE00063C564 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A28D3D71AF27AE00063C564 /* BackButton.swift */; };
 		1A3D031F1AE050570023BEE0 /* LetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3D031E1AE050560023BEE0 /* LetterButton.swift */; };
-		1A43DF761B6EABA600C0E64F /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A43DF741B6EABA500C0E64F /* Raleway-Light.ttf */; };
-		1A43DF771B6EABA600C0E64F /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A43DF751B6EABA500C0E64F /* Raleway-Medium.ttf */; };
 		1A43DF791B6EAFD300C0E64F /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF781B6EAFD300C0E64F /* CustomFont.swift */; };
-		1A43DF7B1B6EB34700C0E64F /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A43DF7A1B6EB34700C0E64F /* Raleway-SemiBold.ttf */; };
 		1A43DF7D1B6EB46100C0E64F /* Bold_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */; };
 		1A43DF7F1B6EB5FC00C0E64F /* Bold_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */; };
+		1A46EEED1BDE5F92004FB02E /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FA251BDDA2D20003C655 /* Raleway-Medium.ttf */; };
+		1A46EEEE1BDE5F92004FB02E /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FA261BDDA2D90003C655 /* Raleway-SemiBold.ttf */; };
+		1A46EEEF1BDE5F92004FB02E /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FA271BDDA2E20003C655 /* Raleway-Light.ttf */; };
 		1A4C2D4F1AD7FBE700A465A8 /* ClickCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C2D4E1AD7FBE600A465A8 /* ClickCheck.swift */; };
+		1A53FA1C1BDDA0820003C655 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA1B1BDDA0820003C655 /* Bolts.framework */; };
+		1A53FA1E1BDDA0BC0003C655 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA1D1BDDA0BC0003C655 /* ParseCrashReporting.framework */; };
+		1A53FA201BDDA0DD0003C655 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA1F1BDDA0DD0003C655 /* ParseFacebookUtils.framework */; };
+		1A53FA231BDDA0F90003C655 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA211BDDA0F90003C655 /* ParseUI.framework */; };
+		1A53FA241BDDA0F90003C655 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA221BDDA0F90003C655 /* Parse.framework */; };
+		1A53FA2A1BDDB7F30003C655 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA281BDDB7F30003C655 /* Fabric.framework */; };
+		1A53FA2B1BDDB7F30003C655 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA291BDDB7F30003C655 /* TwitterKit.framework */; };
 		1A8C85981AEAA4F60055173B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C85971AEAA4F60055173B /* loginViewController.swift */; };
 		1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C85991AEAB0DD0055173B /* Accounts.framework */; };
 		1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C859B1AEAB0ED0055173B /* Social.framework */; };
@@ -35,18 +42,10 @@
 		1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61C1F1A9933B00094DDDE /* LaunchScreen.xib */; };
 		1AC61C2D1A9933B00094DDDE /* Colby_Ice_CreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C2C1A9933B00094DDDE /* Colby_Ice_CreamTests.swift */; };
 		1AC61C371A99537D0094DDDE /* DanaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */; };
-		1AC61DBA1A995D290094DDDE /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DB71A995D290094DDDE /* TwitterKit.framework */; };
-		1AC61DBB1A995D290094DDDE /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61DB81A995D290094DDDE /* TwitterKitResources.bundle */; };
-		1AC61DBC1A995D290094DDDE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DB91A995D290094DDDE /* Fabric.framework */; };
 		1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DBF1A995F010094DDDE /* TweetPage.swift */; };
 		1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DC51A99FA570094DDDE /* CheckBox.swift */; };
 		1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */; };
 		1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */; };
-		1AC61DD61A9A50E90094DDDE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD11A9A50E90094DDDE /* Bolts.framework */; };
-		1AC61DD71A9A50E90094DDDE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD21A9A50E90094DDDE /* Parse.framework */; };
-		1AC61DD81A9A50E90094DDDE /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD31A9A50E90094DDDE /* ParseCrashReporting.framework */; };
-		1AC61DD91A9A50E90094DDDE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD41A9A50E90094DDDE /* ParseFacebookUtils.framework */; };
-		1AC61DDA1A9A50E90094DDDE /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DD51A9A50E90094DDDE /* ParseUI.framework */; };
 		1AC61DDC1A9A517A0094DDDE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DDB1A9A517A0094DDDE /* AudioToolbox.framework */; };
 		1AC61DDE1A9A51860094DDDE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DDD1A9A51860094DDDE /* CFNetwork.framework */; };
 		1AC61DE01A9A51910094DDDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DDF1A9A51910094DDDE /* CoreGraphics.framework */; };
@@ -64,8 +63,6 @@
 		1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD743B91AE7D302008618F2 /* CheckLabel.swift */; };
 		1ADF46921AEF8DF1009C0DB8 /* CustomLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */; };
 		1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */; };
-		1AE411001A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */; };
-		1AE411031A9BB56B00D5EE46 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE411021A9BB56B00D5EE46 /* circle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,13 +78,21 @@
 /* Begin PBXFileReference section */
 		1A28D3D71AF27AE00063C564 /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		1A3D031E1AE050560023BEE0 /* LetterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterButton.swift; sourceTree = "<group>"; };
-		1A43DF741B6EABA500C0E64F /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.ttf"; path = "../../../../Downloads/raleway (1)/Raleway-Light.ttf"; sourceTree = "<group>"; };
-		1A43DF751B6EABA500C0E64F /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Medium.ttf"; path = "../../../../Downloads/raleway (1)/Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		1A43DF781B6EAFD300C0E64F /* CustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
-		1A43DF7A1B6EB34700C0E64F /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBold.ttf"; path = "../../../../Downloads/raleway (1)/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bold_Button.swift; sourceTree = "<group>"; };
 		1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bold_Label.swift; sourceTree = "<group>"; };
+		1A46EEEB1BDE5F84004FB02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Colby Ice Cream/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		1A4C2D4E1AD7FBE600A465A8 /* ClickCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickCheck.swift; sourceTree = "<group>"; };
+		1A53FA1B1BDDA0820003C655 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.9.0/Bolts.framework"; sourceTree = "<group>"; };
+		1A53FA1D1BDDA0BC0003C655 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../Downloads/parse-library-1.9.0/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		1A53FA1F1BDDA0DD0003C655 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../Downloads/parse-library-1.9.0/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		1A53FA211BDDA0F90003C655 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../Downloads/parse-library-1.9.0/ParseUI.framework"; sourceTree = "<group>"; };
+		1A53FA221BDDA0F90003C655 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.9.0/Parse.framework"; sourceTree = "<group>"; };
+		1A53FA251BDDA2D20003C655 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		1A53FA261BDDA2D90003C655 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		1A53FA271BDDA2E20003C655 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		1A53FA281BDDB7F30003C655 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		1A53FA291BDDB7F30003C655 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		1A8C85971AEAA4F60055173B /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		1A8C85991AEAB0DD0055173B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1A8C859B1AEAB0ED0055173B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -111,18 +116,10 @@
 		1AC61C2B1A9933B00094DDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC61C2C1A9933B00094DDDE /* Colby_Ice_CreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colby_Ice_CreamTests.swift; sourceTree = "<group>"; };
 		1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DanaPickerViewController.swift; sourceTree = "<group>"; };
-		1AC61DB71A995D290094DDDE /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		1AC61DB81A995D290094DDDE /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		1AC61DB91A995D290094DDDE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		1AC61DBF1A995F010094DDDE /* TweetPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetPage.swift; sourceTree = "<group>"; };
 		1AC61DC51A99FA570094DDDE /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit_SetDiningHall.swift; sourceTree = "<group>"; };
 		1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit_Flavors.swift; sourceTree = "<group>"; };
-		1AC61DD11A9A50E90094DDDE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.6.3/Bolts.framework"; sourceTree = "<group>"; };
-		1AC61DD21A9A50E90094DDDE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.6.3/Parse.framework"; sourceTree = "<group>"; };
-		1AC61DD31A9A50E90094DDDE /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../Downloads/parse-library-1.6.3/ParseCrashReporting.framework"; sourceTree = "<group>"; };
-		1AC61DD41A9A50E90094DDDE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/parse-library-1.6.3/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
-		1AC61DD51A9A50E90094DDDE /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../Downloads/parse-library-1.6.3/ParseUI.framework"; sourceTree = "<group>"; };
 		1AC61DDB1A9A517A0094DDDE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1AC61DDD1A9A51860094DDDE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1AC61DDF1A9A51910094DDDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -141,8 +138,6 @@
 		1AD743B91AE7D302008618F2 /* CheckLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckLabel.swift; sourceTree = "<group>"; };
 		1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogInViewController.swift; sourceTree = "<group>"; };
 		1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignUpViewController.swift; sourceTree = "<group>"; };
-		1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vacaciones-font-ffp-defharo.otf"; path = "../../../../Downloads/vacaciones_outline/Vacaciones-font-ffp-defharo.otf"; sourceTree = "<group>"; };
-		1AE411021A9BB56B00D5EE46 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../Downloads/circle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +145,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A53FA2A1BDDB7F30003C655 /* Fabric.framework in Frameworks */,
+				1A53FA2B1BDDB7F30003C655 /* TwitterKit.framework in Frameworks */,
+				1A53FA231BDDA0F90003C655 /* ParseUI.framework in Frameworks */,
+				1A53FA241BDDA0F90003C655 /* Parse.framework in Frameworks */,
+				1A53FA201BDDA0DD0003C655 /* ParseFacebookUtils.framework in Frameworks */,
+				1A53FA1E1BDDA0BC0003C655 /* ParseCrashReporting.framework in Frameworks */,
+				1A53FA1C1BDDA0820003C655 /* Bolts.framework in Frameworks */,
 				1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */,
 				1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */,
 				1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */,
@@ -163,13 +165,6 @@
 				1AC61DE01A9A51910094DDDE /* CoreGraphics.framework in Frameworks */,
 				1AC61DDE1A9A51860094DDDE /* CFNetwork.framework in Frameworks */,
 				1AC61DDC1A9A517A0094DDDE /* AudioToolbox.framework in Frameworks */,
-				1AC61DD61A9A50E90094DDDE /* Bolts.framework in Frameworks */,
-				1AC61DD81A9A50E90094DDDE /* ParseCrashReporting.framework in Frameworks */,
-				1AC61DDA1A9A50E90094DDDE /* ParseUI.framework in Frameworks */,
-				1AC61DD91A9A50E90094DDDE /* ParseFacebookUtils.framework in Frameworks */,
-				1AC61DBA1A995D290094DDDE /* TwitterKit.framework in Frameworks */,
-				1AC61DD71A9A50E90094DDDE /* Parse.framework in Frameworks */,
-				1AC61DBC1A995D290094DDDE /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +189,7 @@
 		1AC61C081A9933B00094DDDE = {
 			isa = PBXGroup;
 			children = (
+				1A46EEEA1BDE5F84004FB02E /* Main.storyboard */,
 				1AC61DD01A9A50C80094DDDE /* Frameworks */,
 				1AC61C131A9933B00094DDDE /* Colby Ice Cream */,
 				1AC61C291A9933B00094DDDE /* Colby Ice CreamTests */,
@@ -244,11 +240,9 @@
 		1AC61C141A9933B00094DDDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1A43DF7A1B6EB34700C0E64F /* Raleway-SemiBold.ttf */,
-				1A43DF751B6EABA500C0E64F /* Raleway-Medium.ttf */,
-				1A43DF741B6EABA500C0E64F /* Raleway-Light.ttf */,
-				1AE411021A9BB56B00D5EE46 /* circle.png */,
-				1AE410FE1A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf */,
+				1A53FA251BDDA2D20003C655 /* Raleway-Medium.ttf */,
+				1A53FA261BDDA2D90003C655 /* Raleway-SemiBold.ttf */,
+				1A53FA271BDDA2E20003C655 /* Raleway-Light.ttf */,
 				1AC61C151A9933B00094DDDE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -290,6 +284,13 @@
 		1AC61DD01A9A50C80094DDDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A53FA281BDDB7F30003C655 /* Fabric.framework */,
+				1A53FA291BDDB7F30003C655 /* TwitterKit.framework */,
+				1A53FA211BDDA0F90003C655 /* ParseUI.framework */,
+				1A53FA221BDDA0F90003C655 /* Parse.framework */,
+				1A53FA1F1BDDA0DD0003C655 /* ParseFacebookUtils.framework */,
+				1A53FA1D1BDDA0BC0003C655 /* ParseCrashReporting.framework */,
+				1A53FA1B1BDDA0820003C655 /* Bolts.framework */,
 				1A8C859B1AEAB0ED0055173B /* Social.framework */,
 				1A8C85991AEAB0DD0055173B /* Accounts.framework */,
 				1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */,
@@ -303,14 +304,6 @@
 				1AC61DDF1A9A51910094DDDE /* CoreGraphics.framework */,
 				1AC61DDD1A9A51860094DDDE /* CFNetwork.framework */,
 				1AC61DDB1A9A517A0094DDDE /* AudioToolbox.framework */,
-				1AC61DD11A9A50E90094DDDE /* Bolts.framework */,
-				1AC61DD21A9A50E90094DDDE /* Parse.framework */,
-				1AC61DD31A9A50E90094DDDE /* ParseCrashReporting.framework */,
-				1AC61DD41A9A50E90094DDDE /* ParseFacebookUtils.framework */,
-				1AC61DD51A9A50E90094DDDE /* ParseUI.framework */,
-				1AC61DB91A995D290094DDDE /* Fabric.framework */,
-				1AC61DB81A995D290094DDDE /* TwitterKitResources.bundle */,
-				1AC61DB71A995D290094DDDE /* TwitterKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -423,13 +416,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A43DF7B1B6EB34700C0E64F /* Raleway-SemiBold.ttf in Resources */,
-				1AC61DBB1A995D290094DDDE /* TwitterKitResources.bundle in Resources */,
-				1A43DF771B6EABA600C0E64F /* Raleway-Medium.ttf in Resources */,
-				1AE411001A9BAA4100D5EE46 /* Vacaciones-font-ffp-defharo.otf in Resources */,
+				1A46EEED1BDE5F92004FB02E /* Raleway-Medium.ttf in Resources */,
+				1A46EEEE1BDE5F92004FB02E /* Raleway-SemiBold.ttf in Resources */,
+				1A46EEEF1BDE5F92004FB02E /* Raleway-Light.ttf in Resources */,
 				1AC61C1C1A9933B00094DDDE /* Main.storyboard in Resources */,
-				1A43DF761B6EABA600C0E64F /* Raleway-Light.ttf in Resources */,
-				1AE411031A9BB56B00D5EE46 /* circle.png in Resources */,
 				1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */,
 				1AC61C1E1A9933B00094DDDE /* Images.xcassets in Resources */,
 			);
@@ -516,6 +506,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1A46EEEA1BDE5F84004FB02E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A46EEEB1BDE5F84004FB02E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		1AC61C1A1A9933B00094DDDE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -624,6 +622,7 @@
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
 					"$(PROJECT_DIR)",
 					"/Users/dhvogel/Downloads/parse-library-1.6.3",
+					"/Users/dhvogel/Downloads/parse-library-1.9.0",
 				);
 				INFOPLIST_FILE = "Colby Ice Cream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -633,6 +632,7 @@
 				);
 				PRODUCT_NAME = "Colby Ice Cream";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -651,6 +651,7 @@
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
 					"$(PROJECT_DIR)",
 					"/Users/dhvogel/Downloads/parse-library-1.6.3",
+					"/Users/dhvogel/Downloads/parse-library-1.9.0",
 				);
 				INFOPLIST_FILE = "Colby Ice Cream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -660,6 +661,7 @@
 				);
 				PRODUCT_NAME = "Colby Ice Cream";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

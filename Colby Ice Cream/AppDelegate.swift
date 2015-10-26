@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Fabric
-import TwitterKit
 
 
 
@@ -21,11 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        
-        let notificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
-        let settings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
-        application.registerUserNotificationSettings(settings)
         
         Parse.setApplicationId("96gTumILSjh1rxOTT5sWmiWwW992YC7jwIpEgiJt",
             clientKey: "qjIme7cY6Eq2ULooghd2DlAzWj5YCVCYcRVhRucc")

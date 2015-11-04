@@ -107,7 +107,7 @@ class Submit_Flavors: UIViewController {
         
         if (isNull == false) {
             
-            var FName: String! = PFUser.currentUser().valueForKey("first_name") as! String
+            var FName: String! = PFUser.currentUser()!.valueForKey("first_name") as! String
             
             var msg = "You submitted "
             msg = msg + flavors[0] + ", "
@@ -129,10 +129,10 @@ class Submit_Flavors: UIViewController {
             loadingSpinner.center = CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)
             loadingSpinner.startAnimating()
             self.view.addSubview(loadingSpinner)
-
+            
             
             ICSubmission.saveInBackgroundWithBlock{
-                (success: Bool, error: NSError!) -> Void in
+                (success, error) -> Void in
                 
                 if success == true {
                     let alertController = UIAlertController(title:"Thanks, " + FName + "!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)

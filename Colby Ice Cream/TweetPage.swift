@@ -7,18 +7,4 @@
 //
 
 import UIKit
-import TwitterKit
 
-
-class TweetPage: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let authenticateButton = DGTAuthenticateButton(authenticationCompletion: {
-            (session: DGTSession!, error: NSError!) in
-            // play with Digits session
-        })
-        authenticateButton.center = self.view.center
-        self.view.addSubview(authenticateButton)
-    }
-}

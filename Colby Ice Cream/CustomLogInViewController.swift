@@ -8,6 +8,8 @@
 
 import UIKit
 import Parse
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 class CustomLogInViewController: UIViewController {
 
@@ -39,12 +41,14 @@ class CustomLogInViewController: UIViewController {
         self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         
         view.addSubview(self.actInd)
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        if ((PFUser.currentUser().username) != nil) {
+        if ((PFUser.currentUser()!.username) != nil) {
             self.performSegueWithIdentifier("loggedIn", sender: nil)
         }
         
@@ -108,6 +112,7 @@ class CustomLogInViewController: UIViewController {
         self.performSegueWithIdentifier("signUp", sender: self)
         
     }
+    
     
 
 }

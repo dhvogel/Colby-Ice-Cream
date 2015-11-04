@@ -16,13 +16,7 @@
 		1A46EEEE1BDE5F92004FB02E /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FA261BDDA2D90003C655 /* Raleway-SemiBold.ttf */; };
 		1A46EEEF1BDE5F92004FB02E /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FA271BDDA2E20003C655 /* Raleway-Light.ttf */; };
 		1A4C2D4F1AD7FBE700A465A8 /* ClickCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C2D4E1AD7FBE600A465A8 /* ClickCheck.swift */; };
-		1A53FA1C1BDDA0820003C655 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA1B1BDDA0820003C655 /* Bolts.framework */; };
-		1A53FA1E1BDDA0BC0003C655 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA1D1BDDA0BC0003C655 /* ParseCrashReporting.framework */; };
-		1A53FA201BDDA0DD0003C655 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA1F1BDDA0DD0003C655 /* ParseFacebookUtils.framework */; };
-		1A53FA231BDDA0F90003C655 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA211BDDA0F90003C655 /* ParseUI.framework */; };
-		1A53FA241BDDA0F90003C655 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA221BDDA0F90003C655 /* Parse.framework */; };
-		1A53FA2A1BDDB7F30003C655 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA281BDDB7F30003C655 /* Fabric.framework */; };
-		1A53FA2B1BDDB7F30003C655 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A53FA291BDDB7F30003C655 /* TwitterKit.framework */; };
+		1A6D2B4B1BEAC66C00AFBF39 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D2B4A1BEAC66C00AFBF39 /* Podfile */; };
 		1A8C85981AEAA4F60055173B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C85971AEAA4F60055173B /* loginViewController.swift */; };
 		1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C85991AEAB0DD0055173B /* Accounts.framework */; };
 		1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C859B1AEAB0ED0055173B /* Social.framework */; };
@@ -42,7 +36,6 @@
 		1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61C1F1A9933B00094DDDE /* LaunchScreen.xib */; };
 		1AC61C2D1A9933B00094DDDE /* Colby_Ice_CreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C2C1A9933B00094DDDE /* Colby_Ice_CreamTests.swift */; };
 		1AC61C371A99537D0094DDDE /* DanaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */; };
-		1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DBF1A995F010094DDDE /* TweetPage.swift */; };
 		1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DC51A99FA570094DDDE /* CheckBox.swift */; };
 		1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */; };
 		1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */; };
@@ -63,6 +56,7 @@
 		1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD743B91AE7D302008618F2 /* CheckLabel.swift */; };
 		1ADF46921AEF8DF1009C0DB8 /* CustomLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */; };
 		1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */; };
+		D94E22B387B6CC95B2A24322 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D3E47B13CEC023C46C0B2A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,16 +77,10 @@
 		1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bold_Label.swift; sourceTree = "<group>"; };
 		1A46EEEB1BDE5F84004FB02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Colby Ice Cream/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		1A4C2D4E1AD7FBE600A465A8 /* ClickCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickCheck.swift; sourceTree = "<group>"; };
-		1A53FA1B1BDDA0820003C655 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.9.0/Bolts.framework"; sourceTree = "<group>"; };
-		1A53FA1D1BDDA0BC0003C655 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../Downloads/parse-library-1.9.0/ParseCrashReporting.framework"; sourceTree = "<group>"; };
-		1A53FA1F1BDDA0DD0003C655 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../Downloads/parse-library-1.9.0/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
-		1A53FA211BDDA0F90003C655 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../Downloads/parse-library-1.9.0/ParseUI.framework"; sourceTree = "<group>"; };
-		1A53FA221BDDA0F90003C655 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.9.0/Parse.framework"; sourceTree = "<group>"; };
 		1A53FA251BDDA2D20003C655 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		1A53FA261BDDA2D90003C655 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		1A53FA271BDDA2E20003C655 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
-		1A53FA281BDDB7F30003C655 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		1A53FA291BDDB7F30003C655 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		1A6D2B4A1BEAC66C00AFBF39 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1A8C85971AEAA4F60055173B /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		1A8C85991AEAB0DD0055173B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1A8C859B1AEAB0ED0055173B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -116,7 +104,6 @@
 		1AC61C2B1A9933B00094DDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC61C2C1A9933B00094DDDE /* Colby_Ice_CreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colby_Ice_CreamTests.swift; sourceTree = "<group>"; };
 		1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DanaPickerViewController.swift; sourceTree = "<group>"; };
-		1AC61DBF1A995F010094DDDE /* TweetPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetPage.swift; sourceTree = "<group>"; };
 		1AC61DC51A99FA570094DDDE /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit_SetDiningHall.swift; sourceTree = "<group>"; };
 		1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit_Flavors.swift; sourceTree = "<group>"; };
@@ -138,6 +125,9 @@
 		1AD743B91AE7D302008618F2 /* CheckLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckLabel.swift; sourceTree = "<group>"; };
 		1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogInViewController.swift; sourceTree = "<group>"; };
 		1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignUpViewController.swift; sourceTree = "<group>"; };
+		2849517F869F02C8BB69E727 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6B448DF98FD91FF429EB4940 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C6D3E47B13CEC023C46C0B2A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,13 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A53FA2A1BDDB7F30003C655 /* Fabric.framework in Frameworks */,
-				1A53FA2B1BDDB7F30003C655 /* TwitterKit.framework in Frameworks */,
-				1A53FA231BDDA0F90003C655 /* ParseUI.framework in Frameworks */,
-				1A53FA241BDDA0F90003C655 /* Parse.framework in Frameworks */,
-				1A53FA201BDDA0DD0003C655 /* ParseFacebookUtils.framework in Frameworks */,
-				1A53FA1E1BDDA0BC0003C655 /* ParseCrashReporting.framework in Frameworks */,
-				1A53FA1C1BDDA0820003C655 /* Bolts.framework in Frameworks */,
 				1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */,
 				1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */,
 				1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */,
@@ -165,6 +148,7 @@
 				1AC61DE01A9A51910094DDDE /* CoreGraphics.framework in Frameworks */,
 				1AC61DDE1A9A51860094DDDE /* CFNetwork.framework in Frameworks */,
 				1AC61DDC1A9A517A0094DDDE /* AudioToolbox.framework in Frameworks */,
+				D94E22B387B6CC95B2A24322 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +173,13 @@
 		1AC61C081A9933B00094DDDE = {
 			isa = PBXGroup;
 			children = (
+				1A6D2B4A1BEAC66C00AFBF39 /* Podfile */,
 				1A46EEEA1BDE5F84004FB02E /* Main.storyboard */,
 				1AC61DD01A9A50C80094DDDE /* Frameworks */,
 				1AC61C131A9933B00094DDDE /* Colby Ice Cream */,
 				1AC61C291A9933B00094DDDE /* Colby Ice CreamTests */,
 				1AC61C121A9933B00094DDDE /* Products */,
+				ACA01FB399F6296BB557E802 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,7 +208,6 @@
 				1AC61C1F1A9933B00094DDDE /* LaunchScreen.xib */,
 				1AC61C141A9933B00094DDDE /* Supporting Files */,
 				1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */,
-				1AC61DBF1A995F010094DDDE /* TweetPage.swift */,
 				1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */,
 				1A43DF781B6EAFD300C0E64F /* CustomFont.swift */,
 				1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */,
@@ -284,13 +269,6 @@
 		1AC61DD01A9A50C80094DDDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A53FA281BDDB7F30003C655 /* Fabric.framework */,
-				1A53FA291BDDB7F30003C655 /* TwitterKit.framework */,
-				1A53FA211BDDA0F90003C655 /* ParseUI.framework */,
-				1A53FA221BDDA0F90003C655 /* Parse.framework */,
-				1A53FA1F1BDDA0DD0003C655 /* ParseFacebookUtils.framework */,
-				1A53FA1D1BDDA0BC0003C655 /* ParseCrashReporting.framework */,
-				1A53FA1B1BDDA0820003C655 /* Bolts.framework */,
 				1A8C859B1AEAB0ED0055173B /* Social.framework */,
 				1A8C85991AEAB0DD0055173B /* Accounts.framework */,
 				1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */,
@@ -304,6 +282,7 @@
 				1AC61DDF1A9A51910094DDDE /* CoreGraphics.framework */,
 				1AC61DDD1A9A51860094DDDE /* CFNetwork.framework */,
 				1AC61DDB1A9A517A0094DDDE /* AudioToolbox.framework */,
+				C6D3E47B13CEC023C46C0B2A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -334,6 +313,15 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		ACA01FB399F6296BB557E802 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2849517F869F02C8BB69E727 /* Pods.debug.xcconfig */,
+				6B448DF98FD91FF429EB4940 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,10 +329,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AC61C301A9933B00094DDDE /* Build configuration list for PBXNativeTarget "Colby Ice Cream" */;
 			buildPhases = (
+				9B3382A68A331BD1BDA7626E /* Check Pods Manifest.lock */,
 				1AC61C0D1A9933B00094DDDE /* Sources */,
 				1AC61C0E1A9933B00094DDDE /* Frameworks */,
 				1AC61C0F1A9933B00094DDDE /* Resources */,
 				1AC61DB61A995CA40094DDDE /* ShellScript */,
+				1255B6BE0378D35487F8898D /* Embed Pods Frameworks */,
+				EC8F9E64F01F525AA54276FD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,6 +412,7 @@
 				1A46EEEF1BDE5F92004FB02E /* Raleway-Light.ttf in Resources */,
 				1AC61C1C1A9933B00094DDDE /* Main.storyboard in Resources */,
 				1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */,
+				1A6D2B4B1BEAC66C00AFBF39 /* Podfile in Resources */,
 				1AC61C1E1A9933B00094DDDE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +427,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1255B6BE0378D35487F8898D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1AC61DB61A995CA40094DDDE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +455,36 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 9e094555545abc4b0cb4cf4377b9df0705b32ffe 949cf0a9de1ea86c8fcbe72f8839865dff930e21055df1a9667a3fdfcbefaf5c\n";
 		};
+		9B3382A68A331BD1BDA7626E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8F9E64F01F525AA54276FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -455,7 +492,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC61DC01A995F010094DDDE /* TweetPage.swift in Sources */,
 				1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */,
 				1ACF7D791B86C69A002D202B /* BorderedButton.swift in Sources */,
 				1ABE7E271B84116E00AD9DFA /* CheckViewController.swift in Sources */,
@@ -612,18 +648,21 @@
 		};
 		1AC61C311A9933B00094DDDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2849517F869F02C8BB69E727 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
+					/Users/dhvogel/Documents/FacebookSDK,
+					"/Users/dhvogel/Downloads/parse-library-1.9.0",
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
 					"$(PROJECT_DIR)",
-					"/Users/dhvogel/Downloads/parse-library-1.6.3",
-					"/Users/dhvogel/Downloads/parse-library-1.9.0",
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Colby Ice Cream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -641,18 +680,21 @@
 		};
 		1AC61C321A9933B00094DDDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B448DF98FD91FF429EB4940 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
+					/Users/dhvogel/Documents/FacebookSDK,
+					"/Users/dhvogel/Downloads/parse-library-1.9.0",
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
 					"$(PROJECT_DIR)",
-					"/Users/dhvogel/Downloads/parse-library-1.6.3",
-					"/Users/dhvogel/Downloads/parse-library-1.9.0",
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Colby Ice Cream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

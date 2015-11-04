@@ -33,8 +33,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        if (PFUser.currentUser().username != nil) {
-            var FName: String! = PFUser.currentUser().valueForKey("first_name") as! String
+        if (PFUser.currentUser()!.username != nil) {
+            var FName: String! = PFUser.currentUser()!.valueForKey("first_name") as! String
             self.NameLabel.text = "Hi, " + FName + "!"
         }
         

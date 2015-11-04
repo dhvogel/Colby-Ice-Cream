@@ -10,6 +10,7 @@ import Foundation
 import Parse
 import ParseUI
 
+
 class loginViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
     
     var logInViewController: PFLogInViewController! = PFLogInViewController()
@@ -23,9 +24,7 @@ class loginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        
-        
-        
+       
         
         
     }
@@ -97,6 +96,9 @@ class loginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
         PFUser.logOut()
     }
     
+    //Mark: - Facebook Login
+    
+
     
     
     /*

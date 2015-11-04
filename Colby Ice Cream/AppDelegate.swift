@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FBSDKCoreKit
 
 
 
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.setApplicationId("96gTumILSjh1rxOTT5sWmiWwW992YC7jwIpEgiJt",
             clientKey: "qjIme7cY6Eq2ULooghd2DlAzWj5YCVCYcRVhRucc")
-        PFUser.enableAutomaticUser()
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
         var defaultACL = PFACL()
         // If you would like all objects to be private by default, remove this line.
@@ -34,9 +34,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
         pageControl.backgroundColor = UIColor.whiteColor()
         
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
 
         return true
     }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
+//    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+//        return FBSDKApplicationDelegate.
+//    }
+    
     
 
     func applicationWillResignActive(application: UIApplication) {
@@ -54,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {

@@ -102,8 +102,8 @@ class CustomSignUpViewController: UIViewController, UITextFieldDelegate {
             newUser.username = username.lowercaseString
             newUser.password = password
             newUser.email = email
-            newUser["first_name"] = FName
-            newUser["last_name"] = LName
+            newUser.setValue(FName,forKey:"first_name")
+            newUser.setValue(LName,forKey:"last_name")
             
             
             newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in

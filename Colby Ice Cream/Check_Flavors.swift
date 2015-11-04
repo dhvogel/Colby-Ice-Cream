@@ -127,19 +127,16 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
     }
     
     func getFlavorsfromObject(obj: PFObject!, hall:String) -> Void {
-        let Flavor_1:String! = obj["Flavor1"] as! String
-        
-        let Flavor_2:String! = obj["Flavor2"] as! String
-        
-        let Flavor_3:String! = obj["Flavor3"] as! String
-        
-        let Flavor_4:String! = obj["Flavor4"] as! String
+        let Flavor_1:String! = obj.objectForKey("Flavor1") as! String
+        let Flavor_2:String! = obj.objectForKey("Flavor2") as! String
+        let Flavor_3:String! = obj.objectForKey("Flavor3") as! String
+        let Flavor_4:String! = obj.objectForKey("Flavor4") as! String
         
         var name: String!
-        let FName: String! = obj["submitted_FName"] as! String
+        let FName: String! = obj.objectForKey("submitted_FName") as! String
         //name = FName + " " + LName[0]
         
-        var dateUpdated = obj.updatedAt as NSDate
+        var dateUpdated = obj.objectForKey("updatedAt") as! NSDate
         var dateFormat = NSDateFormatter()
         dateFormat.dateFormat = "MMM d, h:mm a"
         let Time_Label: String = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String

@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F7FBCAD62D8438ACF7EE330B067734CDE7FC3DE2</key>
-		<string>https://github.com/dhvogel/IOS_App.git</string>
+		<string>ssh://github.com/dhvogel/IOS_App.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Colby Ice Cream.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/dhvogel/IOS_App.git</string>
+	<string>ssh://github.com/dhvogel/IOS_App.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

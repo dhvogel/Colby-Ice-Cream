@@ -136,10 +136,12 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         let FName: String! = obj.objectForKey("submitted_FName") as! String
         //name = FName + " " + LName[0]
         
-        var dateUpdated = obj.objectForKey("updatedAt") as! NSDate
+        var dateUpdated = obj.updatedAt as NSDate!
+        println(dateUpdated)
+        println(Flavor_1)
         var dateFormat = NSDateFormatter()
         dateFormat.dateFormat = "MMM d, h:mm a"
-        let Time_Label: String = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String
+        let Time_Label: String? = (NSString(format: "%@", dateFormat.stringFromDate(dateUpdated!)) as? String)
     
         var finArray: [String!] = [Flavor_1, Flavor_2, Flavor_3, Flavor_4, FName, Time_Label]
     

@@ -8,6 +8,7 @@
 
 import Foundation
 import Parse
+import FBSDKCoreKit
 
 class ViewController: UIViewController {
     
@@ -32,11 +33,21 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+
+        self.NameLabel.text = "Fetching name..."
         
-        if (PFUser.currentUser()!.username != nil) {
-            let FName: String! = PFUser.currentUser()!.valueForKey("first_name") as! String
-            self.NameLabel.text = "Hi, " + FName + "!"
-        }
+        let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"first_name"])
+        graphRequest.startWithCompletionHandler({(connection, result, error) -> Void in
+            if ((error) != nil) {
+                print("Could not retrieve name")
+            }
+            else {
+                print(result)
+                print(result.valueForKey("first_name"))
+                let FName:String! = result.valueForKey("first_name") as? String
+                self.NameLabel.text = "Hi, " + FName + "!"
+            }
+        })
         
     }
 

@@ -89,7 +89,7 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
             
             self.actInd.startAnimating()
             
-            let permissions:[String]? = ["user_about_me"]
+            let permissions:[String]? = ["public_profile", "user_photos"]
             
             PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions, block: { (user: PFUser?, error: NSError?) -> Void in
                 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
     
@@ -115,7 +116,7 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         var startVC = self.viewControllerAtIndex(0) as CheckViewController
         var viewControllers = NSArray(object: startVC)
         
-        self.pageViewController.setViewControllers(viewControllers as [AnyObject], direction: .Forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
         
         self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height - 60)
         
@@ -136,14 +137,14 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         let FName: String! = obj.objectForKey("submitted_FName") as! String
         //name = FName + " " + LName[0]
         
-        var dateUpdated = obj.updatedAt as NSDate!
-        println(dateUpdated)
-        println(Flavor_1)
-        var dateFormat = NSDateFormatter()
+        let dateUpdated = obj.updatedAt as NSDate!
+        print(dateUpdated)
+        print(Flavor_1)
+        let dateFormat = NSDateFormatter()
         dateFormat.dateFormat = "MMM d, h:mm a"
-        let Time_Label: String? = (NSString(format: "%@", dateFormat.stringFromDate(dateUpdated!)) as? String)
+        let Time_Label: String? = (NSString(format: "%@", dateFormat.stringFromDate(dateUpdated!)) as String)
     
-        var finArray: [String!] = [Flavor_1, Flavor_2, Flavor_3, Flavor_4, FName, Time_Label]
+        let finArray: [String!] = [Flavor_1, Flavor_2, Flavor_3, Flavor_4, FName, Time_Label]
     
         if (hall=="Foss") {
             self.Foss_Flavors = finArray
@@ -166,7 +167,7 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         var startVC = self.viewControllerAtIndex(0) as CheckViewController
         var viewControllers = NSArray(object: startVC)
         
-        self.pageViewController.setViewControllers(viewControllers as [AnyObject], direction: .Forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as! [UIViewController] as [UIViewController]?, direction: .Forward, animated: true, completion: nil)
     }
     
     func viewControllerAtIndex(index: Int) -> CheckViewController
@@ -175,7 +176,7 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
             return CheckViewController()
         }
         
-        var vc: CheckViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CheckViewController") as! CheckViewController
+        let vc: CheckViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CheckViewController") as! CheckViewController
         
         vc.flavors = self.pageFlavors[index] as! [String!]
         vc.titleText = self.pageTitles[index] as! String
@@ -192,7 +193,7 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
     {
         
-        var vc = viewController as! CheckViewController
+        let vc = viewController as! CheckViewController
         var index = vc.pageIndex as Int
         
         
@@ -209,7 +210,7 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
-        var vc = viewController as! CheckViewController
+        let vc = viewController as! CheckViewController
         var index = vc.pageIndex as Int
         
         if (index == NSNotFound)

@@ -10,7 +10,7 @@ import UIKit
 
 class FinalFlavor: UIButton {
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setValue(UIFont(name: "Raleway-Light", size:15), forKey: "font")
         self.layer.borderWidth = 1
@@ -35,7 +35,7 @@ class FinalFlavor: UIButton {
             self.layer.borderColor = UIColor.blackColor().CGColor
             self.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
             self.setValue(UIFont(name: "Raleway-Light", size: 15), forKey: "font")
-            let idx = find(flavors, self.titleLabel!.text!)
+            let idx = flavors.indexOf((self.titleLabel!.text!))
             if (idx != nil) {
                 flavors[idx!] = "nothing"
             }

@@ -10,7 +10,7 @@ import UIKit
 
 class CustomFontTextView: UITextView {
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setValue(UIFont(name: "Raleway-Light", size:15), forKey: "font")
     }

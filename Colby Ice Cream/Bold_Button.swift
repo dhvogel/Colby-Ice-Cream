@@ -10,7 +10,7 @@ import UIKit
 
 class Bold_Button: UIButton {
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.titleLabel!.font = UIFont(name: "Raleway-SemiBold", size:15)
     }

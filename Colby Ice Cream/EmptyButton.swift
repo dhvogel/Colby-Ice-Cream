@@ -10,7 +10,7 @@ import UIKit
 
 class EmptyButton: UIButton {
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 5

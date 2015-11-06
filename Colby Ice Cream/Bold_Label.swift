@@ -10,7 +10,7 @@ import UIKit
 
 class Bold_Label: UILabel {
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setValue(UIFont(name: "Raleway-SemiBold", size:15), forKey: "font")
     }

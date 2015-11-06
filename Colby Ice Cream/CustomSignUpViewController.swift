@@ -60,36 +60,36 @@ class CustomSignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func signUpAction(sender: AnyObject) {
         
-        var username = self.UsernameField.text
-        var password = self.PasswordField.text
-        var ReTypepassword = self.ReTypePasswordField.text
-        var email = self.EmailField.text
-        var FName = self.FirstNameField.text
-        var LName = self.LastNameField.text
+        let username = self.UsernameField.text
+        let password = self.PasswordField.text
+        let ReTypepassword = self.ReTypePasswordField.text
+        let email = self.EmailField.text
+        let FName = self.FirstNameField.text
+        let LName = self.LastNameField.text
         
         
-        if (count(username.utf16) < 4) {
-            var alert = UIAlertView(title: "Invalid", message: "Username must be more than 4 characters", delegate: self, cancelButtonTitle: "OK")
+        if (username!.utf16.count < 4) {
+            let alert = UIAlertView(title: "Invalid", message: "Username must be more than 4 characters", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
-        else if(count(password.utf16) < 5 || count(password.utf16) > 20) {
-            var alert = UIAlertView(title: "Invalid", message: "Password must be between 5 and 20 characters", delegate: self, cancelButtonTitle: "OK")
+        else if(password!.utf16.count < 5 || password!.utf16.count > 20) {
+            let alert = UIAlertView(title: "Invalid", message: "Password must be between 5 and 20 characters", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
-        else if (count(email.utf16) < 11 || suffix(email, 10) != "@colby.edu") {
-            var alert = UIAlertView(title: "Invalid", message: "Please enter valid Colby email (ending in @colby.edu)", delegate: self, cancelButtonTitle: "OK")
+        else if (email!.utf16.count < 11 || String(email!.characters.suffix(10)) != "@colby.edu") {
+            let alert = UIAlertView(title: "Invalid", message: "Please enter valid Colby email (ending in @colby.edu)", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
-        else if (count(FName.utf16) < 1) {
-            var alert = UIAlertView(title: "Invalid", message: "Please enter valid first name", delegate: self, cancelButtonTitle: "OK")
+        else if (FName!.utf16.count < 1) {
+            let alert = UIAlertView(title: "Invalid", message: "Please enter valid first name", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
-        else if (count(LName.utf16) < 1) {
-            var alert = UIAlertView(title: "Invalid", message: "Please enter valid last name", delegate: self, cancelButtonTitle: "OK")
+        else if (LName!.utf16.count < 1) {
+            let alert = UIAlertView(title: "Invalid", message: "Please enter valid last name", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
         else if (password != ReTypepassword) {
-            var alert = UIAlertView(title: "Invalid", message: "Re-typed password does not match password", delegate: self, cancelButtonTitle: "OK")
+            let alert = UIAlertView(title: "Invalid", message: "Re-typed password does not match password", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
             
@@ -98,8 +98,8 @@ class CustomSignUpViewController: UIViewController, UITextFieldDelegate {
             
             self.actInd.startAnimating()
             
-            var newUser = PFUser()
-            newUser.username = username.lowercaseString
+            let newUser = PFUser()
+            newUser.username = username!.lowercaseString
             newUser.password = password
             newUser.email = email
             newUser.setValue(FName,forKey:"first_name")
@@ -112,13 +112,13 @@ class CustomSignUpViewController: UIViewController, UITextFieldDelegate {
                 
                 if((error) != nil) {
                     
-                    var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                     
                 }
                 else {
                     
-                    var alert = UIAlertView(title: "Success", message: "Signed Up!", delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertView(title: "Success", message: "Signed Up!", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                     
                     self.performSegueWithIdentifier("justSignedUp", sender: nil)

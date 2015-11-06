@@ -23,7 +23,7 @@ class CheckBox: UIButton {
             }
             else{
                 self.setImage(unCheckedImage, forState: .Normal)
-                let idx = find(flavors, self.titleForState(.Normal)!)
+                let idx = flavors.indexOf((self.titleForState(.Normal)!))
                 if (idx != nil) {
                     flavors.removeAtIndex(idx!)
                 }

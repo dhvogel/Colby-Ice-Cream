@@ -11,7 +11,7 @@ import UIKit
 
 class ClickCheck: UIButton {
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setValue(UIFont(name: "Raleway-Light", size: 15), forKey: "font")
     }
@@ -55,7 +55,7 @@ class ClickCheck: UIButton {
                 self.setValue(UIFont(name: "Raleway-Light", size: 15), forKey: "font")
                 self.layer.cornerRadius = 5
                 self.layer.borderWidth = 1
-                let idx = find(flavors, self.titleForState(.Normal)!)
+                let idx = flavors.indexOf((self.titleForState(.Normal)!))
                 if (idx != nil) {
                     flavors[idx!] = "nothing"
                 }
@@ -75,7 +75,7 @@ class ClickCheck: UIButton {
     
     override func awakeFromNib() {
         self.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
-        if contains(flavors,self.titleForState(.Normal)!) {
+        if flavors.contains((self.titleForState(.Normal)!)) {
             reset = true
             isChecked = true
             reset = false

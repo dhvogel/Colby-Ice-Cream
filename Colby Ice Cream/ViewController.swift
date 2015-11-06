@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if (PFUser.currentUser()!.username != nil) {
-            var FName: String! = PFUser.currentUser()!.valueForKey("first_name") as! String
+            let FName: String! = PFUser.currentUser()!.valueForKey("first_name") as! String
             self.NameLabel.text = "Hi, " + FName + "!"
         }
         

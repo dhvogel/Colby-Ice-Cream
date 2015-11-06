@@ -10,7 +10,7 @@ import UIKit
 
 class MenuButton: UIButton {
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setValue(UIFont(name: "Raleway-Medium", size: 15), forKey: "font")
         self.backgroundColor = UIColor.clearColor()

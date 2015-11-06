@@ -12,6 +12,8 @@
 		1A43DF791B6EAFD300C0E64F /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF781B6EAFD300C0E64F /* CustomFont.swift */; };
 		1A43DF7D1B6EB46100C0E64F /* Bold_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */; };
 		1A43DF7F1B6EB5FC00C0E64F /* Bold_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */; };
+		1A4592F91BEBEF5800CB5197 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4592F81BEBEF5800CB5197 /* libsqlite3.tbd */; };
+		1A4592FB1BEBEF6D00CB5197 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4592FA1BEBEF6D00CB5197 /* libz.tbd */; };
 		1A46EEED1BDE5F92004FB02E /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FA251BDDA2D20003C655 /* Raleway-Medium.ttf */; };
 		1A46EEEE1BDE5F92004FB02E /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FA261BDDA2D90003C655 /* Raleway-SemiBold.ttf */; };
 		1A46EEEF1BDE5F92004FB02E /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A53FA271BDDA2E20003C655 /* Raleway-Light.ttf */; };
@@ -49,7 +51,6 @@
 		1AC61DEA1A9A51C00094DDDE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DE91A9A51C00094DDDE /* StoreKit.framework */; };
 		1AC61DEC1A9A51D80094DDDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */; };
 		1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DED1A9A51E40094DDDE /* libz.dylib */; };
-		1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */; };
 		1ACF7D791B86C69A002D202B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D781B86C69A002D202B /* BorderedButton.swift */; };
 		1ACF7D7D1B878603002D202B /* CustomFontTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */; };
 		1ACF7D7F1B87869F002D202B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF7D7E1B87869F002D202B /* AboutViewController.swift */; };
@@ -75,6 +76,8 @@
 		1A43DF781B6EAFD300C0E64F /* CustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bold_Button.swift; sourceTree = "<group>"; };
 		1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bold_Label.swift; sourceTree = "<group>"; };
+		1A4592F81BEBEF5800CB5197 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1A4592FA1BEBEF6D00CB5197 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1A46EEEB1BDE5F84004FB02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Colby Ice Cream/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		1A4C2D4E1AD7FBE600A465A8 /* ClickCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickCheck.swift; sourceTree = "<group>"; };
 		1A53FA251BDDA2D20003C655 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
@@ -117,7 +120,6 @@
 		1AC61DE91A9A51C00094DDDE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1AC61DED1A9A51E40094DDDE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colby Ice Cream-Bridging-Header.h"; sourceTree = "<group>"; };
 		1ACF7D781B86C69A002D202B /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFontTextView.swift; sourceTree = "<group>"; };
@@ -135,9 +137,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4592FB1BEBEF6D00CB5197 /* libz.tbd in Frameworks */,
+				1A4592F91BEBEF5800CB5197 /* libsqlite3.tbd in Frameworks */,
 				1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */,
 				1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */,
-				1AC61DF01A9A51F30094DDDE /* libsqlite3.dylib in Frameworks */,
 				1AC61DEE1A9A51E40094DDDE /* libz.dylib in Frameworks */,
 				1AC61DEC1A9A51D80094DDDE /* SystemConfiguration.framework in Frameworks */,
 				1AC61DEA1A9A51C00094DDDE /* StoreKit.framework in Frameworks */,
@@ -269,9 +272,10 @@
 		1AC61DD01A9A50C80094DDDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A4592FA1BEBEF6D00CB5197 /* libz.tbd */,
+				1A4592F81BEBEF5800CB5197 /* libsqlite3.tbd */,
 				1A8C859B1AEAB0ED0055173B /* Social.framework */,
 				1A8C85991AEAB0DD0055173B /* Accounts.framework */,
-				1AC61DEF1A9A51F30094DDDE /* libsqlite3.dylib */,
 				1AC61DED1A9A51E40094DDDE /* libz.dylib */,
 				1AC61DEB1A9A51D80094DDDE /* SystemConfiguration.framework */,
 				1AC61DE91A9A51C00094DDDE /* StoreKit.framework */,
@@ -370,6 +374,8 @@
 		1AC61C091A9933B00094DDDE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Daniel Vogel";
 				TargetAttributes = {
@@ -657,7 +663,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/dhvogel/Documents/FacebookSDK,
-					"/Users/dhvogel/Downloads/parse-library-1.9.0",
+					"/Users/dhvogel/Documents/parse-library-1.9.0",
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
 					"$(PROJECT_DIR)",
@@ -689,7 +695,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/dhvogel/Documents/FacebookSDK,
-					"/Users/dhvogel/Downloads/parse-library-1.9.0",
+					"/Users/dhvogel/Documents/parse-library-1.9.0",
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/Millennial/SDK",
 					"$(PROJECT_DIR)",

@@ -10,7 +10,7 @@ import UIKit
 
 class LetterButton: UIButton {
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.clipsToBounds = true
         self.layer.cornerRadius = 0.5 * self.bounds.size.width

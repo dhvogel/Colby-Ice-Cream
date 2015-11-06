@@ -10,7 +10,7 @@ import UIKit
 
 class BackButton: UIButton {
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         let backbutton = UIImage(named: "backButton")
         self.clipsToBounds = true

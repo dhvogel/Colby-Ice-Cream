@@ -90,7 +90,7 @@ class Submit_Flavors: UIViewController {
     
     func wordEntered(alert: UIAlertAction!){
         // store the new word
-        self.nameEntered = newWordField.text
+        self.nameEntered = newWordField.text!
     }
     
     
@@ -107,7 +107,7 @@ class Submit_Flavors: UIViewController {
         
         if (isNull == false) {
             
-            var FName: String! = PFUser.currentUser()!.valueForKey("first_name") as! String
+            let FName: String! = PFUser.currentUser()!.valueForKey("first_name") as! String
             
             var msg = "You submitted "
             msg = msg + flavors[0] + ", "
@@ -116,7 +116,7 @@ class Submit_Flavors: UIViewController {
             msg = msg + flavors[3]
             msg = msg + " for " + Hall_Select
             
-            var ICSubmission = PFObject(className:"ICSubmit")
+            let ICSubmission = PFObject(className:"ICSubmit")
             ICSubmission.setObject(Hall_Select, forKey: "DHall")
             ICSubmission.setObject(flavors[0], forKey: "Flavor1")
             ICSubmission.setObject(flavors[1], forKey: "Flavor2")
@@ -125,7 +125,7 @@ class Submit_Flavors: UIViewController {
             ICSubmission.setObject(FName, forKey: "submitted_FName")
             
             
-            var loadingSpinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
+            let loadingSpinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
             loadingSpinner.center = CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)
             loadingSpinner.startAnimating()
             self.view.addSubview(loadingSpinner)

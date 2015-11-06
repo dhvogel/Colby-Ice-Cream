@@ -42,13 +42,13 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         view.addSubview(self.actInd)
         
         if (FBSDKAccessToken.currentAccessToken() == nil) {
-            println("Not logged in")
+            print("Not logged in")
         }
         else {
-            println("Logged in!")
+            print("Logged in!")
         }
         
-        var loginButton = FBSDKLoginButton()
+        let loginButton = FBSDKLoginButton()
         loginButton.readPermissions = ["public_profile", "email", "user_friends"]
         loginButton.center = self.view.center
         loginButton.delegate = self
@@ -87,34 +87,34 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         
-        var username = self.usernameField.text.lowercaseString
-        var password = self.passwordField.text
+        let username = self.usernameField.text!.lowercaseString
+        let password = self.passwordField.text
         
-        if (count(username.utf16) < 4 || count(password.utf16) < 5) {
-            var alert = UIAlertView(title: "Invalid", message: "Please enter valid username and password", delegate: self, cancelButtonTitle: "OK")
+        if (username.utf16.count < 4 || password!.utf16.count < 5) {
+            let alert = UIAlertView(title: "Invalid", message: "Please enter valid username and password", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
         else {
             
             self.actInd.startAnimating()
             
-            var permissions:NSArray = ["user_about_me"]
+            let permissions:[String]? = ["user_about_me"]
             
-            PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions as [AnyObject], block: { (user: PFUser?, error: NSError?) -> Void in
+            PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions, block: { (user: PFUser?, error: NSError?) -> Void in
                 
                 self.actInd.stopAnimating()
                 
                 if ((user) != nil){
-                    var alert = UIAlertView(title: "Success", message: "Logged in", delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertView(title: "Success", message: "Logged in", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                     self.performSegueWithIdentifier("loggedIn", sender: nil)
                 } else if (user!.isNew) {
-                    var alert = UIAlertView(title: "Success", message: "First log in!", delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertView(title: "Success", message: "First log in!", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                     self.performSegueWithIdentifier("loggedIn", sender: nil)
                 }
                 else {
-                    var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                 }
             
@@ -126,7 +126,7 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        println("User logged out")
+        print("User logged out")
     }
     
     @IBAction func SignupAction(sender: AnyObject) {

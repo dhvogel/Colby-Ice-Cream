@@ -57,12 +57,12 @@ class loginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
     
     func logInViewController(logInController: PFLogInViewController!, didLogInUser user: PFUser!) {
         
-        println("yay!")
+        print("yay!")
         
     }
     
     func logInViewController(logInController: PFLogInViewController!, didFailToLogInWithError error: NSError!) {
-        println("failure to login.")
+        print("failure to login.")
     }
     
     //Mark: Parse Sign Up
@@ -73,11 +73,11 @@ class loginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
     }
     
     func signUpViewController(signUpController: PFSignUpViewController!, didFailToSignUpWithError error: NSError!) {
-        println("Failed to signup")
+        print("Failed to signup")
     }
     
     func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController!) {
-        println("User dismissed sign up.")
+        print("User dismissed sign up.")
     }
     
     //Mark: Actions

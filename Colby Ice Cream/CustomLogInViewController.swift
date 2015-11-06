@@ -86,15 +86,6 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     //Mark -- Actions
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        
-        let username = self.usernameField.text!.lowercaseString
-        let password = self.passwordField.text
-        
-        if (username.utf16.count < 4 || password!.utf16.count < 5) {
-            let alert = UIAlertView(title: "Invalid", message: "Please enter valid username and password", delegate: self, cancelButtonTitle: "OK")
-            alert.show()
-        }
-        else {
             
             self.actInd.startAnimating()
             
@@ -121,9 +112,8 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
                 
             })
             
-        }
-        
     }
+    
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User logged out")

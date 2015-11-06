@@ -107,7 +107,8 @@ class Submit_Flavors: UIViewController {
         
         if (isNull == false) {
             
-            let FName: String! = PFUser.currentUser()!.valueForKey("first_name") as! String
+            let name: String! = UserInfo.name
+            let first_name:String! = UserInfo.first_name
             
             var msg = "You submitted "
             msg = msg + flavors[0] + ", "
@@ -122,7 +123,8 @@ class Submit_Flavors: UIViewController {
             ICSubmission.setObject(flavors[1], forKey: "Flavor2")
             ICSubmission.setObject(flavors[2], forKey: "Flavor3")
             ICSubmission.setObject(flavors[3], forKey: "Flavor4")
-            ICSubmission.setObject(FName, forKey: "submitted_FName")
+            ICSubmission.setObject(name, forKey: "submitted_name")
+            ICSubmission.setObject(first_name, forKey: "submitted_FName")
             
             
             let loadingSpinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
@@ -135,7 +137,7 @@ class Submit_Flavors: UIViewController {
                 (success, error) -> Void in
                 
                 if success == true {
-                    let alertController = UIAlertController(title:"Thanks, " + FName + "!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
+                    let alertController = UIAlertController(title:"Thanks, " + first_name + "!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alertController, animated: true, completion: nil)
                 }

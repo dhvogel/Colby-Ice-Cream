@@ -137,8 +137,6 @@ class Check_Flavors: UIViewController, UIPageViewControllerDataSource {
         //name = FName + " " + LName[0]
         
         let dateUpdated = obj.updatedAt as NSDate!
-        print(dateUpdated)
-        print(Flavor_1)
         let dateFormat = NSDateFormatter()
         dateFormat.dateFormat = "MMM d, h:mm a"
         let Time_Label: String? = (NSString(format: "%@", dateFormat.stringFromDate(dateUpdated!)) as String)

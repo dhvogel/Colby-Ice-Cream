@@ -66,27 +66,8 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         if ((PFUser.currentUser()?.username) != nil) {
-            let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"name,first_name"])
-            graphRequest.startWithCompletionHandler({(connection, result, error) -> Void in
-                if ((error) != nil) {
-                    print("Could not get user info")
-                }
-                else {
-                    print(result)
-                    print(result.valueForKey("first_name"))
-                    print(String(result.valueForKey("first_name")))
-                    UserInfo.first_name = (result.valueForKey("first_name") as! String!)
-                    UserInfo.name = (result.valueForKey("name") as! String!)
-                    UserInfo.id = (result.valueForKey("id") as! String!)
-                    //print(UserInfo.email)
-                    //UserInfo.name = (result.valueForKey("name") as? String)!
-                    //UserInfo.first_name = (result.valueForKey("first_name") as? String)!
-                    
-                    self.performSegueWithIdentifier("loggedIn", sender: nil)
-                }
-            })
+            getUserInfo()
         }
- 
     }
 
     override func didReceiveMemoryWarning() {
@@ -111,32 +92,13 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
             
             self.actInd.startAnimating()
             
-            let permissions:[String]? = ["public_profile"]
-            
-            PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions, block: { (user: PFUser?, error: NSError?) -> Void in
-                
+            PFFacebookUtils.logInInBackgroundWithAccessToken(FBSDKAccessToken.currentAccessToken(), block: { (user: PFUser?, error: NSError?) -> Void in
                 self.actInd.stopAnimating()
-                
+                print(error)
                 if ((user) != nil){
                     let alert = UIAlertView(title: "Success", message: "Logged in", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
-                    print("user not nil")
-                    self.performSegueWithIdentifier("loggedIn", sender: nil)
-                } else if (user!.isNew) {
-                    print("user not is new")
-                    let alert = UIAlertView(title: "Success", message: "First log in!", delegate: self, cancelButtonTitle: "OK")
-                    alert.show()
-                    let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"name,first_name"])
-                    graphRequest.startWithCompletionHandler({(connection, result, error) -> Void in
-                        if ((error) != nil) {
-                            print("Could not get user info")
-                        }
-                        else {
-                            print(result)
-                            UserInfo.name = String(result.valueForKey("name"))
-                            UserInfo.first_name = String(result.valueForKey("first_name"))
-                        }
-                    })
+                    self.getUserInfo()
                     self.performSegueWithIdentifier("loggedIn", sender: nil)
                 }
                 else {
@@ -148,8 +110,25 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
             })
             
     }
-    
-    
+
+    func getUserInfo() {
+        let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"name,first_name"])
+        graphRequest.startWithCompletionHandler({(connection, result, error) -> Void in
+            if ((error) != nil) {
+                print("Could not get user info")
+            }
+            else {
+                UserInfo.first_name = (result.valueForKey("first_name") as! String!)
+                UserInfo.name = (result.valueForKey("name") as! String!)
+                UserInfo.id = (result.valueForKey("id") as! String!)
+                
+                self.performSegueWithIdentifier("loggedIn", sender: nil)
+            }
+        })
+
+    }
+
+
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User logged out")
     }

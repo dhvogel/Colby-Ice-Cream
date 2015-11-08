@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        print(UserInfo.first_name)
         var greetingArray:[String] = ["Hola", "Hi", "Howdy", "Aloha", "Mahalo", "Shalom", "Hey", "Yo"]
         let curGreeting = greetingArray[Int(arc4random_uniform(UInt32(greetingArray.count)))]
         self.NameLabel.text = curGreeting + ", " + UserInfo.first_name + "!"

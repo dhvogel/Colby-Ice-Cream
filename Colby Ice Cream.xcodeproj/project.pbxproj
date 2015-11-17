@@ -57,7 +57,7 @@
 		1AD743BA1AE7D302008618F2 /* CheckLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD743B91AE7D302008618F2 /* CheckLabel.swift */; };
 		1ADF46921AEF8DF1009C0DB8 /* CustomLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46911AEF8DF1009C0DB8 /* CustomLogInViewController.swift */; };
 		1ADF46941AEF8E0B009C0DB8 /* CustomSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */; };
-		D94E22B387B6CC95B2A24322 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D3E47B13CEC023C46C0B2A /* libPods.a */; };
+		D40B570F757005D6C0FC0FDA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C5F3583A9A69722EB39E36 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +129,7 @@
 		1ADF46931AEF8E0B009C0DB8 /* CustomSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignUpViewController.swift; sourceTree = "<group>"; };
 		2849517F869F02C8BB69E727 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6B448DF98FD91FF429EB4940 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		C6D3E47B13CEC023C46C0B2A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C5F3583A9A69722EB39E36 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 				1AC61DE01A9A51910094DDDE /* CoreGraphics.framework in Frameworks */,
 				1AC61DDE1A9A51860094DDDE /* CFNetwork.framework in Frameworks */,
 				1AC61DDC1A9A517A0094DDDE /* AudioToolbox.framework in Frameworks */,
-				D94E22B387B6CC95B2A24322 /* libPods.a in Frameworks */,
+				D40B570F757005D6C0FC0FDA /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +286,7 @@
 				1AC61DDF1A9A51910094DDDE /* CoreGraphics.framework */,
 				1AC61DDD1A9A51860094DDDE /* CFNetwork.framework */,
 				1AC61DDB1A9A517A0094DDDE /* AudioToolbox.framework */,
-				C6D3E47B13CEC023C46C0B2A /* libPods.a */,
+				E8C5F3583A9A69722EB39E36 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         sexyLayer.frame = view.frame
         
         self.view.layer.insertSublayer(sexyLayer, atIndex: 0)
+            
         
         
 

@@ -118,6 +118,9 @@ class Submit_Flavors: UIViewController {
             msg = msg + " for " + Hall_Select
             
             let ICSubmission = PFObject(className:"ICSubmit")
+            let postACL = PFACL()
+            postACL.setPublicWriteAccess(false)
+            ICSubmission.ACL = postACL
             ICSubmission.setObject(Hall_Select, forKey: "DHall")
             ICSubmission.setObject(flavors[0], forKey: "Flavor1")
             ICSubmission.setObject(flavors[1], forKey: "Flavor2")

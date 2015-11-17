@@ -94,11 +94,10 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
             
             PFFacebookUtils.logInInBackgroundWithAccessToken(FBSDKAccessToken.currentAccessToken(), block: { (user: PFUser?, error: NSError?) -> Void in
                 self.actInd.stopAnimating()
-                print(error)
                 if ((user) != nil){
-                    let alert = UIAlertView(title: "Success", message: "Logged in", delegate: self, cancelButtonTitle: "OK")
-                    alert.show()
+                    
                     self.getUserInfo()
+                    print(PFUser.currentUser())
                     self.performSegueWithIdentifier("loggedIn", sender: nil)
                 }
                 else {
@@ -108,6 +107,11 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
             
                 
             })
+        
+        
+       
+        
+        
             
     }
 
@@ -118,13 +122,22 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
                 print("Could not get user info")
             }
             else {
-                UserInfo.first_name = (result.valueForKey("first_name") as! String!)
-                UserInfo.name = (result.valueForKey("name") as! String!)
-                UserInfo.id = (result.valueForKey("id") as! String!)
+                let first_name = (result.valueForKey("first_name") as! String!)
+                let name = (result.valueForKey("name") as! String!)
+                let id = (result.valueForKey("id") as! String!)
                 
+                UserInfo.first_name = first_name
+                UserInfo.name = name
+                UserInfo.id = id
+    
+                
+                PFUser.currentUser()?.setObject(name, forKey: "name")
+                PFUser.currentUser()?.saveInBackground()
+
                 self.performSegueWithIdentifier("loggedIn", sender: nil)
             }
         })
+        
 
     }
 

@@ -29,14 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let defaultACL = PFACL()
         // If you would like all objects to be private by default, remove this line.
         defaultACL.setPublicReadAccess(true)
-        defaultACL.setPublicWriteAccess(false)
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
         
         let pageControl = UIPageControl.appearance()
         pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
         pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
         pageControl.backgroundColor = UIColor.whiteColor()
-        
 
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
@@ -77,20 +75,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let query:PFQuery = PFUser.query()!
         query.whereKey("Privilege", equalTo: "Administrator")
         query.whereKey("Added", equalTo: false)
+        let roleQuery:PFQuery = PFRole.query()!
+        roleQuery.whereKey("name", equalTo: "Administrator")
         query.findObjectsInBackgroundWithBlock{(objects, error) -> Void in
             if error == nil {
-                let roleACL = PFACL()
-                roleACL.setPublicReadAccess(true)
-                let role: PFRole = PFRole(name: "Administrator", acl: roleACL)
-                for user in objects! {
-                    print(user)
-                    role.users.addObject(user)
-                    user.setObject(true, forKey: "Added")
-                    user.saveInBackground()
+                roleQuery.getFirstObjectInBackgroundWithBlock{(object, error) -> Void in
+                    if error != nil {
+                        print("ERROR")
+                        print(error)
+                    }
+                    var adminRole:PFRole = object as! PFRole
+                    for user in objects! {
+                        print(user)
+                        adminRole.users.addObject(user)
+                        user.setValue(true, forKey: "Added")
+                        user.saveInBackground()
+                    }
+                    adminRole.saveEventually()
                 }
-                role.saveInBackground()
-                
             }
+                    
             else {
                 print("Error getting objects")
             }

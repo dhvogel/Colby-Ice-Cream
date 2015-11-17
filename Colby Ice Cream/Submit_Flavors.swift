@@ -118,9 +118,7 @@ class Submit_Flavors: UIViewController {
             msg = msg + " for " + Hall_Select
             
             let ICSubmission = PFObject(className:"ICSubmit")
-            let postACL = PFACL()
-            postACL.setPublicWriteAccess(false)
-            ICSubmission.ACL = postACL
+            
             ICSubmission.setObject(Hall_Select, forKey: "DHall")
             ICSubmission.setObject(flavors[0], forKey: "Flavor1")
             ICSubmission.setObject(flavors[1], forKey: "Flavor2")
@@ -145,7 +143,7 @@ class Submit_Flavors: UIViewController {
                     self.presentViewController(alertController, animated: true, completion: nil)
                 }
                 else {
-                    let alertController = UIAlertController(title:"Error", message: "Please select 4 flavors", preferredStyle: UIAlertControllerStyle.Alert)
+                    let alertController = UIAlertController(title:"Error", message: "You must be an administrator to post flavors. Contact dhvogel@colby.edu.", preferredStyle: UIAlertControllerStyle.Alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alertController, animated: true, completion: nil)
                 }

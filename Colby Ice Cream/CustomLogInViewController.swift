@@ -14,6 +14,7 @@ struct UserInfo {
     static var name:String!
     static var first_name:String!
     static var id: String!
+    static var url: NSURL!
 }
 
 class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
@@ -116,23 +117,28 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
 
     func getUserInfo() {
-        let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"name,first_name"])
+        let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"name,first_name, picture.type(normal)"])
         graphRequest.startWithCompletionHandler({(connection, result, error) -> Void in
             if ((error) != nil) {
                 print("Could not get user info")
             }
             else {
+                let picture:NSDictionary = result.valueForKey("picture") as! NSDictionary
+                let data:NSDictionary = picture.valueForKey("data") as! NSDictionary
+                let url = NSURL(string: data.valueForKey("url") as! String!)
                 let first_name = (result.valueForKey("first_name") as! String!)
                 let name = (result.valueForKey("name") as! String!)
                 let id = (result.valueForKey("id") as! String!)
                 
+                
                 UserInfo.first_name = first_name
                 UserInfo.name = name
                 UserInfo.id = id
+                UserInfo.url = url
     
                 
-                PFUser.currentUser()?.setObject(name, forKey: "name")
-                PFUser.currentUser()?.saveInBackground()
+                //PFUser.currentUser()?.setObject(name, forKey: "name")
+                //PFUser.currentUser()?.saveInBackground()
 
                 self.performSegueWithIdentifier("loggedIn", sender: nil)
             }

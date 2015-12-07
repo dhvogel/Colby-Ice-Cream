@@ -35,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
         pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
         pageControl.backgroundColor = UIColor.whiteColor()
+        
+        //getAdmins()
 
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
@@ -84,7 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         print("ERROR")
                         print(error)
                     }
-                    var adminRole:PFRole = object as! PFRole
+                    let adminRole:PFRole = object as! PFRole
                     for user in objects! {
                         print(user)
                         adminRole.users.addObject(user)

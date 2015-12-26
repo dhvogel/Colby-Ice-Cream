@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Colby Ice Cream/ViewController.swift"
-            timestampString = "471215797.040937"
+            timestampString = "471218043.15245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -275,13 +275,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Colby Ice Cream/AppDelegate.swift"
-            timestampString = "469949385.560365"
+            timestampString = "472799538.919092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "application(_:openURL:sourceApplication:annotation:)"
-            landmarkType = "5">
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -355,12 +355,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Colby Ice Cream/AppDelegate.swift"
-            timestampString = "469949385.560365"
+            timestampString = "472799538.919092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "applicationDidBecomeActive(_:)"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "applicationWillTerminate(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

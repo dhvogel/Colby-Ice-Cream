@@ -107,8 +107,8 @@ class Submit_Flavors: UIViewController {
         
         if (isNull == false) {
             
-            let name: String! = UserInfo.name
-            let first_name:String! = UserInfo.first_name
+            let name: String! = "Sodexo"
+            let first_name:String! = "Sodexo"
             
             var msg = "You submitted "
             msg = msg + flavors[0] + ", "

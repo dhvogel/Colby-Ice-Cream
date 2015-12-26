@@ -30,7 +30,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.0.3</string>
+	<string>2.0.8</string>
 	<key>FacebookAppID</key>
 	<string>1642367249338825</string>
 	<key>FacebookDisplayName</key>
@@ -57,26 +57,14 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>akamaihd.net</key>
+			<key>parse.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
-				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
-				<false/>
-			</dict>
-			<key>facebook.com</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
-				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
-				<false/>
-			</dict>
-			<key>fbcdn.net</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
-				<false/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
 			</dict>
 		</dict>
 	</dict>

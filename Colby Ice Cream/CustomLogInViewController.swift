@@ -8,21 +8,13 @@
 
 import UIKit
 import Parse
-import ParseFacebookUtilsV4
 
-struct UserInfo {
-    static var name:String!
-    static var first_name:String!
-    static var id: String!
-    static var url: NSURL!
-}
 
-class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
+class CustomLogInViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var LoginTitle: UILabel!
-    
+    @IBOutlet weak var logInButton: Bold_Button!
     
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
     
@@ -32,7 +24,10 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         super.viewDidLoad()
         
-        self.LoginTitle.setValue(UIFont(name: "Raleway-Light", size:30), forKey: "font")
+        logInButton.layer.borderWidth = 1
+        logInButton.layer.cornerRadius = 5
+        logInButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        logInButton.layer.borderColor = UIColor.whiteColor().CGColor
         
         let sexyLayer:CAGradientLayer
         sexyLayer = colorGen.gradientGenerator("#5FA9FF", hexBottom: "#C29EFF")
@@ -48,32 +43,49 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         view.addSubview(self.actInd)
         
-        if (FBSDKAccessToken.currentAccessToken() == nil) {
-            print("Not logged in")
-        }
-        else {
-            print("Logged in!")
-        }
-        
-        let loginButton = FBSDKLoginButton()
-        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        loginButton.center = self.view.center
-        loginButton.delegate = self
-        self.view.addSubview(loginButton)
-        
-        
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        if ((PFUser.currentUser()?.username) != nil) {
-            getUserInfo()
-        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func loginAction(sender: AnyObject) {
+        
+        let username = self.usernameField.text!.lowercaseString
+        let password = self.passwordField.text
+        
+        if (username.utf16.count < 4 || password!.utf16.count < 5) {
+            let alert = UIAlertView(title: "Invalid", message: "Please enter valid username and password", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+        }
+        else {
+            
+            self.actInd.startAnimating()
+            
+            PFUser.logInWithUsernameInBackground(username, password: password!, block: { (user, error) -> Void in
+                
+                self.actInd.stopAnimating()
+                
+                if ((user) != nil) {
+                    let alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
+                    alert.show()
+                    self.performSegueWithIdentifier("loggedIn", sender: nil)
+                }
+                else {
+                    let alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
+                    alert.show()
+                }
+                
+                
+            })
+            
+        }
+        
     }
     
 
@@ -88,75 +100,6 @@ class CustomLogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     */
     
     //Mark -- Actions
-    
-    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-            
-            self.actInd.startAnimating()
-            
-            PFFacebookUtils.logInInBackgroundWithAccessToken(FBSDKAccessToken.currentAccessToken(), block: { (user: PFUser?, error: NSError?) -> Void in
-                self.actInd.stopAnimating()
-                if ((user) != nil){
-                    
-                    self.getUserInfo()
-                    print(PFUser.currentUser())
-                    self.performSegueWithIdentifier("loggedIn", sender: nil)
-                }
-                else {
-                    let alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
-                    alert.show()
-                }
-            
-                
-            })
-        
-        
-       
-        
-        
-            
-    }
-
-    func getUserInfo() {
-        let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"name,first_name, picture.type(normal)"])
-        graphRequest.startWithCompletionHandler({(connection, result, error) -> Void in
-            if ((error) != nil) {
-                print("Could not get user info")
-            }
-            else {
-                let picture:NSDictionary = result.valueForKey("picture") as! NSDictionary
-                let data:NSDictionary = picture.valueForKey("data") as! NSDictionary
-                let url = NSURL(string: data.valueForKey("url") as! String!)
-                let first_name = (result.valueForKey("first_name") as! String!)
-                let name = (result.valueForKey("name") as! String!)
-                let id = (result.valueForKey("id") as! String!)
-                
-                
-                UserInfo.first_name = first_name
-                UserInfo.name = name
-                UserInfo.id = id
-                UserInfo.url = url
-    
-                
-                //PFUser.currentUser()?.setObject(name, forKey: "name")
-                //PFUser.currentUser()?.saveInBackground()
-
-                self.performSegueWithIdentifier("loggedIn", sender: nil)
-            }
-        })
-        
-
-    }
-
-
-    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        print("User logged out")
-    }
-    
-    @IBAction func SignupAction(sender: AnyObject) {
-        
-        self.performSegueWithIdentifier("signUp", sender: self)
-        
-    }
     
     
 

@@ -22,6 +22,7 @@
 		1A8C85981AEAA4F60055173B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C85971AEAA4F60055173B /* loginViewController.swift */; };
 		1A8C859A1AEAB0DD0055173B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C85991AEAB0DD0055173B /* Accounts.framework */; };
 		1A8C859C1AEAB0ED0055173B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C859B1AEAB0ED0055173B /* Social.framework */; };
+		1A95BF881C2EE5F200DE7640 /* FavoriteFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95BF871C2EE5F200DE7640 /* FavoriteFlavorViewController.swift */; };
 		1AA0CD9A1ADAA3760028E7CE /* FinalFlavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA0CD991ADAA3760028E7CE /* FinalFlavor.swift */; };
 		1ABE7E1D1B7E9CC000AD9DFA /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE7E1C1B7E9CC000AD9DFA /* MenuButton.swift */; };
 		1ABE7E1F1B7EC22C00AD9DFA /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE7E1E1B7EC22C00AD9DFA /* ColorGenerator.swift */; };
@@ -37,7 +38,6 @@
 		1AC61C1E1A9933B00094DDDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61C1D1A9933B00094DDDE /* Images.xcassets */; };
 		1AC61C211A9933B00094DDDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC61C1F1A9933B00094DDDE /* LaunchScreen.xib */; };
 		1AC61C2D1A9933B00094DDDE /* Colby_Ice_CreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C2C1A9933B00094DDDE /* Colby_Ice_CreamTests.swift */; };
-		1AC61C371A99537D0094DDDE /* DanaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */; };
 		1AC61DC61A99FA570094DDDE /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DC51A99FA570094DDDE /* CheckBox.swift */; };
 		1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */; };
 		1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */; };
@@ -87,6 +87,7 @@
 		1A8C85971AEAA4F60055173B /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		1A8C85991AEAB0DD0055173B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1A8C859B1AEAB0ED0055173B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1A95BF871C2EE5F200DE7640 /* FavoriteFlavorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteFlavorViewController.swift; sourceTree = "<group>"; };
 		1AA0CD991ADAA3760028E7CE /* FinalFlavor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalFlavor.swift; sourceTree = "<group>"; };
 		1ABE7E1C1B7E9CC000AD9DFA /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		1ABE7E1E1B7EC22C00AD9DFA /* ColorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
@@ -106,7 +107,6 @@
 		1AC61C261A9933B00094DDDE /* Colby Ice CreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Colby Ice CreamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC61C2B1A9933B00094DDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC61C2C1A9933B00094DDDE /* Colby_Ice_CreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colby_Ice_CreamTests.swift; sourceTree = "<group>"; };
-		1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DanaPickerViewController.swift; sourceTree = "<group>"; };
 		1AC61DC51A99FA570094DDDE /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		1AC61DCB1A9A0B240094DDDE /* Submit_SetDiningHall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit_SetDiningHall.swift; sourceTree = "<group>"; };
 		1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit_Flavors.swift; sourceTree = "<group>"; };
@@ -173,6 +173,37 @@
 			name = Formatting;
 			sourceTree = "<group>";
 		};
+		1A95BF861C2EE5C700DE7640 /* Favorite_Flavors */ = {
+			isa = PBXGroup;
+			children = (
+				1A95BF871C2EE5F200DE7640 /* FavoriteFlavorViewController.swift */,
+			);
+			name = Favorite_Flavors;
+			sourceTree = "<group>";
+		};
+		1A95BF8A1C2EE61700DE7640 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */,
+				1ABE7E221B80EC4500AD9DFA /* DiningHallButton.swift */,
+				1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */,
+				1ABE7E1E1B7EC22C00AD9DFA /* ColorGenerator.swift */,
+				1A43DF781B6EAFD300C0E64F /* CustomFont.swift */,
+				1ABE7E1C1B7E9CC000AD9DFA /* MenuButton.swift */,
+				1ACF7D781B86C69A002D202B /* BorderedButton.swift */,
+				1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */,
+			);
+			name = Styling;
+			sourceTree = "<group>";
+		};
+		1A95BF8B1C2EE69600DE7640 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				1ACF7D7E1B87869F002D202B /* AboutViewController.swift */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
 		1AC61C081A9933B00094DDDE = {
 			isa = PBXGroup;
 			children = (
@@ -198,7 +229,9 @@
 		1AC61C131A9933B00094DDDE /* Colby Ice Cream */ = {
 			isa = PBXGroup;
 			children = (
-				1A43DF7C1B6EB46100C0E64F /* Bold_Button.swift */,
+				1A95BF8B1C2EE69600DE7640 /* About */,
+				1A95BF8A1C2EE61700DE7640 /* Styling */,
+				1A95BF861C2EE5C700DE7640 /* Favorite_Flavors */,
 				1A28D3D41AF27A8F0063C564 /* Formatting */,
 				1ADF46951AEFE86C009C0DB8 /* Login */,
 				1AD5C33D1AD6B9BF0008BA97 /* Favorites */,
@@ -210,17 +243,7 @@
 				1AC61C1D1A9933B00094DDDE /* Images.xcassets */,
 				1AC61C1F1A9933B00094DDDE /* LaunchScreen.xib */,
 				1AC61C141A9933B00094DDDE /* Supporting Files */,
-				1AC61C361A99537D0094DDDE /* DanaPickerViewController.swift */,
 				1AC61DF11A9A52500094DDDE /* Colby Ice Cream-Bridging-Header.h */,
-				1A43DF781B6EAFD300C0E64F /* CustomFont.swift */,
-				1A43DF7E1B6EB5FC00C0E64F /* Bold_Label.swift */,
-				1ABE7E1C1B7E9CC000AD9DFA /* MenuButton.swift */,
-				1ABE7E1E1B7EC22C00AD9DFA /* ColorGenerator.swift */,
-				1ABE7E201B7ED3B800AD9DFA /* LetterViewController.swift */,
-				1ABE7E221B80EC4500AD9DFA /* DiningHallButton.swift */,
-				1ACF7D781B86C69A002D202B /* BorderedButton.swift */,
-				1ACF7D7C1B878603002D202B /* CustomFontTextView.swift */,
-				1ACF7D7E1B87869F002D202B /* AboutViewController.swift */,
 			);
 			path = "Colby Ice Cream";
 			sourceTree = "<group>";
@@ -256,6 +279,7 @@
 		1AC61DCF1A9A4ABA0094DDDE /* Submit */ = {
 			isa = PBXGroup;
 			children = (
+				1ABE7E201B7ED3B800AD9DFA /* LetterViewController.swift */,
 				1AC61DC51A99FA570094DDDE /* CheckBox.swift */,
 				1AC61DCD1A9A28950094DDDE /* Submit_Flavors.swift */,
 				1AD743B91AE7D302008618F2 /* CheckLabel.swift */,
@@ -502,6 +526,7 @@
 				1ACF7D791B86C69A002D202B /* BorderedButton.swift in Sources */,
 				1ABE7E271B84116E00AD9DFA /* CheckViewController.swift in Sources */,
 				1ACF7D7D1B878603002D202B /* CustomFontTextView.swift in Sources */,
+				1A95BF881C2EE5F200DE7640 /* FavoriteFlavorViewController.swift in Sources */,
 				1AC61DCE1A9A28950094DDDE /* Submit_Flavors.swift in Sources */,
 				1AC61C191A9933B00094DDDE /* ViewController.swift in Sources */,
 				1A28D3D81AF27AE00063C564 /* BackButton.swift in Sources */,
@@ -512,7 +537,6 @@
 				1A8C85981AEAA4F60055173B /* loginViewController.swift in Sources */,
 				1AC61DCC1A9A0B240094DDDE /* Submit_SetDiningHall.swift in Sources */,
 				1A43DF7D1B6EB46100C0E64F /* Bold_Button.swift in Sources */,
-				1AC61C371A99537D0094DDDE /* DanaPickerViewController.swift in Sources */,
 				1ABE7E251B840B7800AD9DFA /* Check_Flavors.swift in Sources */,
 				1A3D031F1AE050570023BEE0 /* LetterButton.swift in Sources */,
 				1A4C2D4F1AD7FBE700A465A8 /* ClickCheck.swift in Sources */,
@@ -592,7 +616,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dan Vogel (8VNWSEP6J3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dan Vogel (8VNWSEP6J3)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -612,6 +637,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c691beb1-f7f1-4045-860e-250e2a976695";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -634,7 +660,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dan Vogel (8VNWSEP6J3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dan Vogel (8VNWSEP6J3)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -647,6 +674,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c691beb1-f7f1-4045-860e-250e2a976695";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -659,8 +687,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dan Vogel (8VNWSEP6J3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dan Vogel (8VNWSEP6J3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/dhvogel/Documents/FacebookSDK,
 					"/Users/dhvogel/Documents/parse-library-1.9.0",
@@ -676,7 +704,7 @@
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/GoogleAdMob/SDK",
 				);
 				PRODUCT_NAME = "Colby Ice Cream";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c691beb1-f7f1-4045-860e-250e2a976695";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -691,8 +719,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dan Vogel (8VNWSEP6J3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dan Vogel (8VNWSEP6J3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/dhvogel/Documents/FacebookSDK,
 					"/Users/dhvogel/Documents/parse-library-1.9.0",
@@ -708,7 +736,7 @@
 					"$(PROJECT_DIR)/MoPubSDK/AdNetworkSupport/GoogleAdMob/SDK",
 				);
 				PRODUCT_NAME = "Colby Ice Cream";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c691beb1-f7f1-4045-860e-250e2a976695";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Colby Ice Cream/Colby Ice Cream-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;

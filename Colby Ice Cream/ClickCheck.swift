@@ -40,10 +40,12 @@ class ClickCheck: UIButton {
                         self.setValue(UIFont(name: "Raleway-SemiBold", size: 15), forKey: "font")
                         self.layer.cornerRadius = 5
                         self.layer.borderWidth = 1
-                        for (var i=0; i<flavors.count; i++) {
-                            if (flavors[i] == "nothing") {
-                                flavors[i] = self.titleLabel!.text!
-                                break
+                        if (!flavors.contains(self.titleLabel!.text!)){
+                            for (var i=0; i<flavors.count; i++) {
+                                if (flavors[i] == "nothing") {
+                                    flavors[i] = self.titleLabel!.text!
+                                    break
+                                }
                             }
                         }
                     }

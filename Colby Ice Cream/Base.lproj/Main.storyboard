@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+            <string>Raleway-Medium</string>
+            <string>Raleway-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Custom Log In View Controller-->
         <scene sceneID="Oon-IL-SHp">
@@ -20,33 +27,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Colby Ice Cream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5J-17-8e2" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="175" y="73" width="250" height="50"/>
-                                <animations/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZHW-Tl-8HA">
+                                <rect key="frame" x="180" y="76" width="240" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Lrq-Cz-ffv"/>
+                                    <constraint firstAttribute="width" constant="240" id="lRV-aa-e7v"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcJ-Ts-TFf">
+                                <rect key="frame" x="180" y="114" width="240" height="30"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gb-hv-Zyg" customClass="Bold_Button" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="180" y="176" width="240" height="30"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="15"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="HWf-VX-qAC" eventType="touchUpInside" id="wMg-ip-iSD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0L-e7-clx" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="160" y="26" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Axs-PP-5T4"/>
+                                    <constraint firstAttribute="width" constant="30" id="RDC-Wd-7Kc"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="BC7-Ra-A9w"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="X5J-17-8e2" secondAttribute="centerX" id="f2V-SP-Z3b"/>
-                            <constraint firstItem="X5J-17-8e2" firstAttribute="top" secondItem="i78-Xv-WKS" secondAttribute="bottom" constant="53" id="lcs-n1-1Pb"/>
+                            <constraint firstItem="EcJ-Ts-TFf" firstAttribute="top" secondItem="ZHW-Tl-8HA" secondAttribute="bottom" constant="8" symbolic="YES" id="557-wA-a1V"/>
+                            <constraint firstItem="j0L-e7-clx" firstAttribute="centerX" secondItem="0v1-KM-OHH" secondAttribute="centerX" id="9IX-4H-1qm"/>
+                            <constraint firstItem="9gb-hv-Zyg" firstAttribute="leading" secondItem="EcJ-Ts-TFf" secondAttribute="leading" id="9cm-N6-weu"/>
+                            <constraint firstItem="ZHW-Tl-8HA" firstAttribute="leading" secondItem="EcJ-Ts-TFf" secondAttribute="leading" id="I0v-tz-Xar"/>
+                            <constraint firstItem="9gb-hv-Zyg" firstAttribute="top" secondItem="EcJ-Ts-TFf" secondAttribute="bottom" constant="32" id="JbN-VK-3mK"/>
+                            <constraint firstItem="ZHW-Tl-8HA" firstAttribute="top" secondItem="i78-Xv-WKS" secondAttribute="bottom" constant="56" id="MNK-jZ-wqM"/>
+                            <constraint firstItem="9gb-hv-Zyg" firstAttribute="centerX" secondItem="0v1-KM-OHH" secondAttribute="centerX" id="U2p-La-Y2d"/>
+                            <constraint firstItem="9gb-hv-Zyg" firstAttribute="trailing" secondItem="EcJ-Ts-TFf" secondAttribute="trailing" id="q6W-wh-Ppa"/>
+                            <constraint firstItem="ZHW-Tl-8HA" firstAttribute="trailing" secondItem="EcJ-Ts-TFf" secondAttribute="trailing" id="yLu-5L-Q2U"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gvN-JQ-0ve"/>
                     <connections>
-                        <outlet property="LoginTitle" destination="X5J-17-8e2" id="9HF-wE-PiW"/>
-                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="loggedIn" id="TVQ-wM-TNB"/>
+                        <outlet property="logInButton" destination="9gb-hv-Zyg" id="z4U-SI-KnF"/>
+                        <outlet property="passwordField" destination="EcJ-Ts-TFf" id="SPj-en-Qye"/>
+                        <outlet property="usernameField" destination="ZHW-Tl-8HA" id="9Oo-0x-trA"/>
+                        <segue destination="KJf-WF-hJB" kind="modal" identifier="loggedIn" id="o4G-gd-Hi4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnE-yl-ogK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3202" y="1717"/>
+            <point key="canvasLocation" x="-1634" y="742"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="h25-Uk-ELd">
@@ -59,7 +102,6 @@
                     <view key="view" contentMode="scaleToFill" id="e4W-FB-72h">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -79,24 +121,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-5m-cdB" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="156" y="230" width="288" height="32"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="288" id="CcV-m0-yle"/>
-                                    <constraint firstAttribute="height" constant="32" id="z3W-pI-hU4"/>
-                                </constraints>
-                                <state key="normal" title="| Submit Flavors | ">
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="HWf-VX-qAC" kind="modal" id="9FL-yo-GtW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5A-0a-16u" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="140" width="288" height="32"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="dye-Wa-wFe"/>
@@ -111,7 +137,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwo-3B-sGS" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="320" width="288" height="32"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Z7O-Jv-hlo"/>
@@ -124,33 +149,45 @@
                                     <segue destination="TAH-5b-2Do" kind="modal" id="azF-UY-RB1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etZ-AB-2j8" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="156" y="410" width="288" height="34"/>
-                                <animations/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fO7-Xc-Aym" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="156" y="230" width="288" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="288" id="QtL-va-amD"/>
-                                    <constraint firstAttribute="height" constant="34" id="gRw-aI-gZ6"/>
+                                    <constraint firstAttribute="width" constant="288" id="GXY-iq-i8E"/>
+                                    <constraint firstAttribute="height" constant="32" id="Nys-mE-DMa"/>
                                 </constraints>
-                                <state key="normal" title="| Share |">
+                                <state key="normal" title="| Submit Flavors | ">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="shareLink:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CZT-Ft-4Ps"/>
+                                    <segue destination="HWf-VX-qAC" kind="modal" id="0Rp-PB-FrQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwG-7S-o8B" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="156" y="410" width="288" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="AQO-Hm-0ew"/>
+                                    <constraint firstAttribute="height" constant="32" id="FX6-eA-uHV"/>
+                                </constraints>
+                                <state key="normal" title="| Favorite Flavors |">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X3i-b2-9W9" kind="modal" id="OPV-iB-O52"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dwo-3B-sGS" firstAttribute="top" secondItem="7Hd-5m-cdB" secondAttribute="bottom" constant="58" id="1Aa-WY-H6U"/>
                             <constraint firstAttribute="centerX" secondItem="Dwo-3B-sGS" secondAttribute="centerX" id="Col-0w-IBO"/>
+                            <constraint firstItem="DwG-7S-o8B" firstAttribute="leading" secondItem="Dwo-3B-sGS" secondAttribute="leading" id="Dg5-bK-7sN"/>
                             <constraint firstItem="X5A-0a-16u" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SjQ-pL-xXq"/>
                             <constraint firstItem="X5A-0a-16u" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="120" id="UUU-Ac-Wu6"/>
-                            <constraint firstItem="Dwo-3B-sGS" firstAttribute="leading" secondItem="etZ-AB-2j8" secondAttribute="leading" id="eGg-ZL-OLP"/>
-                            <constraint firstItem="X5A-0a-16u" firstAttribute="leading" secondItem="7Hd-5m-cdB" secondAttribute="leading" id="hM0-xK-oLI"/>
-                            <constraint firstItem="7Hd-5m-cdB" firstAttribute="top" secondItem="X5A-0a-16u" secondAttribute="bottom" constant="58" id="nTA-KV-ftC"/>
-                            <constraint firstItem="etZ-AB-2j8" firstAttribute="top" secondItem="Dwo-3B-sGS" secondAttribute="bottom" constant="58" id="oKg-B9-kBK"/>
+                            <constraint firstItem="DwG-7S-o8B" firstAttribute="top" secondItem="Dwo-3B-sGS" secondAttribute="bottom" constant="58" id="WJl-6g-zFT"/>
+                            <constraint firstItem="fO7-Xc-Aym" firstAttribute="top" secondItem="X5A-0a-16u" secondAttribute="bottom" constant="58" id="dht-78-kJi"/>
+                            <constraint firstItem="Dwo-3B-sGS" firstAttribute="top" secondItem="fO7-Xc-Aym" secondAttribute="bottom" constant="58" id="gYi-Nt-l6Y"/>
+                            <constraint firstItem="fO7-Xc-Aym" firstAttribute="leading" secondItem="X5A-0a-16u" secondAttribute="leading" id="pKc-MU-XSb"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -172,7 +209,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIb-pN-sZa" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="234" y="37" width="133" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="133" id="vFI-wk-i8J"/>
                                 </constraints>
@@ -182,7 +218,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1R-WV-P5n" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="165" width="568" height="90"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Wku-Kf-2gs"/>
                                 </constraints>
@@ -193,7 +228,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU1-jK-Tfh" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="164" y="30" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="QbZ-2L-cPW"/>
                                     <constraint firstAttribute="height" constant="30" id="XY7-mT-Ewm"/>
@@ -207,7 +241,6 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Stop eating boring ice cream. Stop living a boring life." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kit-aa-Wfw" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="16" y="269" width="568" height="62"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="edK-i2-mc9"/>
                                 </constraints>
@@ -216,7 +249,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Kit-aa-Wfw" firstAttribute="top" secondItem="j1R-WV-P5n" secondAttribute="bottom" constant="14" id="0r9-x0-jFy"/>
@@ -236,7 +268,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIx-Gm-hvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-979" y="1969"/>
+            <point key="canvasLocation" x="-1625" y="1493"/>
+        </scene>
+        <!--Favorite Flavor View Controller-->
+        <scene sceneID="UlA-NZ-SfN">
+            <objects>
+                <viewController id="X3i-b2-9W9" customClass="FavoriteFlavorViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z9N-U1-bga"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z98-aZ-glI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Exc-zB-QZa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdT-AA-GTv" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="285" y="32" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="MUa-Pn-eku"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="n8F-tJ-JVb"/>
+                                    <constraint firstAttribute="height" constant="30" id="qaq-Mr-2Kn"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="s6h-6r-ykC"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asC-eq-v8F">
+                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DhY-Hy-oAY">
+                                        <rect key="frame" x="68" y="8" width="463" height="514"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01q-6K-WJv">
+                                        <rect key="frame" x="279" y="85" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ani-7M-WDj">
+                                        <rect key="frame" x="278" y="140" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DhY-Hy-oAY" firstAttribute="top" secondItem="asC-eq-v8F" secondAttribute="top" constant="8" id="AyR-yh-c07"/>
+                                    <constraint firstItem="DhY-Hy-oAY" firstAttribute="leading" secondItem="asC-eq-v8F" secondAttribute="leading" constant="68" id="NCe-qm-2Kc"/>
+                                    <constraint firstItem="DhY-Hy-oAY" firstAttribute="centerX" secondItem="asC-eq-v8F" secondAttribute="centerX" id="WWc-bD-oz5"/>
+                                    <constraint firstAttribute="bottom" secondItem="DhY-Hy-oAY" secondAttribute="bottom" constant="8" id="eZx-Xr-6OK"/>
+                                    <constraint firstAttribute="trailing" secondItem="DhY-Hy-oAY" secondAttribute="trailing" constant="69" id="gzA-w8-K7f"/>
+                                    <constraint firstItem="DhY-Hy-oAY" firstAttribute="centerY" secondItem="asC-eq-v8F" secondAttribute="centerY" id="t6p-Op-63r"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wdT-AA-GTv" firstAttribute="top" secondItem="z9N-U1-bga" secondAttribute="bottom" constant="12" id="8BM-Gc-aPk"/>
+                            <constraint firstItem="asC-eq-v8F" firstAttribute="bottom" secondItem="Z98-aZ-glI" secondAttribute="top" id="9K7-Ue-pZC"/>
+                            <constraint firstItem="wdT-AA-GTv" firstAttribute="centerX" secondItem="Exc-zB-QZa" secondAttribute="centerX" id="Nff-Up-gsB"/>
+                            <constraint firstItem="asC-eq-v8F" firstAttribute="centerX" secondItem="wdT-AA-GTv" secondAttribute="centerX" id="PxM-b9-u0x"/>
+                            <constraint firstItem="asC-eq-v8F" firstAttribute="top" secondItem="wdT-AA-GTv" secondAttribute="bottom" constant="8" symbolic="YES" id="gFg-hi-BL9"/>
+                            <constraint firstItem="asC-eq-v8F" firstAttribute="leading" secondItem="Exc-zB-QZa" secondAttribute="leading" id="nCe-Hi-wS0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLy-0t-lK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1625" y="2160"/>
         </scene>
         <!--Check Flavors-->
         <scene sceneID="Wrw-uE-Myx">
@@ -249,7 +352,6 @@
                     <view key="view" contentMode="scaleToFill" id="4R1-oP-fLD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="BJl-So-3Gf"/>
@@ -272,7 +374,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sd-H7-1Xp" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="150" y="96" width="301" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="301" id="khk-9e-77U"/>
                                 </constraints>
@@ -282,42 +383,36 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL3-Vh-U17" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="150" y="146" width="301" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppu-cm-2Ho" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="150" y="196" width="301" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLH-Wq-NhV" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="150" y="246" width="301" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUe-V3-sx5" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="150" y="346" width="301" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPt-mb-uZ8" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="150" y="296" width="301" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-vJ-UWw" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="150" y="28" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="53Q-kE-dWh"/>
                                     <constraint firstAttribute="height" constant="30" id="IOF-8r-D3m"/>
@@ -332,7 +427,6 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCB-WV-NNz" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="261" y="37" width="78" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="78" id="5fb-pS-wxl"/>
                                 </constraints>
@@ -341,7 +435,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ppu-cm-2Ho" firstAttribute="top" secondItem="aL3-Vh-U17" secondAttribute="bottom" constant="29" id="1TT-BH-BiX"/>
@@ -408,7 +501,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pv-CC-PDv" customClass="DiningHallButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="250" y="89" width="100" height="100"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Eed-WJ-Qpx"/>
                                     <constraint firstAttribute="height" constant="100" id="jvl-kQ-VeI"/>
@@ -423,7 +515,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-2c-Wb7" customClass="DiningHallButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="250" y="239" width="100" height="100"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ZzP-KD-4Pz"/>
                                 </constraints>
@@ -437,7 +528,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6V-i1-r6O" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="160" y="26" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="1fC-aG-06G"/>
                                     <constraint firstAttribute="height" constant="30" id="nke-Uq-wvZ"/>
@@ -452,7 +542,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRh-ki-ue2" customClass="DiningHallButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="250" y="389" width="100" height="100"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="C7f-F1-Hxo"/>
                                     <constraint firstAttribute="height" constant="100" id="Pp5-Cf-SCe"/>
@@ -466,7 +555,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2pv-CC-PDv" firstAttribute="centerX" secondItem="roH-qV-ef3" secondAttribute="centerX" priority="250" id="3LD-CK-sIy"/>
@@ -500,14 +588,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="W" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imp-Sf-Sha">
                                 <rect key="frame" x="292" y="130" width="16" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cT-0C-VPx" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="NJn-oS-b0m"/>
                                 </constraints>
@@ -517,7 +603,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAF-Jh-86v" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ZlG-jJ-015"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="gO8-Eq-PgX"/>
@@ -531,7 +616,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XAF-Jh-86v" firstAttribute="top" secondItem="gqi-3Q-E5P" secondAttribute="bottom" constant="60" id="7oY-g5-Utv"/>
@@ -561,14 +645,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="V" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGc-P0-EP7" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="295" y="130" width="11" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lx7-zO-B6f" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="vZx-SG-UyF"/>
                                 </constraints>
@@ -578,14 +660,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnD-NO-qZu" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Vanilla with Red Raspberry">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGi-jR-2TG" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JCK-Z5-FbM"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Yip-XZ-Kna"/>
@@ -599,7 +679,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RnD-NO-qZu" firstAttribute="leading" secondItem="Lx7-zO-B6f" secondAttribute="leading" id="18j-9j-gMI"/>
@@ -632,14 +711,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="T" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xp-rE-9pI" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="295" y="130" width="10" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS5-Vv-gNK" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="zUU-rt-bfz"/>
                                 </constraints>
@@ -649,7 +726,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBA-w6-uYb" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="9l1-7y-wVU"/>
                                     <constraint firstAttribute="height" constant="30" id="P3P-hh-vzC"/>
@@ -663,7 +739,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fS5-Vv-gNK" firstAttribute="top" secondItem="6xp-rE-9pI" secondAttribute="bottom" constant="19" id="7w3-mp-9Gx"/>
@@ -693,7 +768,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7H-5E-H7K" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="165" y="95" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="fbb-D3-XCL"/>
                                     <constraint firstAttribute="height" constant="30" id="hA2-K4-vHN"/>
@@ -707,7 +781,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvo-6H-LBD" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="220" y="95" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Iko-c1-w3A"/>
                                     <constraint firstAttribute="height" constant="30" id="Sqx-HQ-5Qj"/>
@@ -721,7 +794,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWv-7g-RJ6" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="95" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DBs-t8-ltT"/>
                                     <constraint firstAttribute="width" constant="30" id="Tp6-hl-2jN"/>
@@ -735,7 +807,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdZ-Fp-E4t" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="340" y="95" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="BOb-07-0GV"/>
                                     <constraint firstAttribute="width" constant="30" id="ydJ-UJ-uTt"/>
@@ -749,7 +820,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-a1-fJ0" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="405" y="95" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="bXY-0i-mGC"/>
                                     <constraint firstAttribute="height" constant="30" id="yZY-FF-DdH"/>
@@ -763,7 +833,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-V5-jQN" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="165" y="138" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="azo-CI-L0h"/>
                                     <constraint firstAttribute="width" constant="30" id="w5Y-Ec-Scc"/>
@@ -777,7 +846,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLe-lV-MGo" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="220" y="138" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ppp-QF-0au"/>
                                     <constraint firstAttribute="width" constant="30" id="yf9-bd-FGH"/>
@@ -791,7 +859,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbe-LS-V5S" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="138" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="PSi-ep-7We"/>
                                     <constraint firstAttribute="width" constant="30" id="vK9-g2-2V5"/>
@@ -805,7 +872,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uf-Y8-Zsp" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="340" y="138" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="11o-vG-Xtq"/>
                                     <constraint firstAttribute="width" constant="30" id="6RV-gY-lSd"/>
@@ -819,7 +885,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qM3-g8-ghS" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="405" y="138" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KDP-2i-YrT"/>
                                     <constraint firstAttribute="width" constant="30" id="Mz6-ae-cNu"/>
@@ -833,7 +898,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIs-eU-VJf" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="220" y="181" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="AEs-T7-nkW"/>
                                     <constraint firstAttribute="width" constant="30" id="aEJ-4k-q6l"/>
@@ -847,7 +911,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bh-7J-Tfs" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="181" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bax-N6-QRO"/>
                                     <constraint firstAttribute="width" constant="30" id="xzO-Dl-dqy"/>
@@ -861,7 +924,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-iN-vFJ" customClass="LetterButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="340" y="181" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KQE-RL-pzm"/>
                                     <constraint firstAttribute="width" constant="30" id="YOn-KU-5Qf"/>
@@ -875,7 +937,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K62-ju-GtM" customClass="FinalFlavor" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="368" width="194" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="2Pl-Pa-J3w"/>
                                 </constraints>
@@ -885,21 +946,18 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6b-CT-i6L" customClass="FinalFlavor" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="406" width="194" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Flavor not selected">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAp-az-via" customClass="FinalFlavor" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="444" width="194" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Flavor not selected">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-yG-Gee" customClass="Bold_Button" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="545" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Submit Flavors!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -909,14 +967,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1re-RN-gGk" customClass="FinalFlavor" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="482" width="194" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Flavor not selected">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAd-gI-fpG" customClass="EmptyButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="401" y="370" width="40" height="25"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="nsD-av-Agj"/>
                                 </constraints>
@@ -930,7 +986,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1i-ea-QTp" customClass="EmptyButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="401" y="408" width="40" height="25"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="empty">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -941,7 +996,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljt-er-eec" customClass="OtherButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="356" y="408" width="40" height="25"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="I1N-vI-IPD"/>
                                 </constraints>
@@ -955,7 +1009,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoA-Bl-1go" customClass="EmptyButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="401" y="446" width="40" height="25"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="empty">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -966,7 +1019,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqz-oz-zcy" customClass="OtherButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="356" y="446" width="40" height="25"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="53Y-d7-tmX"/>
                                 </constraints>
@@ -980,7 +1032,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-HQ-a22" customClass="EmptyButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="401" y="484" width="40" height="25"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="empty">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -991,7 +1042,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSK-Hk-Qds" customClass="OtherButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="356" y="484" width="40" height="25"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="IeN-O7-pUD"/>
                                 </constraints>
@@ -1005,7 +1055,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNA-4T-abk" customClass="OtherButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="356" y="370" width="40" height="25"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="HkT-6q-WFg"/>
                                     <constraint firstAttribute="height" constant="25" id="f76-rJ-2mt"/>
@@ -1020,14 +1069,12 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title_Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW2-ds-aJ0" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="230" y="20" width="140" height="30"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvD-TH-gHx" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="20" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ra8-Mw-JSQ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="sFM-LB-05v"/>
@@ -1042,20 +1089,17 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The flavor starts with:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zj-1o-j7w" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="218" y="58" width="165" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="So far I've submitted:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-eF-1jx" customClass="CustomFont" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="218" y="339" width="164" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rLe-lV-MGo" firstAttribute="centerX" secondItem="kvo-6H-LBD" secondAttribute="centerX" id="04J-mH-Eg6"/>
@@ -1187,14 +1231,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va8-0k-yhC" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="294" y="130" width="13" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J14-cG-PCy" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="AXx-8M-f1X"/>
                                 </constraints>
@@ -1204,14 +1246,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHk-iX-4rd" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Orange Sherbert">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-ug-EPB" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="MpP-JJ-hy2"/>
                                     <constraint firstAttribute="height" constant="30" id="OpI-3R-gTq"/>
@@ -1225,7 +1265,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="va8-0k-yhC" firstAttribute="centerX" secondItem="J14-cG-PCy" secondAttribute="centerX" id="38Q-3x-d0R"/>
@@ -1258,7 +1297,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-UM-yYP" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="8hq-6G-eTA"/>
                                 </constraints>
@@ -1268,7 +1306,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIr-BM-2KM" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="FJD-a8-Cyi"/>
                                     <constraint firstAttribute="height" constant="30" id="LKj-4r-6cY"/>
@@ -1283,20 +1320,17 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-bX-VpH" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="294" y="130" width="12" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCE-7V-ybd" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Appalachian Trail">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dIr-BM-2KM" firstAttribute="top" secondItem="EuS-go-lDV" secondAttribute="bottom" constant="60" id="9gv-Md-rfN"/>
@@ -1329,14 +1363,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="P" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XF-MD-gEr" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="294" y="130" width="12" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWa-tb-mDx" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="EIT-hj-1yw"/>
                                 </constraints>
@@ -1346,35 +1378,30 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mU-QE-zGC" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Peanut Butter Pie">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWr-Pl-eiq" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="246" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Pink Peppermint Stick">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKi-Fa-0bT" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="284" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Pistachio Nut">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyX-SW-RQ0" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="322" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Pumpkin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmq-ac-JZt" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="5sp-sw-zgd"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="H3z-SO-xWK"/>
@@ -1388,7 +1415,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FWr-Pl-eiq" firstAttribute="leading" secondItem="4mU-QE-zGC" secondAttribute="leading" id="3la-1H-6LA"/>
@@ -1430,14 +1456,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4G-86-NcD" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="294" y="130" width="12" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aB-n4-aI9" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="iOq-iQ-Zj2"/>
                                 </constraints>
@@ -1447,21 +1471,18 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIQ-l8-udQ" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Sugarloaf Mint Chip">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzo-uk-t56" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="246" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Sweet and Salty Pretzel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkX-r3-sOL" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="79" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="IXP-d9-X2D"/>
                                     <constraint firstAttribute="height" constant="30" id="QQ2-39-KXC"/>
@@ -1475,7 +1496,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gzo-uk-t56" firstAttribute="top" secondItem="DIQ-l8-udQ" secondAttribute="bottom" constant="8" symbolic="YES" id="1Gr-84-nyt"/>
@@ -1510,14 +1530,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTt-TK-Vn5" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="294" y="130" width="13" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzs-81-I0A" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="fCs-hw-kUJ"/>
                                 </constraints>
@@ -1527,14 +1545,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jh-wg-e3d" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Grapenuts with Vanilla">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ll-4N-dxC" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CXr-KT-zh0"/>
                                     <constraint firstAttribute="width" constant="30" id="ayk-Rl-UnT"/>
@@ -1548,7 +1564,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mzs-81-I0A" firstAttribute="centerX" secondItem="hTt-TK-Vn5" secondAttribute="centerX" id="2NW-sD-LzX"/>
@@ -1582,14 +1597,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="R" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e5-9w-4Cr" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="294" y="130" width="12" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNv-WH-9OZ" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="aJa-wc-9x8"/>
                                 </constraints>
@@ -1599,14 +1612,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1z-D2-6Ri" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Red Raspberry Sorbet">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsv-Wa-niK" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="D2I-Yp-ymi"/>
                                     <constraint firstAttribute="height" constant="30" id="F0U-tn-P42"/>
@@ -1620,7 +1631,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="L1z-D2-6Ri" firstAttribute="top" secondItem="RNv-WH-9OZ" secondAttribute="bottom" constant="8" symbolic="YES" id="2i9-DV-GYS"/>
@@ -1653,14 +1663,12 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8T-cs-lkN" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="293" y="129" width="15" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb0-FX-OgP" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="169" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="9pX-At-3bY"/>
                                     <constraint firstAttribute="height" constant="20" id="KaW-eu-KPD"/>
@@ -1671,7 +1679,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjL-cf-VBg" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="225" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="XjF-QW-ua9"/>
                                 </constraints>
@@ -1681,7 +1688,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="692-9P-QdI" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="253" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="flJ-cL-2Am"/>
                                 </constraints>
@@ -1691,7 +1697,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaK-7l-6G2" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="281" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Tcg-rG-RXS"/>
                                 </constraints>
@@ -1701,7 +1706,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUF-kv-VNn" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="309" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="bHP-ML-ISb"/>
                                 </constraints>
@@ -1711,7 +1715,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40h-pr-Qir" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="337" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="oYC-Mw-jFL"/>
                                 </constraints>
@@ -1721,7 +1724,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoY-iO-xT2" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="365" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="nlt-a0-AZU"/>
                                 </constraints>
@@ -1731,7 +1733,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRm-kE-2sc" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="79" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="B2t-Pi-zOV"/>
                                     <constraint firstAttribute="width" constant="30" id="WTT-P6-H0u"/>
@@ -1746,7 +1747,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxt-1h-hpk" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="197" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="mGX-66-28q"/>
                                 </constraints>
@@ -1756,7 +1756,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1u-Ug-yr7" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="393" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="OLU-d3-qT4"/>
                                 </constraints>
@@ -1765,7 +1764,6 @@
                                 </state>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="692-9P-QdI" firstAttribute="leading" secondItem="IjL-cf-VBg" secondAttribute="leading" id="0re-qs-DaQ"/>
@@ -1819,7 +1817,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrN-Jh-pc0" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="EUJ-0e-iPB"/>
                                 </constraints>
@@ -1829,7 +1826,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiZ-ty-Ixf" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="LYA-eM-Rb6"/>
                                     <constraint firstAttribute="width" constant="30" id="W3g-t4-dwh"/>
@@ -1844,20 +1840,17 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoh-da-mrt" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="294" y="130" width="12" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVa-gv-m3m" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Butter Pecan">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NiZ-ty-Ixf" firstAttribute="centerX" secondItem="Xoh-da-mrt" secondAttribute="centerX" id="6OB-AU-x3H"/>
@@ -1890,7 +1883,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9c-EX-MyN" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="294" y="130" width="13" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="YSb-1M-FgJ"/>
                                 </constraints>
@@ -1900,7 +1892,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USt-DT-dsA" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="187" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="IDP-kh-sfP"/>
                                 </constraints>
@@ -1910,7 +1901,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdY-fm-vtb" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="215" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="aeF-GR-zoM"/>
                                 </constraints>
@@ -1920,7 +1910,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCx-Nz-48w" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cy1-dm-Qzj"/>
                                     <constraint firstAttribute="width" constant="30" id="pHy-x6-ip0"/>
@@ -1935,7 +1924,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-aF-KdK" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="243" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="azo-Or-N0s"/>
                                 </constraints>
@@ -1945,7 +1933,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6P2-WZ-74E" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="271" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="nem-ST-tnj"/>
                                 </constraints>
@@ -1955,7 +1942,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-zC-Xql" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="299" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="5Y4-tM-vib"/>
                                 </constraints>
@@ -1965,7 +1951,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkF-A2-Sgj" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="327" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="BzJ-no-9Un"/>
                                 </constraints>
@@ -1975,7 +1960,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOP-Ex-RhE" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="355" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="QHx-v6-DTE"/>
                                 </constraints>
@@ -1985,7 +1969,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3e-34-86n" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="383" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Vv1-bd-bDQ"/>
                                 </constraints>
@@ -1995,7 +1978,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ9-Lp-nk2" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="411" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="cPh-u7-SNt"/>
                                 </constraints>
@@ -2005,7 +1987,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjn-Lk-NXK" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="159" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="HZN-cj-MzR"/>
                                     <constraint firstAttribute="width" constant="288" id="s2G-cj-0r7"/>
@@ -2016,7 +1997,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULh-w8-eEk" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="439" width="288" height="20"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="WCJ-n1-IDX"/>
                                 </constraints>
@@ -2025,7 +2005,6 @@
                                 </state>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ebh-aF-KdK" firstAttribute="trailing" secondItem="6P2-WZ-74E" secondAttribute="trailing" id="3CD-au-ZTM"/>
@@ -2095,7 +2074,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otc-Ue-nYk" customClass="BackButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="285" y="80" width="30" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="EB6-6O-jay"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="deg-Mg-VK0"/>
@@ -2110,14 +2088,12 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zD-b4-xFS" customClass="Bold_Label" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="295" y="130" width="10" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X12-4N-pgh" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="170" width="288" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="MGu-oU-XHa"/>
                                 </constraints>
@@ -2127,13 +2103,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hib-mi-KvY" customClass="ClickCheck" customModule="Colby_Ice_Cream" customModuleProvider="target">
                                 <rect key="frame" x="156" y="208" width="288" height="30"/>
-                                <animations/>
                                 <state key="normal" title="French Vanilla">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="X12-4N-pgh" firstAttribute="centerX" secondItem="6zD-b4-xFS" secondAttribute="centerX" id="APg-MA-8tO"/>
@@ -2155,7 +2129,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fVr-AN-aDB"/>
-        <segue reference="TVQ-wM-TNB"/>
+        <segue reference="o4G-gd-Hi4"/>
+        <segue reference="s6h-6r-ykC"/>
+        <segue reference="lS2-8j-3wa"/>
     </inferredMetricsTieBreakers>
 </document>

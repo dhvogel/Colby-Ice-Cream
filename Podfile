@@ -8,8 +8,6 @@ pod 'Parse'
 pod 'ParseUI'
 pod 'ParseCrashReporting'
 pod 'ParseFacebookUtilsV4'
-pod 'Fabric'
-pod 'Crashlytics'
 
 post_install do |installer|
     installer.pods_project.build_configuration_list.build_configurations.each do |configuration|

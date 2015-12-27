@@ -122,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5A-0a-16u" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="156" y="140" width="288" height="32"/>
+                                <rect key="frame" x="156" y="40" width="288" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="dye-Wa-wFe"/>
@@ -136,7 +136,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwo-3B-sGS" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="156" y="320" width="288" height="32"/>
+                                <rect key="frame" x="156" y="400" width="288" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Z7O-Jv-hlo"/>
@@ -150,7 +150,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fO7-Xc-Aym" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="156" y="230" width="288" height="32"/>
+                                <rect key="frame" x="156" y="130" width="288" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="GXY-iq-i8E"/>
@@ -164,7 +164,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwG-7S-o8B" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
-                                <rect key="frame" x="156" y="410" width="288" height="32"/>
+                                <rect key="frame" x="156" y="220" width="288" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="AQO-Hm-0ew"/>
@@ -177,17 +177,33 @@
                                     <segue destination="X3i-b2-9W9" kind="modal" id="OPV-iB-O52"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgQ-Fc-NFX" customClass="MenuButton" customModule="Colby_Ice_Cream" customModuleProvider="target">
+                                <rect key="frame" x="156" y="310" width="288" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="GLq-97-ZtC"/>
+                                    <constraint firstAttribute="width" constant="288" id="tuS-hF-0io"/>
+                                </constraints>
+                                <state key="normal" title="| Shake of the Week |">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TO7-Nv-2JE" kind="modal" id="WrF-r8-HHQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Dwo-3B-sGS" secondAttribute="centerX" id="Col-0w-IBO"/>
+                            <constraint firstItem="NgQ-Fc-NFX" firstAttribute="leading" secondItem="DwG-7S-o8B" secondAttribute="leading" id="DRV-oS-Cke"/>
                             <constraint firstItem="DwG-7S-o8B" firstAttribute="leading" secondItem="Dwo-3B-sGS" secondAttribute="leading" id="Dg5-bK-7sN"/>
                             <constraint firstItem="X5A-0a-16u" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SjQ-pL-xXq"/>
-                            <constraint firstItem="X5A-0a-16u" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="120" id="UUU-Ac-Wu6"/>
-                            <constraint firstItem="DwG-7S-o8B" firstAttribute="top" secondItem="Dwo-3B-sGS" secondAttribute="bottom" constant="58" id="WJl-6g-zFT"/>
+                            <constraint firstItem="X5A-0a-16u" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="UUU-Ac-Wu6"/>
+                            <constraint firstItem="DwG-7S-o8B" firstAttribute="top" secondItem="Dwo-3B-sGS" secondAttribute="bottom" constant="-212" id="WJl-6g-zFT"/>
                             <constraint firstItem="fO7-Xc-Aym" firstAttribute="top" secondItem="X5A-0a-16u" secondAttribute="bottom" constant="58" id="dht-78-kJi"/>
-                            <constraint firstItem="Dwo-3B-sGS" firstAttribute="top" secondItem="fO7-Xc-Aym" secondAttribute="bottom" constant="58" id="gYi-Nt-l6Y"/>
+                            <constraint firstItem="Dwo-3B-sGS" firstAttribute="top" secondItem="fO7-Xc-Aym" secondAttribute="bottom" constant="238" id="gYi-Nt-l6Y"/>
                             <constraint firstItem="fO7-Xc-Aym" firstAttribute="leading" secondItem="X5A-0a-16u" secondAttribute="leading" id="pKc-MU-XSb"/>
+                            <constraint firstItem="NgQ-Fc-NFX" firstAttribute="top" secondItem="DwG-7S-o8B" secondAttribute="bottom" constant="58" id="zRY-wr-KJp"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -270,6 +286,73 @@
             </objects>
             <point key="canvasLocation" x="-1625" y="1493"/>
         </scene>
+        <!--Featured Milkshake View Controller-->
+        <scene sceneID="DBV-ZW-0aw">
+            <objects>
+                <viewController id="TO7-Nv-2JE" customClass="FeaturedMilkshakeViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9c1-nB-OZ3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cux-w5-uus"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iGv-NN-uXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="MilkshakeToMenu" id="rjW-nR-1Ei"/>
+                        <segue destination="7ip-cX-5JH" kind="modal" identifier="MilkshakeToMilkshakeSubmit" id="oFs-dT-2WU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAO-3o-6TA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2163" y="2891"/>
+        </scene>
+        <!--Milkshake Submit View Controller-->
+        <scene sceneID="oxv-x8-qaE">
+            <objects>
+                <viewController id="7ip-cX-5JH" customClass="MilkshakeSubmitViewController" customModule="Colby_Ice_Cream" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qla-TF-51i"/>
+                        <viewControllerLayoutGuide type="bottom" id="Com-Nx-2dU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bm5-iI-jlk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQE-5C-ZHb">
+                                <rect key="frame" x="20" y="70" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLU-bk-d1B">
+                                <rect key="frame" x="20" y="100" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eLU-bk-d1B" firstAttribute="top" secondItem="FQE-5C-ZHb" secondAttribute="bottom" constant="9" id="Bc4-8i-pBE"/>
+                            <constraint firstItem="FQE-5C-ZHb" firstAttribute="centerX" secondItem="Bm5-iI-jlk" secondAttribute="centerX" id="aWJ-uD-qNB"/>
+                            <constraint firstItem="eLU-bk-d1B" firstAttribute="leading" secondItem="Bm5-iI-jlk" secondAttribute="leadingMargin" id="hBn-Z2-DrA"/>
+                            <constraint firstItem="eLU-bk-d1B" firstAttribute="leading" secondItem="FQE-5C-ZHb" secondAttribute="leading" id="kmB-jR-lNi"/>
+                            <constraint firstItem="eLU-bk-d1B" firstAttribute="centerX" secondItem="Bm5-iI-jlk" secondAttribute="centerX" id="vqS-DZ-BtV"/>
+                            <constraint firstItem="FQE-5C-ZHb" firstAttribute="top" secondItem="qla-TF-51i" secondAttribute="bottom" constant="50" id="xJR-cf-mBd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MilkshakeSubmitDesc" destination="eLU-bk-d1B" id="8fX-bZ-roe"/>
+                        <outlet property="MilkshakeSubmitTitle" destination="FQE-5C-ZHb" id="A9F-um-SmW"/>
+                        <segue destination="TO7-Nv-2JE" kind="modal" identifier="MilkshakeSubmitToMilkshake" id="LBd-xu-aj1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FKN-tb-FoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-993" y="2859"/>
+        </scene>
         <!--Favorite Flavor View Controller-->
         <scene sceneID="UlA-NZ-SfN">
             <objects>
@@ -313,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xLy-0t-lK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1525" y="2198"/>
+            <point key="canvasLocation" x="-1625" y="2196"/>
         </scene>
         <!--Check Flavors-->
         <scene sceneID="Wrw-uE-Myx">
@@ -1214,7 +1297,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="AXx-8M-f1X"/>
                                 </constraints>
-                                <state key="normal" title="Old-Fashioned Vanilla">
+                                <state key="normal" title="Old Fashioned Vanilla">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -1733,7 +1816,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="OLU-d3-qT4"/>
                                 </constraints>
-                                <state key="normal" title="Mt. Katahdin Crunch">
+                                <state key="normal" title="Mt Katahdin Crunch">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -2103,8 +2186,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="rjW-nR-1Ei"/>
+        <segue reference="WrF-r8-HHQ"/>
         <segue reference="o4G-gd-Hi4"/>
-        <segue reference="FG6-1t-U5L"/>
-        <segue reference="lS2-8j-3wa"/>
+        <segue reference="fVr-AN-aDB"/>
     </inferredMetricsTieBreakers>
 </document>

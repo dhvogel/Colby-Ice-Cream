@@ -57,7 +57,6 @@ class FavoriteFlavorViewController: UIViewController, UIScrollViewDelegate {
         favoriteDesc.setValue(UIFont(name: "Raleway-Light", size:13), forKey: "font")
         
         containerView.addSubview(favoriteDesc)
-        //favoriteDesc.autoresizingMask = [UIViewAutoresizing.FlexibleLeftMargin, UIViewAutoresizing.FlexibleRightMargin, UIViewAutoresizing.FlexibleTopMargin, UIViewAutoresizing.FlexibleBottomMargin]
         
         favoriteDesc.text = "Tap flavors to get notified whenever they are reported!"
         favoriteDesc.textColor = UIColor.whiteColor()

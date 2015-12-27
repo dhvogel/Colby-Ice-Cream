@@ -21,6 +21,21 @@ class BackButton: UIButton {
         
     }
     
+    init(){
+        super.init(frame: CGRectZero)
+        setUp()
+    }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUp()
+    }
+    func setUp(){
+        let backbutton = UIImage(named: "backButton")
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 0.5 * self.bounds.size.width
+        self.setImage(backbutton, forState: .Normal)
+    }
+    
 
     /*
     // Only override drawRect: if you perform custom drawing.

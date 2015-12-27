@@ -149,9 +149,20 @@ class Submit_Flavors: UIViewController {
                 }
                 loadingSpinner.stopAnimating()
                 loadingSpinner.removeFromSuperview()
-                flavors = ["nothing", "nothing", "nothing", "nothing"]
+                
                 
             }
+            
+            
+            for flavor in flavors {
+                let push = PFPush()
+                push.setChannel(flavor.stringByReplacingOccurrencesOfString(" ", withString: "").stringByReplacingOccurrencesOfString("'", withString: ""))
+                push.setMessage("\(flavor) was just reported in \(Hall_Select)!")
+                push.sendPushInBackground()
+            }
+            
+            
+            flavors = ["nothing", "nothing", "nothing", "nothing"]
         }
         else {
             let alertController = UIAlertController(title:"Error", message: "Please select 4 flavors", preferredStyle: UIAlertControllerStyle.Alert)

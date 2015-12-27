@@ -12,6 +12,17 @@ class CustomFont: UILabel {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    init(){
+        super.init(frame: CGRectZero)
+        setUp()
+    }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUp()
+    }
+    func setUp(){
         self.setValue(UIFont(name: "Raleway-Light", size:15), forKey: "font")
     }
 

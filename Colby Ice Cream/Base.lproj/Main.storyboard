@@ -297,16 +297,53 @@
                     <view key="view" contentMode="scaleToFill" id="iGv-NN-uXZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmu-xK-Laz">
+                                <rect key="frame" x="20" y="70" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCz-kN-yMI">
+                                <rect key="frame" x="20" y="100" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0u-no-ThB">
+                                <rect key="frame" x="20" y="130" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M0u-no-ThB" firstAttribute="leading" secondItem="iCz-kN-yMI" secondAttribute="leading" id="3cp-vj-MIZ"/>
+                            <constraint firstItem="qmu-xK-Laz" firstAttribute="trailing" secondItem="iCz-kN-yMI" secondAttribute="trailing" id="C5M-dw-HrZ"/>
+                            <constraint firstItem="iCz-kN-yMI" firstAttribute="leading" secondItem="qmu-xK-Laz" secondAttribute="leading" id="DCJ-Rl-qjE"/>
+                            <constraint firstItem="iCz-kN-yMI" firstAttribute="trailing" secondItem="M0u-no-ThB" secondAttribute="trailing" id="Ij9-fw-iUI"/>
+                            <constraint firstItem="qmu-xK-Laz" firstAttribute="top" secondItem="9c1-nB-OZ3" secondAttribute="bottom" constant="50" id="PxJ-yu-JUH"/>
+                            <constraint firstItem="iCz-kN-yMI" firstAttribute="centerX" secondItem="iGv-NN-uXZ" secondAttribute="centerX" id="QKs-mU-ZCF"/>
+                            <constraint firstItem="M0u-no-ThB" firstAttribute="top" secondItem="iCz-kN-yMI" secondAttribute="bottom" constant="9" id="QhU-yl-qQP"/>
+                            <constraint firstItem="M0u-no-ThB" firstAttribute="trailing" secondItem="iGv-NN-uXZ" secondAttribute="trailingMargin" id="UaS-VG-pwJ"/>
+                            <constraint firstItem="qmu-xK-Laz" firstAttribute="leading" secondItem="iGv-NN-uXZ" secondAttribute="leadingMargin" id="eFs-gC-re3"/>
+                            <constraint firstItem="qmu-xK-Laz" firstAttribute="centerX" secondItem="iGv-NN-uXZ" secondAttribute="centerX" id="egT-DM-zuu"/>
+                            <constraint firstItem="M0u-no-ThB" firstAttribute="centerX" secondItem="iGv-NN-uXZ" secondAttribute="centerX" id="iKA-UU-GsV"/>
+                            <constraint firstItem="iCz-kN-yMI" firstAttribute="top" secondItem="qmu-xK-Laz" secondAttribute="bottom" constant="9" id="isZ-7R-aSG"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="FeatShakeName" destination="iCz-kN-yMI" id="MJr-SA-ecr"/>
+                        <outlet property="FeatShakeSubmitter" destination="M0u-no-ThB" id="Vul-sl-IVx"/>
+                        <outlet property="FeatShakeTitle" destination="qmu-xK-Laz" id="hdL-0j-jpJ"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="MilkshakeToMenu" id="rjW-nR-1Ei"/>
                         <segue destination="7ip-cX-5JH" kind="modal" identifier="MilkshakeToMilkshakeSubmit" id="oFs-dT-2WU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAO-3o-6TA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2163" y="2891"/>
+            <point key="canvasLocation" x="-1854" y="2895"/>
         </scene>
         <!--Milkshake Submit View Controller-->
         <scene sceneID="oxv-x8-qaE">
@@ -2186,9 +2223,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rjW-nR-1Ei"/>
-        <segue reference="WrF-r8-HHQ"/>
-        <segue reference="o4G-gd-Hi4"/>
         <segue reference="fVr-AN-aDB"/>
+        <segue reference="rjW-nR-1Ei"/>
+        <segue reference="LBd-xu-aj1"/>
+        <segue reference="o4G-gd-Hi4"/>
     </inferredMetricsTieBreakers>
 </document>

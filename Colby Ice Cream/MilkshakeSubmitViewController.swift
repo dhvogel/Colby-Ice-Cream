@@ -21,7 +21,7 @@ class MilkshakeSubmitViewController: UIViewController, UITextFieldDelegate {
         let colorGen = ColorGenerator()
         
         let sexyLayer:CAGradientLayer
-        sexyLayer = colorGen.gradientGenerator("#ffc5d9", hexBottom: "#c2f2d0")
+        sexyLayer = colorGen.gradientGenerator("#ffc5d9", hexBottom: "#c1d1e0")
         sexyLayer.frame = view.frame
         
         self.view.layer.insertSublayer(sexyLayer, atIndex: 0)
@@ -86,7 +86,7 @@ class MilkshakeSubmitViewController: UIViewController, UITextFieldDelegate {
         self.textFields.append( submitterTextField )
         self.view.addSubview(submitterTextField)
         
-        let submitMilkshakeButton: UIButton = UIButton(frame: CGRect(x: 5, y: screenBounds.height - 25, width: screenBounds.width - 10, height: 20))
+        let submitMilkshakeButton: UIButton = UIButton(frame: CGRect(x: 5, y: screenBounds.height - 35, width: screenBounds.width - 10, height: 25))
         submitMilkshakeButton.backgroundColor = UIColor.clearColor()
         submitMilkshakeButton.layer.borderWidth = 1
         submitMilkshakeButton.layer.borderColor = UIColor.whiteColor().CGColor
@@ -114,7 +114,7 @@ class MilkshakeSubmitViewController: UIViewController, UITextFieldDelegate {
             self.presentViewController(alertController, animated: true, completion: nil)
             return
         }
-        let ycoord: CGFloat = 230 + CGFloat(sender.tag * 25)
+        let ycoord: CGFloat = 210 + CGFloat(sender.tag * 25)
         let ingredientTextField = UITextField(frame: CGRectMake(5, ycoord, screenBounds.width/2 - 5, 20))
         ingredientTextField.placeholder = "Ingredient \(sender.tag + 1)"
         ingredientTextField.font = UIFont.systemFontOfSize(12)
@@ -214,43 +214,40 @@ class MilkshakeSubmitViewController: UIViewController, UITextFieldDelegate {
                 recipe.append(["ingredient":ingredient, "amount":amount])
             }
         }
-        print(recipe)
+ 
+        
+        let ShakeSubmission = PFObject(className:"ShakeSubmit")
+        ShakeSubmission.setObject(title, forKey: "ShakeName")
+        ShakeSubmission.setObject(submitter, forKey: "ShakeSubmitter")
+        for entry in 0...recipe.count-1 {
+            ShakeSubmission.setObject(recipe[entry]["ingredient"]!, forKey: "Ingredient\(entry+1)")
+            ShakeSubmission.setObject(recipe[entry]["amount"]!, forKey: "Amount\(entry+1)")
+        }
         
         
-//        let ShakeSubmission = PFObject(className:"ShakeSubmit")
-//
-//        ICSubmission.setObject(flavors[0], forKey: "Flavor1")
-//        ICSubmission.setObject(flavors[1], forKey: "Flavor2")
-//        ICSubmission.setObject(flavors[2], forKey: "Flavor3")
-//        ICSubmission.setObject(flavors[3], forKey: "Flavor4")
-//        ICSubmission.setObject(name, forKey: "submitted_name")
-//        ICSubmission.setObject(first_name, forKey: "submitted_FName")
-//        
-//        
-//        let loadingSpinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
-//        loadingSpinner.center = CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)
-//        loadingSpinner.startAnimating()
-//        self.view.addSubview(loadingSpinner)
-//        
-//        
-//        ICSubmission.saveInBackgroundWithBlock{
-//            (success, error) -> Void in
-//            
-//            if success == true {
-//                let alertController = UIAlertController(title:"Thanks, " + first_name + "!", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
-//                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-//                self.presentViewController(alertController, animated: true, completion: nil)
-//            }
-//            else {
-//                let alertController = UIAlertController(title:"Error", message: "You must be an administrator to post flavors. Contact dhvogel@colby.edu.", preferredStyle: UIAlertControllerStyle.Alert)
-//                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-//                self.presentViewController(alertController, animated: true, completion: nil)
-//            }
-//            loadingSpinner.stopAnimating()
-//            loadingSpinner.removeFromSuperview()
-//            
-//            
-//        }
+        let loadingSpinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
+        loadingSpinner.center = CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)
+        loadingSpinner.startAnimating()
+        self.view.addSubview(loadingSpinner)
+        
+        ShakeSubmission.saveInBackgroundWithBlock{
+            (success, error) -> Void in
+            
+            if success == true {
+                let alertController = UIAlertController(title:"Thanks, " + submitter + "!", message: "Your shake recipe was submitted!", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
+            }
+            else {
+                let alertController = UIAlertController(title:"Error", message: "Could not submit shake recipe due to connectivity error", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
+            }
+            loadingSpinner.stopAnimating()
+            loadingSpinner.removeFromSuperview()
+            
+            
+        }
         return true
     }
     
